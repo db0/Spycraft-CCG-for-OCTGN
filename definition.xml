@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<game xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Spycraft" id="d1d8cc2c-e817-4b4d-9449-3315bbd3c643" octgnVersion="3.0" version="0.3" markersize="16">
+	<card back="r1" front="r5" width="63" height="88" cornerRadius="2">
+		<property name="Type" type="String" hidden="false" ignoreText="False" textKind="Enum" />
+		<property name="Expense Rating" type="String" hidden="false" ignoreText="False" textKind="Enum" />
+		<property name="Charisma" type="String" hidden="false" ignoreText="False" textKind="Enum" />
+		<property name="Combat" type="String" hidden="false" ignoreText="False" textKind="Enum" />
+		<property name="Transport" type="String" hidden="false" ignoreText="False" textKind="Enum" />
+		<property name="Craft" type="String" hidden="false" ignoreText="False" textKind="Enum" />
+		<property name="Level" type="String" hidden="false" ignoreText="False" textKind="Enum" />
+		<property name="Bravado" type="String" hidden="false" ignoreText="False" textKind="Enum" />
+		<property name="Rules" type="String" hidden="false" ignoreText="False" textKind="Enum" />
+		<property name="Victory Points" type="String" hidden="false" ignoreText="False" textKind="Enum" />
+		<property name="Cover Level" type="String" hidden="false" ignoreText="False" textKind="Enum" />
+	</card>
+	<table name="Table" visibility="undefined" ordered="false" width="640" height="480" board="r3" boardPosition="0,0,0,0" background="r4" backgroundStyle="stretch">
+		<groupaction menu="Roll d6" default="false" execute="roll6" />
+		<cardaction menu="Retire" default="false" shortcut="del" execute="retire" />
+		<cardaction menu="Activate/Deactivate" default="false" shortcut="ctrl+a" execute="act" />
+		<cardaction menu="Wound/Unwound" default="false" shortcut="ctrl+w" execute="wound" />
+		<cardaction menu="Clear" default="false" shortcut="esc" execute="clear" />
+	</table>
+	<player summary="{#victory} / {#brief} / {#Hand}">
+		<hand name="Hand" visibility="me" ordered="false" width="63" height="88" icon="r7">
+			<cardaction menu="Play as Face-Down" default="true" shortcut="ctrl+f" execute="play" />
+		</hand>
+		<group name="Deck" visibility="none" ordered="false" width="63" height="88" icon="r8" collapsed="false">
+			<groupaction menu="Draw" default="true" shortcut="ctrl+D" execute="draw" />
+			<groupaction menu="Draw Many" default="false" shortcut="ctrl+alt+D" execute="drawMany" />
+			<groupaction menu="Shuffle" default="false" shortcut="ctrl+S" execute="shuffle" />
+		</group>
+		<group name="Discard" visibility="all" ordered="false" width="63" height="88" icon="r9" collapsed="false">
+			<groupaction menu="Shuffle into Deck" default="false" execute="shuffleIntoDeck" />
+		</group>
+		<group name="Leaders" visibility="me" ordered="false" width="63" height="88" icon="r10" collapsed="false" />
+		<counter name="victory" default="0" reset="false" icon="r6" />
+		<counter name="brief" default="0" reset="false" icon="r11" />
+	</player>
+	<shared>
+		<group name="Mission" visibility="none" ordered="false" width="63" height="88" icon="r12" collapsed="false">
+			<groupaction menu="Shuffle" default="false" execute="shuffle" />
+		</group>
+	</shared>
+	<deck>
+		<section name="Deck" group="Deck" />
+		<section name="Leaders" group="Leaders" />
+	</deck>
+	<sharedDeck>
+		<section name="Mission" group="Mission" />
+	</sharedDeck>
+	<scripts>
+		<script src="r2" />
+	</scripts>
+</game>
