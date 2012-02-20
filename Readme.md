@@ -15,6 +15,13 @@ A good location to find some more detailed info about it is also [this thread](h
 Changelog
 ---------
 
+### 0.4.1
+
+Incorporated changes from the official 0.4 version by Lord Nat to 0.3.1 and modified the following
+
+  * The Expose action became Expose/Clear. Using it a second time will remove the Exposed counter.
+  * The Baffle action became Baffle/Clear. Using it a second time will reduce the counters by one.
+
 ### 0.3.1
 
 Added a different background to fit the theme
