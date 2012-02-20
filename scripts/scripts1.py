@@ -60,3 +60,36 @@ def clear(card, x = 0, y = 0):
     notify("{} clears {}.".format(me, card))
     card.highlight = None
     card.target(False)
+
+markerTypes = { 
+    'exposed': ("Exposed marker", "0183c0b8-6a6d-42c5-bedb-94bbc8ca5329"),
+    'baffled': ("Baffled marker", "0415bae0-0c88-4ec6-8169-aeb117318618")
+	}
+
+def expose(card, x = 0, y = 0):
+    mute()
+    if card.markers[markerTypes['exposed']] == 0:
+        notify("{} becomes Exposed.".format(card))
+        card.markers[markerTypes['exposed']] = 1
+    else:
+        notify("{} is not Exposed anymore.".format(card))
+        card.markers[markerTypes['exposed']] = 0
+
+
+def baffle(card, x = 0, y = 0):
+    mute()
+    if card.markers[markerTypes['baffled']] == 0:
+       notify("{} becomes Baffled and is considered Exposed until the end of the mission.".format(card))
+       card.markers[markerTypes['exposed']] += 1
+       card.markers[markerTypes['baffled']] += 1
+    else:
+       notify("{} is not baffled anymore.".format(card))
+       card.markers[markerTypes['exposed']] -= 1
+       card.markers[markerTypes['baffled']] -= 1
+
+AbilityColor = "#FF0000"
+
+def ability(card, x = 0, y = 0):
+    mute()
+    card.highlight = AbilityColor
+    notify('{} activates the ability on {}'.format(me, card))

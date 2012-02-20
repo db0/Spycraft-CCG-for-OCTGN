@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
   <Relationship Target="/card/back.jpg" Id="r1" Type="http://schemas.octgn.org/picture" />
-  <Relationship Target="/table/Intel.jpg" Id="r3" Type="http://schemas.octgn.org/picture" />
+  <Relationship Target="/table/Intel.jpg" Id="r4" Type="http://schemas.octgn.org/picture" />
   <Relationship Target="/card/front.jpg" Id="r5" Type="http://schemas.octgn.org/picture" />
   <Relationship Target="/scripts/scripts1.py" Id="r2" Type="http://schemas.octgn.org/script" />
   <Relationship Target="/counters/briefcase-icon.png" Id="r11" Type="http://schemas.octgn.org/picture" />
@@ -11,4 +11,5 @@
   <Relationship Target="/groups/discard.png" Id="r9" Type="http://schemas.octgn.org/picture" />
   <Relationship Target="/groups/hand.jpg" Id="r7" Type="http://schemas.octgn.org/picture" />
   <Relationship Target="/groups/H_Mission_50.png" Id="r12" Type="http://schemas.octgn.org/picture" />
+  <Relationship Target="/groups/graveyard.png" Id="r13" Type="http://schemas.octgn.org/picture" />
 </Relationships>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<game xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Spycraft" id="d1d8cc2c-e817-4b4d-9449-3315bbd3c643" octgnVersion="3.0" version="0.3.1" markersize="16">
+<game xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Spycraft" id="d1d8cc2c-e817-4b4d-9449-3315bbd3c643" octgnVersion="3.0" version="0.4.1" markersize="16">
 	<card back="r1" front="r5" width="63" height="88" cornerRadius="2">
 		<property name="Type" type="String" hidden="false" ignoreText="False" textKind="Enum" />
 		<property name="Expense Rating" type="String" hidden="false" ignoreText="False" textKind="Enum" />
@@ -13,11 +13,14 @@
 		<property name="Victory Points" type="String" hidden="false" ignoreText="False" textKind="Enum" />
 		<property name="Cover Level" type="String" hidden="false" ignoreText="False" textKind="Enum" />
 	</card>
-	<table name="Table" visibility="undefined" ordered="false" width="640" height="480" board="r3" boardPosition="0,0,0,0" background="r3" backgroundStyle="uniformToFill">
+	<table name="Table" visibility="undefined" ordered="false" width="640" height="480" board="r4" boardPosition="0,0,0,0" background="r4" backgroundStyle="uniformToFill">
 		<groupaction menu="Roll d6" default="false" execute="roll6" />
 		<cardaction menu="Retire" default="false" shortcut="del" execute="retire" />
 		<cardaction menu="Activate/Deactivate" default="false" shortcut="ctrl+a" execute="act" />
 		<cardaction menu="Wound/Unwound" default="false" shortcut="ctrl+w" execute="wound" />
+		<cardaction menu="Use Ability" default="false" shortcut="ctrl+b" execute="ability" />
+		<cardaction menu="Expose/Clear" default="false" execute="expose" />
+		<cardaction menu="Baffle/Clear" default="false" execute="baffle" />
 		<cardaction menu="Clear" default="false" shortcut="esc" execute="clear" />
 	</table>
 	<player summary="{#victory} / {#brief} / {#Hand}">
@@ -40,6 +43,7 @@
 		<group name="Mission" visibility="none" ordered="false" width="63" height="88" icon="r12" collapsed="false">
 			<groupaction menu="Shuffle" default="false" execute="shuffle" />
 		</group>
+		<group name="Mission Discard" visibility="all" ordered="false" width="63" height="88" icon="r13" collapsed="false" />
 	</shared>
 	<deck>
 		<section name="Deck" group="Deck" />
