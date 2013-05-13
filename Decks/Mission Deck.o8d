@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="d1d8cc2c-e817-4b4d-9449-3315bbd3c643" shared="true">
+  <section name="Mission">
+    <card qty="1" id="6c4a2809-c94b-4e38-873b-4f353438dd8c">Air Chase Over Nice</card>
+    <card qty="1" id="45142ebd-bf33-472d-b643-c4c5dbce6d30">A Night at the Opera</card>
+    <card qty="1" id="b45ffe4f-2d0a-41c6-9c01-31d47a67c8c4">Containment</card>
+    <card qty="1" id="f6f54077-38a8-4ea8-9729-a1dec6c4889a">Destory the Biochem Lab</card>
+    <card qty="1" id="0ae44f17-b97c-4b79-8114-36db3a912808">Escape the City</card>
+    <card qty="1" id="834e0e78-4a53-43bc-a01f-d47e430e5754">Escape the Khan's Lair</card>
+    <card qty="1" id="6526d184-f4d9-4a36-ad22-e33ab5b690a8">Flight of the Intruder</card>
+    <card qty="1" id="5ef299d2-8199-4ce5-8be3-0b87f7e3bcf5">High-Speed Melee</card>
+    <card qty="1" id="f8b5a0b2-6acd-4d06-8cc8-76bea8eac8cf">Manhunt at Carnaval</card>
+    <card qty="1" id="710cf749-c32a-42ed-b4ea-ca3721f8b83e">Pleasant Country Drive</card>
+    <card qty="1" id="34eb8dd7-8e25-49cf-b323-ffad77d255cd">Raid on the Motor Pool</card>
+    <card qty="1" id="73c26967-4fb1-455a-b376-a0ee801b149a">R&amp;R Interrupted</card>
+    <card qty="1" id="b2368fdd-9b7d-497f-bb5f-cda8b4103334">Safe House Tussle</card>
+    <card qty="1" id="4827ef4f-48ad-4cb4-8012-efade6418089">Safety Slugs Only!</card>
+    <card qty="1" id="9fb06398-a421-4925-9dcd-a6e48bd1137c">Sky Drop</card>
+    <card qty="1" id="ec13c374-047d-4251-bf25-650023dd3c44">Snow Killers</card>
+    <card qty="1" id="975f7a73-c592-47a7-b96b-56ff6133c44d">Surveillance at Marseilles</card>
+    <card qty="1" id="06ddab53-13bf-4305-aa12-8f84b970e213">The Direct Approach</card>
+    <card qty="1" id="ab497e35-a053-4ec6-b097-85ad9dfa1d21">The Side Streets of Bern</card>
+    <card qty="1" id="1be230ae-9171-4d96-9a22-3f34b6aec63b">The Sting</card>
+    <card qty="1" id="c5f99f50-5a3e-460d-a3fc-6c632cced257">The Warlord's Fortress</card>
+    <card qty="1" id="74776e00-2737-4efc-9014-878560e55779">Tracking Subject Zero</card>
+    <card qty="1" id="c8d29e93-78df-4785-a880-d0366e600b7d">Verbal Sparring</card>
+    <card qty="1" id="7d7d7f16-233b-4f13-a020-4d83141dc65f">Wipe the Mainframe</card>
+  </section>
+</deck>
