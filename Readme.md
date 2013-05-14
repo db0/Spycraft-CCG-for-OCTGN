@@ -5,6 +5,15 @@ Espionage is a grand shadow play in which every act is an ideological war and ev
 
 The Spycraft CCG brings these anti-heroes to life, in a world where they have outlived their utility as government pawns. What happens when spies strike out on their own to change the world they helped to destroy? How far will they go to save it? Welcome to the first step toward a very different future...
 
+Available Sets
+---------
+
+Currently Spycraft CCG does not utilize OCTGN auto-generated proxies to play. You'll need to download the card image packs to be able to play. 
+
+The link below will provide you with a download bundle you can import into OCTGN by the "add o8c" function in the game manager
+
+* [7th Sea Card CCG Images Bundle](http://dbzer0.com/pub/SpycraftCCG/sets/SpycraftCCG-Sets-Bundle.o8c) *(Last Updated 14/05/2013)*
+
 Linkage
 -------
 
@@ -12,20 +21,3 @@ There's not a lot of places to find information about this CCG anymore, but one 
 
 A good location to find some more detailed info about it is also [this thread](http://www.alderac.com/forum/viewtopic.php?f=150&t=60145) in the alderac forums.
 
-Changelog
----------
-
-### 0.4.1
-
-Incorporated changes from the official 0.4 version by Lord Nat to 0.3.1 and modified the following
-
-  * The Expose action became Expose/Clear. Using it a second time will remove the Exposed counter.
-  * The Baffle action became Baffle/Clear. Using it a second time will reduce the counters by one.
-
-### 0.3.1
-
-Added a different background to fit the theme
-
-### 0.3
-
-Original version released by Lord Nat in the [OCTGN Game Directory](http://octgn.gamersjudgement.com/viewtopic.php?f=44&t=262)

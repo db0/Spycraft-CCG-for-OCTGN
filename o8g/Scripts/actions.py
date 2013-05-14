@@ -93,3 +93,7 @@ def ability(card, x = 0, y = 0):
     mute()
     card.highlight = AbilityColor
     notify('{} activates the ability on {}'.format(me, card))
+
+def download_o8c(group,x=0,y=0):
+   openUrl("http://dbzer0.com/pub/SpycraftCCG/sets/SpycraftCCG-Sets-Bundle.o8c")
+    

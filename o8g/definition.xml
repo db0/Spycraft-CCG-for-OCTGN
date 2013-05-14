@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<game xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+      name="Spycraft" 
+      id="d1d8cc2c-e817-4b4d-9449-3315bbd3c643" 
+      octgnVersion="3.1.15.112" 
+      version="1.0.0.2" 
+      markersize="16"
+      tags="duel spies aeg"
+      description="Spycraft CCG is a espionage themed card game for two players.
+      &#xD;&#xD;&#xD;Espionage is a grand shadow play in which every act is an ideological war and every actor carries the fate of nations in his armor-lined briefcase. The greatest among them are silent soldiers of private wars ... wars fought behind the scenes for reasons we never truly understand. They lie, cheat, and steal to protect truth, integrity, and security. They kill to save lives. Spies specialize in treachery so no one else has to, and find honor in conviction alone.
+      &#xD;&#xD;The Spycraft CCG brings these anti-heroes to life, in a world where they have outlived their utility as government pawns. What happens when spies strike out on their own to change the world they helped to destroy? How far will they go to save it? Welcome to the first step toward a very different future...
+      &#xd;&#xd;Automation rank: D
+      &#xd;(This game definition contains no automation.)"
+      setsurl="https://github.com/db0/Spycraft-CCG-for-OCTGN#available-sets"
+      gameurl="https://github.com/db0/Spycraft-CCG-for-OCTGN#Spycraft-ccg-plugin-for-octgn"
+      authors="Db0, Lord Nat"
+      iconurl="https://raw.github.com/db0/Spycraft-CCG-for-OCTGN/master/spycraft_logo.jpg">
+   <scripts>
+      <script src="Scripts/actions.py" />
+   </scripts>  
+   <proxygen definitionsrc="Proxy/proxydef.xml">
+   </proxygen>   
+	<card back="Card/back.jpg" front="Card/front.jpg" width="63" height="88" cornerRadius="2">
+		<property name="Type" type="String" hidden="False" ignoreText="False" textKind="Enum" />
+		<property name="Expense Rating" type="String" hidden="False" ignoreText="False" textKind="Enum" />
+		<property name="Charisma" type="String" hidden="False" ignoreText="False" textKind="Enum" />
+		<property name="Combat" type="String" hidden="False" ignoreText="False" textKind="Enum" />
+		<property name="Transport" type="String" hidden="False" ignoreText="False" textKind="Enum" />
+		<property name="Craft" type="String" hidden="False" ignoreText="False" textKind="Enum" />
+		<property name="Level" type="String" hidden="False" ignoreText="False" textKind="Enum" />
+		<property name="Bravado" type="String" hidden="False" ignoreText="False" textKind="Enum" />
+		<property name="Rules" type="String" hidden="False" ignoreText="False" textKind="Enum" />
+		<property name="Victory Points" type="String" hidden="False" ignoreText="False" textKind="Enum" />
+		<property name="Cover Level" type="String" hidden="False" ignoreText="False" textKind="Enum" />
+	</card>
+	<table name="Table" visibility="undefined" ordered="False" width="640" height="480" background="Table/Intel.jpg" backgroundStyle="uniformToFill">
+		<groupactions menu="Game...">
+			<groupaction menu="Download Sets Card Images." shortcut="Ctrl+G" default="False" execute="download_o8c" />
+		</groupactions>
+		<groupaction menu="Roll d6" default="False" execute="roll6" />
+		<cardaction menu="Retire" default="False" shortcut="del" execute="retire" />
+		<cardaction menu="Activate/Deactivate" default="False" shortcut="ctrl+a" execute="act" />
+		<cardaction menu="Wound/Unwound" default="False" shortcut="ctrl+w" execute="wound" />
+		<cardaction menu="Use Ability" default="False" shortcut="ctrl+b" execute="ability" />
+		<cardaction menu="Expose/Clear" default="False" execute="expose" />
+		<cardaction menu="Baffle/Clear" default="False" execute="baffle" />
+		<cardaction menu="Clear" default="False" shortcut="esc" execute="clear" />
+	</table>
+	<player summary="{#victory} / {#brief} / {#Hand}">
+		<hand name="Hand" visibility="me" ordered="False" width="63" height="88" icon="Groups/hand.jpg">
+			<cardaction menu="Play as Face-Down" default="True" shortcut="ctrl+f" execute="play" />
+		</hand>
+		<group name="Deck" visibility="none" ordered="False" width="63" height="88" icon="Groups/deck.png" collapsed="False">
+			<groupaction menu="Draw" default="True" shortcut="ctrl+D" execute="draw" />
+			<groupaction menu="Draw Many" default="False" shortcut="ctrl+alt+D" execute="drawMany" />
+			<groupaction menu="Shuffle" default="False" shortcut="ctrl+S" execute="shuffle" />
+		</group>
+		<group name="Discard" visibility="all" ordered="False" width="63" height="88" icon="Groups/discard.png" collapsed="False">
+			<groupaction menu="Shuffle into Deck" default="False" execute="shuffleIntoDeck" />
+		</group>
+		<group name="Leaders" visibility="me" ordered="False" width="63" height="88" icon="Groups/IconLeadership.png" collapsed="False" />
+		<counter name="victory" default="0" reset="False" icon="Counters/vp.png" />
+		<counter name="brief" default="0" reset="False" icon="Counters/briefcase-icon.png" />
+	</player>
+	<shared>
+		<group name="Mission" visibility="none" ordered="False" width="63" height="88" icon="Groups/H_Mission_50.png" collapsed="False">
+			<groupaction menu="Shuffle" default="False" execute="shuffle" />
+		</group>
+		<group name="Mission Discard" visibility="all" ordered="False" width="63" height="88" icon="Groups/graveyard.png" collapsed="False" />
+	</shared>
+	<deck>
+		<section name="Deck" group="Deck" />
+		<section name="Leaders" group="Leaders" />
+	</deck>
+	<sharedDeck>
+		<section name="Mission" group="Mission" />
+	</sharedDeck>
+</game>

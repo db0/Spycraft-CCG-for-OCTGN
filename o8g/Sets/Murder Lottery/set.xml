@@ -1,0 +1,1812 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="Murder Lottery" id="951a1644-c998-4ff5-8af0-637556acf35e" gameId="d1d8cc2c-e817-4b4d-9449-3315bbd3c643" gameVersion="1.0.0.0" version="1.0.0.0">
+	<cards>
+		<card id="5f07ef0f-c92b-4885-b646-4548e1d25e87" name="Experience Counts">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="While this card is attached, this agent gains +2 to all skills. : React Craft: Afer you win a non-solo op mission: Attach this card to one of your agents at the mission." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="e2d296fb-1863-408f-91c9-cc617ec8b1cf" name="Level the Playing Field">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Intel Charisma 6: In the order of your choosing, target and deactivate all active Firearm and Armor gear. Until the end of the turn, Firearm and Armor gear may only be activated as a Mission Craft action." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="1c7fa3c3-d452-490a-a486-7c8167bc75a8" name="Flesh Wound">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="4" />
+			<property name="Rules" value="React Combat 4: Before this agent is retired: Prevent the retirement. Wound this agent, this wound cannot be prevented." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="f12813ec-98b3-412e-9e1c-c52b765d1cdd" name="Field Dresing">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="4" />
+			<property name="Rules" value="Mission Combat: Target this agent. If this agent is a Medic, you may target an additional agent. Remove on wound from each target." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="7cfed653-5db9-49c1-99cc-2a156d578b71" name="Brainwashing">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="1" />
+			<property name="Rules" value="Franchise only. : Intel Craft X: Target an enemy non-leader agent. Until the end of the turn, the target may not perform any action printed on his card. The TN is the target's craft." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="9ab48d03-5387-4688-b27d-c44f7de6570b" name="Bugged Briefcase">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="React Craft 7: After an opponent's action activates this card: Discard this card from play. Expose the acting agent and an additional agent. This action may be performed from headquarters." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="f402d92a-f2e9-4611-a8db-6b88e75a9173" name="I'm Sorry, Was That Yours?">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="React Charisma 7: Before one of your agents activates a gear: Return target gear attached to an opposing agent to its controller's hand. Your gear's expense is reduced by 6 for the purposes of activation." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="3b31e4f1-8dff-4ea6-89bd-365224c42099" name="Superior Intel">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="1" />
+			<property name="Rules" value="Solo-op - Public - Craft +2 : Charisma actions have -2 TN during this solo op. : React Craft:After you assign a mission team to a mission, discard this card: Permanently increase or decrease both the objective and Victory Points of the missions by 2." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="ecbed87e-e9d8-4ea1-8888-f113623e6dde" name="Code Red Scramble">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="React Craft 4: After another player declares his attacking mission team: Perform up to three &quot;Recruit an Agent&quot; and/or &quot;Requisition Gear&quot; actions. The attacking team is considered to have the highest craft total for determining who performs the first Mission action." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="599265eb-293f-4381-a773-ad16622086c7" name="Dirty Deeds">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="1" />
+			<property name="Rules" value="Faceman only. React Charisma: After this agent declares an action: Change the skill used for actions's TN to charisma. The action becomes a charisma action." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="731c0454-59d5-4800-af97-30369da2b8e4" name="Dodge">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="React Combat 4: After this agent is targeted by a combat action: Cancel the action. The acting player may perform another action." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="942a0c9c-a230-401d-8b6f-d5e685415bac" name="Daredevil Driving">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Wheelman only. : Mission Transport X: If this is a fight mission, move target agent to headquarters. The TN is the target's transport. : Mission Transport X: If this is a chase mission, wound target opposing agent. the TN is the target's combat." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="0e2005e7-bcb4-42ce-8af2-c06502eeebcf" name="Surveillance Op">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Solo Op - Public - Charisma +2 : Combat and transport actions have +1 TN during this solo op. : React Craft: Defore the Debrief Phase: Examine the top two cards of any player's Agency Deck. You may discard this card to discard the exmined cards." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="01d1830a-e648-42b5-a190-b2208fe55d79" name="Caught in the Act">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="React Craft X: After an opposing non-leader agent resolves a craft or combat action: Move that agent to headquarters. The TN is the target's craft." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="2b4f3121-b223-48eb-8096-dbe08a750d86" name="Failure is Not an Option">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="React Transport X: After an agent is moved from a mission team to headquarters: Target the agent and move him back into the mission team. wound the agent. The TN is the agent's combat plus transport." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="baa27828-83ec-43c0-b9b1-5aba92ad7fd8" name="Faulty Gear">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="React Craft X: After an agent declares an action printed on a gear card: Cancel the action and retire the gear. Fixers may add their charisma to their craft for the purposes of meeting the TN of this action. The TN is the gear's expense." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="cf408369-ff5f-4f14-bef2-df1c89b98f5a" name="Clone Farm">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Faceman or Franchise only. : Mission Charisma 8: Until the end of the turn, your maximum team size and mission team size are increased by 1. Another agent on your mission team may immediately perform an additional Mission action." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="81766d3f-fbd5-4148-8efd-1768c177fa3f" name="Neutralize Him">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Solo OP - Public - Craft +2 : Wounds may not be prevented during this solo op. : Mission Craft X: Target an enemy agent that has not performed an action during the mission. Reduce the target's expense to 0. Deactivate all gear attached to the target. the TN is the target's craft." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="521f3a02-2811-471e-87b8-63188327133a" name="I Know Kung Fu">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Combat React X: After this agent is targeted with a Melee action: Wound the target acting agent. The TN is the target's combat." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="b5948c37-b691-407d-8e7b-e212f01afc6d" name="In War, No One Wins">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="React Charisma X: After the end of a mission: Target an enemy agent who was at the mission. Reduce the target's base skills to 0 untill the end of the next mission phase. The TN is the target's expense." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="48aaeaae-df09-40f2-8855-5cbb8a5350bf" name="Unflappable">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="React Craft: Before this agent discards a card for bravado to meet the TN of an action: Increase that card's bravado by 3." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="b6ba185d-224e-4e9c-9397-d2dbab5ca2ec" name="Mission Briefing">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="May not be performed by a leader. : Intel Craft 6: Draw two cards. Until the end of the turn, this agent may not assign or move into mission teams." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="78b08394-a77e-4e2a-9715-0314bae041df" name="Murder Scene">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Mission Charisma 8: Firearm and Melee gear cannot be activated until after the end of this mission. In the order of your choosing, target and deactivate all active Firearm and Melee gear." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="86db7b10-3e81-4bc2-8a5e-02370b027c9d" name="Night of 1,000 Ninjas">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Solo op - Private - Combat +3 : Agents may not be sent to headquarters during this solo op : React Combat 6: After an enemy agent activates a gear: Retire the target gear." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="33585273-fbb0-4510-8c81-7b514f999911" name="One World Doctrine">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Mission Craft 4: Wound target opposing Exposed agent. Draw a card." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="50e80a25-c22b-4cd6-b392-22c3265043a8" name="Mod Distraction">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="While this card is attached, the attacker and defender mission text gains: &quot;The TNs of your charisma actions are increased by 3.&quot; : Mission Charisma 4: Attach this card to the current mission." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="2ba0c4e0-dd4e-4bf0-a543-16f9fcc1c6ee" name="Safe House Run">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="1" />
+			<property name="Rules" value="Solo op - Private - Craft +3 : Players may not assign or activate agents during this solo op. : React Craft: Before one of your agents is activated: Deactivate one of your target non-leader agents. The target agent may not be activated this turn." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="e7ca26c9-5573-4b44-8883-d4b8c9944d3b" name="Rushed Training">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="1" />
+			<property name="Rules" value="React Craft: Before acticating a non-leader agent: Reduce the target agent's expense by 3 for the purposes of activation. Immediately after being activated, the target agent takes a wound. This wound may not be prevented." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="3ebb0f38-bae6-4eb6-810c-d2b481937895" name="Size Matters">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Wheelman only. : Mission Transport: Retire an active Vehicle." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="457b9938-8d93-45e6-b13a-919476cf00ef" name="Auction Night">
+			<property name="Type" value="Mission" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="" />
+			<property name="Rules" value="Intrigue - Private - Craft - Bid Value : Attacker: After assigning, bid a value (1-9). The victory points, mission objective, TN, and minimum TN of your actions are equal to your bid. : Defender: After ypu assinging, you may bid a valuse (1-9). If it's higher than the Attacker's bid, attacking agents have no minimum TN, and the victory points, mission objective TN, and the minimum TN for your actions equal your bid." />
+			<property name="Victory Points" value="*" />
+			<property name="Cover Level" value="2" />
+		</card>
+		<card id="978093ae-070c-49a3-8d8b-a51e3ce39aac" name="Cliffside Chaos">
+			<property name="Type" value="Mission" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="" />
+			<property name="Rules" value="Fight - Private - Transport +4 : Attacker: Your non-leader agents may not discard cards for bravado during this mission. : Defender: Your non-leader agents may not discard cards for bravado during this mission." />
+			<property name="Victory Points" value="5" />
+			<property name="Cover Level" value="4" />
+		</card>
+		<card id="c8d404fa-c927-49a3-8969-fcac852a5eac" name="Smash and Grab">
+			<property name="Type" value="Mission" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="" />
+			<property name="Rules" value="Chase - Public - Combat +4 : Attack: If you win this mission, retire any non-leader agent. : Defender: If you win this mission, search your Agency Decl for an agent card, reveal it to your opponents and put it in your hand." />
+			<property name="Victory Points" value="5" />
+			<property name="Cover Level" value="3" />
+		</card>
+		<card id="ce7eb13c-88ba-4fa7-99c7-69a73f2ae37f" name="The Usual Suspects">
+			<property name="Type" value="Mission" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="" />
+			<property name="Rules" value="Intrigue - Public - Charisma +2 : Atacker: Your agents may perform &quot;React Craft: After an Exposed agent declares an action, send this agent to your headquarters: Cancel the action.&quot; : Defender: Your agents may perform &quot;React Craft: After an Exposed agent declares an action, send this agent to your headquarters: Cancel the action.&quot;" />
+			<property name="Victory Points" value="5" />
+			<property name="Cover Level" value="2" />
+		</card>
+		<card id="62560018-cce5-4cd2-ba45-38b181dce37c" name="Who is Paradox?">
+			<property name="Type" value="Mission" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="" />
+			<property name="Rules" value="Fight - Private - Craft +6 : Attacker: Agents activated during this mission have +2 to all skills untril the end of the mission. : Defender: Your agents may perform &quot;React Craft: After an Exposed agent declares an action, send this agent to your headquarters: Cancel the action.&quot;" />
+			<property name="Victory Points" value="6" />
+			<property name="Cover Level" value="5" />
+		</card>
+		<card id="4fa065e2-7735-45e2-9351-abe79e4867df" name="Hard Time at Aquarica">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Intel Craft 7: Target an enemy agent. Discard one active or inactive gear attached to the target or all active and inactive gear if the target is Exposed." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="4320d0e1-6144-4543-813c-766c75b6303b" name="The Sweetest Kiss">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Solo op - Private - Charisma +2 : Agents cannot be wounded during this solo op. : React Charisma: After winning this solo op, discard this card: Until the end of the turn, target agent may not assign or move into mission teams." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="c3e8fb78-5c91-42db-8f5a-8a3088a0c9c9" name="Spotted a Mile Away">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="React Charisma X: After an agent assigns to a mission: Target the agent. The target must perform the next Mission action taken by his mission team, if possible. The TN is the agent's Charisma." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="557957ca-d42c-4423-b29d-2631962d9f61" name="Embassy Reception">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Mission Charisma 8: If this is not a fight mission, all wounds are prevented until the end of the mission." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="89d97505-f380-482a-95a9-8463f9cb6416" name="Wild Goose Chase">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Mission Charisma 6: Lower target opposing agent's base skills to 0." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="b0c913bf-886e-4613-9dd4-785db0362086" name="Travel in Style">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Solo op - Public - Transport +1 : Agent may no move into this solo op. : Intel Transport 7: Reveal the top three cards of the mission deck. You may discard and replace the first mission in the mission queue with a chase mission revealed in this way. Discard the remaining revealed missions." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="9cefd683-e729-4b75-95db-76c6e55216d9" name="Medical Detail">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Solo op - Private - Transport +1 : Agent's base skills may not be charnged during this solo op. : React Transport: Before one of your agents takes a wound: Prevent the wound." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="309c91e0-4f5c-4344-91fe-094397501fea" name="Late Arrival">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="While this card is attached, the attacker and defender mission text gains: &quot;After both player pass during the Engage the Enemy phase you may move one agent into your mission team from headquarters.&quot; : Mission Transport 5: Attach this card to the current mission." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="9af96799-45e5-4877-a1b1-e62a376ef70f" name="Everything's For Sale">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="1" />
+			<property name="Rules" value="Intel Craft 9: Starting with the acting player, each player may search his Agency Deck and then discard pile for a gear, reveal that card to all players, and put it in his hand. The TN of this action is 6 when performed by a Mastermind or Fixer." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="aca4d3ec-7892-4289-82c6-13912a124d61" name="Walk in the Park">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="4" />
+			<property name="Rules" value="Mission Craft 3: As your first Mission action, if there is no opposing agents, increase the Victory Points of this mission by 2. You may not extend from this mission and may not play another Walk in the Park this turn." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="5f1b6c8d-11ef-4eb7-890c-efd700e6948e" name="Team Tactics">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="1" />
+			<property name="Rules" value="Mission Craft 8: All Mission actions that are printed on agents and have performed during this mission may be performed an additional time during this mission." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="fd930aed-3f47-41d9-9410-8aec729c0eaf" name="Nuisance Goodchilde">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Specialist : Mission Charisma 5: One of your target agents gains +2 combat, +2 transport, and the Soldier trait until the end of the mission or until a player plays or activates a card with &quot;Goodchilde&quot; in the name, whichever comes first. " />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="4354f4d1-97e7-4d2e-a732-68c0c9e502f5" name="He's a Liability">
+			<property name="Type" value="Action" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Intel Charisma: Target an Exposed enemy agent. Until the end of the turn, after the target agent assigns or moves to a mission team, expose every active agent on that mission tem until the end of the turn." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="88868d51-e491-49fd-aee2-0400b2ceaf3b" name="Duck Lee">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="6" />
+			<property name="Charisma" value="1" />
+			<property name="Combat" value="3" />
+			<property name="Transport" value="1" />
+			<property name="Craft" value="4" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Nine Tiger - Fixer : React Craft: Before one of your agents declares an action printed on a gear card. discard the top card of your deck: Reduce the TN of the action be the discarded card's bravado." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="0a3b60e0-f9ed-4e3b-9925-70c3304709c6" name="Bai Gang">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="7" />
+			<property name="Charisma" value="1" />
+			<property name="Combat" value="2" />
+			<property name="Transport" value="5" />
+			<property name="Craft" value="2" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Nine Tiger - Wheelman : Mission Transport 5: Target any number of wounded agents you control at the current mission: Move the targets to your headquarters. Remove a wound from each target. Bai Gang may perform this action while at headquarters." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="0ce09995-cd42-4043-a527-fb6d5a2398bf" name="Deadeye">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="9" />
+			<property name="Charisma" value="0" />
+			<property name="Combat" value="6" />
+			<property name="Transport" value="2" />
+			<property name="Craft" value="2" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Nine Tiger - Soldier : Intel Combat X: Wound target unwounded non-leader agent. This is a Melee action. The TN is target's combat plus craft." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="b63e1af4-90a3-48e5-b74c-d1e13f159ec3" name="Tracer">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="10" />
+			<property name="Charisma" value="2" />
+			<property name="Combat" value="6" />
+			<property name="Transport" value="2" />
+			<property name="Craft" value="4" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Nine Tiget - Soldier - Unique : Mission Combat 6: If Tracer is currently wounded, retire Tracer: Wound an opposing non-leader agent twice." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="a709c70d-253e-486c-b7df-34fb1dfd8765" name="Li Zhen Wan">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="6" />
+			<property name="Charisma" value="3" />
+			<property name="Combat" value="4" />
+			<property name="Transport" value="0" />
+			<property name="Craft" value="2" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Nine Tiger - Soldier : Mission Combat X: Remove a wound from Li Zhen Wan: Wound an opposing agent. The TN is the opposing agent's combat." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="2942165e-7deb-4ac7-963b-fd50a8ae6b56" name="Madam Roushen">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="7" />
+			<property name="Charisma" value="3" />
+			<property name="Combat" value="5" />
+			<property name="Transport" value="1" />
+			<property name="Craft" value="1" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Nine Tiget - Soldier : Intel Combat 7: Wound a non-leader agent you control: Target and Wound an unwounded enemy agent." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="015f072b-9c9b-492e-bd8d-18dbdc71c6f0" name="Cadet Huang">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="8" />
+			<property name="Charisma" value="2" />
+			<property name="Combat" value="5" />
+			<property name="Transport" value="3" />
+			<property name="Craft" value="2" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Nine Tiger - Soldier : React Combat X: After Cadet Huang wounds a target opposing non-leader agent, wound Cadet Huang: Wound the target agent again. The TN is the target's combat." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="9bb284aa-c130-41ba-92f0-924ad06ceee1" name="Rajid Muhamari">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="5" />
+			<property name="Charisma" value="0" />
+			<property name="Combat" value="4" />
+			<property name="Transport" value="0" />
+			<property name="Craft" value="3" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Nine Tiger - Snoop : Mission Combat: Wound a soldier agent you control at this mission: Remove a wound from a soldier agent you control at this mission." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="6bea4fbb-9c4f-4b44-a35f-07676d4643df" name="Bone">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="5" />
+			<property name="Charisma" value="0" />
+			<property name="Combat" value="5" />
+			<property name="Transport" value="1" />
+			<property name="Craft" value="0" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="1" />
+			<property name="Rules" value="Nine Tiger - Soldier : Mission Combat 5: Target an opposing wounded agent: The target may not perform mission actions until after the mission phase ends." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="95c3f041-326d-4505-8eb6-43cce4f1100a" name="Options Galor">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="10" />
+			<property name="Charisma" value="2" />
+			<property name="Combat" value="2" />
+			<property name="Transport" value="1" />
+			<property name="Craft" value="5" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Banshee Net - Fixer - Snoop - Unique : Intel Craft 6: Draw 3 cards and place them face up until the end of the turn. You may use these cards as if they were in your hand. Each time you play a card in this manner, discard a card from your hand. Discard the remaining cards at the end of the turn." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="33b9ae6b-cd7d-401c-9f9c-c2cd2e2b9021" name="Simon Stride">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="12" />
+			<property name="Charisma" value="5" />
+			<property name="Combat" value="4" />
+			<property name="Transport" value="5" />
+			<property name="Craft" value="6" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="4" />
+			<property name="Rules" value="Banshee Net - Faceman - Snoop - Unique : When you extend the mission phase past the first mission, Simon contributes his Craft to your team's total amount of skill for the extended mission's objective while he is in the mission team (in addition to his normal skill contribution)." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="77986fa8-2a58-46c6-a4f8-9c68fd349e7b" name="Orchid">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="10" />
+			<property name="Charisma" value="3" />
+			<property name="Combat" value="3" />
+			<property name="Transport" value="0" />
+			<property name="Craft" value="4" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="4" />
+			<property name="Rules" value="Banshee Net - Pointman : Orchid has +1 to all skills for Each Exposed agent in her mission team, excluding herself." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="48000f92-e7d9-462c-870f-f1a8060ce185" name="Gremlim">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="5" />
+			<property name="Charisma" value="2" />
+			<property name="Combat" value="0" />
+			<property name="Transport" value="2" />
+			<property name="Craft" value="4" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Banshee Net - Snoop : React Craft: After an opposing agent resolves an action on a gear card: Te acting agent's base skills are reduced by 2 until the end of the mission." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="27eb5778-2c1c-4e9a-8c83-c95b8f5a046a" name="General Fitch">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="9" />
+			<property name="Charisma" value="5" />
+			<property name="Combat" value="4" />
+			<property name="Transport" value="2" />
+			<property name="Craft" value="5" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Banshee Net - Soldier : Mission Craft: Target an opposing Exposed agent: Raise or lower the cover of the mission by 3." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="a497f9b6-5d1b-4bcc-af7e-3d121a0441b9" name="Filter">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="9" />
+			<property name="Charisma" value="6" />
+			<property name="Combat" value="3" />
+			<property name="Transport" value="4" />
+			<property name="Craft" value="3" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Banshee Net - Pointman : React Charisma: Before one of your other agents become Exposed, If Filter is not Exposed, expose Filter: Prevent the other agent from becoming Exposed. : Mission Charisma: Remove the Exposed trait from Filter: Expose a target agent." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="1bee58cb-8e91-46af-9249-7ae07f99a537" name="Traffic">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="6" />
+			<property name="Charisma" value="0" />
+			<property name="Combat" value="0" />
+			<property name="Transport" value="3" />
+			<property name="Craft" value="1" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="1" />
+			<property name="Rules" value="Banshee Net - Wheelman : Mission Transport X: If the opposing mission team has fewer than the maximum number of agents, move an active non-leader agent into the opposing mission team from that player's HQ, the TN is the target's transport." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="8c8b6fff-6024-4fe5-98a6-b7b1a24a0d6d" name="Amelia Trapp">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="6" />
+			<property name="Charisma" value="0" />
+			<property name="Combat" value="2" />
+			<property name="Transport" value="4" />
+			<property name="Craft" value="3" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Banshee Net - Snoop - Wheelman : Mission Transport: Target an opposing agent without a Vehicle attached. If amelia has a Vehicle attached, wound the target." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="d40ffb9b-d288-4411-baec-acf8c515e5f5" name="Manny Propaganda">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="7" />
+			<property name="Charisma" value="3" />
+			<property name="Combat" value="1" />
+			<property name="Transport" value="3" />
+			<property name="Craft" value="4" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Banshee Net - Fixer : Intel Craft 5: Examine the top 3 cards of another player's Agency Deck. You may choose one of them and place it on the bottom of that player's deck. Return the other two cards to the top of that player's Agenct Deck in any order." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="0012a8a3-c6ee-4d0a-aaed-222ef7743d64" name="Terry Shaw">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="8" />
+			<property name="Charisma" value="4" />
+			<property name="Combat" value="3" />
+			<property name="Transport" value="1" />
+			<property name="Craft" value="3" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Bloodvine - Snoop : Mission Charisma: Target an opposing Exposed Agent with base skills of 0. Until the end of the mission, reduce the cover of all agents in the target's mission team to 0." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="7949ad5f-472d-4b84-825a-8cd4f2a88f3d" name="Tomas Fatori">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="8" />
+			<property name="Charisma" value="6" />
+			<property name="Combat" value="1" />
+			<property name="Transport" value="2" />
+			<property name="Craft" value="2" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Bloodvine - Faceman : Mision Charisma X: Target an opposing agent. Wound the target. The TN the target's charisma plus transport." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="e82ecd9e-2cb5-4772-96a1-afbd3dd12083" name="Don Giovanni">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="10" />
+			<property name="Charisma" value="5" />
+			<property name="Combat" value="2" />
+			<property name="Transport" value="3" />
+			<property name="Craft" value="5" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Bloodvine - Fixer : Intel Charisma 6: Discard a gear card from your hand: Look at a number of cards from the top of your Agency Deck equal to the expense of the discarded gear. From those cards, you may reveal a non-Unique gear to all players and put it in your hand. Shuffle the remaining cards into your deck." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="8a181c1b-7b4c-49c6-b565-e49255511b44" name="Helio Mota">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="12" />
+			<property name="Charisma" value="4" />
+			<property name="Combat" value="8" />
+			<property name="Transport" value="4" />
+			<property name="Craft" value="3" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Bloodvine - Soldier : React Charisma: After one of your agents wound an opposing agent with a Mission action: If Helio Mota has more charisma than the wounded agent, he may immediately perform a Mission action." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="a69e2ccf-de72-4d54-aec4-dcfbbae40fc1" name="Dr. deFaria">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="6" />
+			<property name="Charisma" value="2" />
+			<property name="Combat" value="2" />
+			<property name="Transport" value="3" />
+			<property name="Craft" value="4" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Bloodvine - Medic : Mission Craft 4: Remove a wound from a Bloodvine agent, Dr. deFaria may perform this action from headquarters." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="6702a375-8f4c-411a-9c37-a506314e6dcd" name="Eric Lane">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="11" />
+			<property name="Charisma" value="3" />
+			<property name="Combat" value="1" />
+			<property name="Transport" value="6" />
+			<property name="Craft" value="3" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Bloodvine - Wheelman : React Transport 7: After a non-leader agent moves into an oppsoing mission team with an action: Wound that agent twice." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="9108b525-58d7-4624-b65d-40f9526824f7" name="Garcia">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="4" />
+			<property name="Charisma" value="0" />
+			<property name="Combat" value="4" />
+			<property name="Transport" value="1" />
+			<property name="Craft" value="1" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Bloodvine - Soldier : React Combat: Before Garcia meets the TN of a Charisma action: Garcia may use his combat instead of his charisma to meet the TN." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="1ac7b00f-8f2a-4bd9-b72a-8966ff25fd85" name="Eagle Eye Scardino">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="9" />
+			<property name="Charisma" value="4" />
+			<property name="Combat" value="3" />
+			<property name="Transport" value="3" />
+			<property name="Craft" value="2" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Bloodvine - Faceman - Unique : React Charisma 2: Eagle Eye may perform a Mission action as if the mission were an Intrigue mission instead of the current mission type." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="37f95db8-217c-4b92-b92a-0ad166b088a1" name="Lucia Giovanni">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="5" />
+			<property name="Charisma" value="5" />
+			<property name="Combat" value="0" />
+			<property name="Transport" value="2" />
+			<property name="Craft" value="3" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Bloodvine - Faceman : Intel Charisma 7: Target a non-leader agent: Neither the target nor Lucia may assign or move into a Mission or Solo-Op this turn." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="c14249f0-14e4-42f4-aada-8c2d1d200c00" name="Luther the Torch">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="7" />
+			<property name="Charisma" value="4" />
+			<property name="Combat" value="0" />
+			<property name="Transport" value="5" />
+			<property name="Craft" value="1" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Freelancer - Wheelman : Mission Transport: Move target agent with base skills of 0 to his headquarters." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="9388f089-1352-4881-8e71-55c6fbe53ef8" name="Crash">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="5" />
+			<property name="Charisma" value="1" />
+			<property name="Combat" value="1" />
+			<property name="Transport" value="4" />
+			<property name="Craft" value="1" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Freelancer - Wheelman : Intel Transport 6: Examine the op six cards of your deck. You may reveal one Vehicle gear card to all players and attach it to Crash. Shuffle the remaining cards back into your deck." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="59984fd2-da71-4f77-95e4-e62357f8617f" name="DCI Oliver Johnson">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="5" />
+			<property name="Charisma" value="0" />
+			<property name="Combat" value="3" />
+			<property name="Transport" value="1" />
+			<property name="Craft" value="0" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Freelancer - Pointman : Mission Combat: Retire DCI Oliver Johnson: Target an enemy leader. The leader's controller must choose to either discard 2 cards now or draw 2 fewer cards during the Debrief phase." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="52277061-0fed-4494-a05c-6521ed111c55" name="Delta Fox">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="7" />
+			<property name="Charisma" value="2" />
+			<property name="Combat" value="3" />
+			<property name="Transport" value="4" />
+			<property name="Craft" value="2" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Freelancer - Soldier : While there is an inactive agent on the opposing mission team, Delta Fox gains +1 to her base skills. : While there is an inactive agent on her mission team, Delta Fox gains +1 to her base skills." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="568a2131-f0a7-4f8f-a7d9-a3d9194aa22d" name="Dr. Skipjack">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="7" />
+			<property name="Charisma" value="2" />
+			<property name="Combat" value="2" />
+			<property name="Transport" value="2" />
+			<property name="Craft" value="2" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Freelancer - Pointman : While at a mission, Dr. Skipjack gains +1 to all his base skills for each Soldier and each Wheelman in opposing mission team." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="86948335-bf23-4b52-888f-c5dc1aa69881" name="Silas Bolles">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="10" />
+			<property name="Charisma" value="6" />
+			<property name="Combat" value="1" />
+			<property name="Transport" value="1" />
+			<property name="Craft" value="3" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Freelancer - Faceman - Unique : React Charisma: After on of your agents has his base skills reduced to 0: Give that Agent a skill bonus equal to his original base skills." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="6a7deff8-a42c-4543-ad55-252462d09c08" name="Miss West">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="4" />
+			<property name="Charisma" value="3" />
+			<property name="Combat" value="0" />
+			<property name="Transport" value="0" />
+			<property name="Craft" value="3" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Freelancer - Medic : React Transport: Before one of your other agents takes a wound: Prevent the wound. Wound Miss West." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="41bb8189-ac68-417c-94ba-ac40d61c7627" name="Phreakshow">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="3" />
+			<property name="Charisma" value="0" />
+			<property name="Combat" value="1" />
+			<property name="Transport" value="0" />
+			<property name="Craft" value="3" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Freelancer - Snoop : React Craft 3: Before an enemy agent's action draws 1 or more cards: Cancel that action." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="f4288af7-be1e-44cb-b68d-895a55b5a9d1" name="Major Prey">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="6" />
+			<property name="Charisma" value="2" />
+			<property name="Combat" value="2" />
+			<property name="Transport" value="2" />
+			<property name="Craft" value="2" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Freelancer - Pointman : React Craft: After Major Prey is targeted with an action, discard a card from your hand: Raise the TN of the action by the discard's bravado." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="3f042cb7-aeee-4936-aac0-56d3ca0691e8" name="The Blue Damsel">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="18" />
+			<property name="Charisma" value="6" />
+			<property name="Combat" value="5" />
+			<property name="Transport" value="2" />
+			<property name="Craft" value="6" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Freelancer - Faceman - Soldier - Prophet - Unique : No aspect of this card may be copied. : React Craft 7: Before you level 4 leader is retired: The Blue Damsel permanently becomes your level 4 leader. This action may be preformed from headquarters." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="40129642-b084-45bb-a87b-c297e7ebb751" name="The Operator">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="9" />
+			<property name="Charisma" value="4" />
+			<property name="Combat" value="0" />
+			<property name="Transport" value="0" />
+			<property name="Craft" value="5" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Freelancer - Snoop : Mission Charisma X: Move any number of Exposed opposing agents to headquarters. The TN is the agents' combined craft, or the numbr of target agents, whichever is higher." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="a048b0a6-19c9-42ed-87bf-bab3e4a2a06e" name="Sarah Monroe">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="3" />
+			<property name="Charisma" value="0" />
+			<property name="Combat" value="0" />
+			<property name="Transport" value="0" />
+			<property name="Craft" value="3" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Freelancer - Snoop : React Craft: After this agent activates during a mission: Expose target agent. At the end of the turn. Remove the Exposed trait from the target." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="eb5e4236-9a3c-406b-ab02-d851c33eaeca" name="Fall Guy Frankie">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="3" />
+			<property name="Charisma" value="1" />
+			<property name="Combat" value="1" />
+			<property name="Transport" value="1" />
+			<property name="Craft" value="1" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Freelancer : React Craft: Before your leader takes a wound, wound Frankie: Prevent the wound to your leader." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="1b57f309-e821-4d05-a965-e71a5cce18a5" name="Vivienne LeVan">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="10" />
+			<property name="Charisma" value="4" />
+			<property name="Combat" value="1" />
+			<property name="Transport" value="2" />
+			<property name="Craft" value="6" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Freelancer - Fixer - Snoop : React Craft: After an Exposed agent is moved to headquarters from a mission team: Wound the agent. : React Craft: After an exposed agent is moved to headquarters from a mission team: Retire a gear attached to the agent." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="882ffc0f-76a5-4b44-ba53-3628d4c4d727" name="Whisper">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="6" />
+			<property name="Charisma" value="4" />
+			<property name="Combat" value="1" />
+			<property name="Transport" value="2" />
+			<property name="Craft" value="3" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Freelancer - Faceman - Snoop : React Craft: After Whisper successfully resolves a Baffle action: Expose the target of the Baffle action." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="4bdcab7e-4fd4-4d3f-b39e-7a1e65ccab2f" name="Alexander Knight">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="12" />
+			<property name="Charisma" value="6" />
+			<property name="Combat" value="7" />
+			<property name="Transport" value="6" />
+			<property name="Craft" value="5" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Shadow Patriots - Pointman - Majestic : React Craft: Before Alexander Knight declares an action: Target a non-leader pointman agent you control. Alexander Knight may declare an action pointed on the target." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="662cd452-9546-48a0-8170-3770fc6b3842" name="Sir Amos Grantley">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="12" />
+			<property name="Charisma" value="6" />
+			<property name="Combat" value="6" />
+			<property name="Transport" value="6" />
+			<property name="Craft" value="6" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Shadow Patriots - Fixer - Majestic : Mission Craft X: Target an opposing agent. Lower the target's base skills to equal his lowest base skill. The TN is the target's craft." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="f41c7fe6-a242-40d5-89bb-29d691af32b8" name="Emma Davis">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="8" />
+			<property name="Charisma" value="3" />
+			<property name="Combat" value="4" />
+			<property name="Transport" value="4" />
+			<property name="Craft" value="3" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Shadow Patriots - Pointman : React Transport 4: After on of your Pointman agents successfully resolves a mission action: Emma Davis may perform a mission action." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="f8d9dc65-4bc6-4135-814e-c3c7c98a3f10" name="Escapade">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="12" />
+			<property name="Charisma" value="7" />
+			<property name="Combat" value="4" />
+			<property name="Transport" value="6" />
+			<property name="Craft" value="7" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="4" />
+			<property name="Rules" value="Shadow Patriots - Faceman - Pointman - Majestic - Unique : React Craft: After an agent you control discards a card for bravado: Draw a card." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="7c00615d-aa46-4f9e-9d86-f56eb62a6a98" name="Casey Briggs">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="7" />
+			<property name="Charisma" value="3" />
+			<property name="Combat" value="3" />
+			<property name="Transport" value="5" />
+			<property name="Craft" value="3" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Shadow Patriots - Wheelman : Mission Transport: Move Casey Briggs to your headquarters: Move target agent from your headquarters into the mission." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="6f21dce5-5d2b-4d40-9a89-b0ff23a1d2ad" name="Lock-Up">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="3" />
+			<property name="Charisma" value="1" />
+			<property name="Combat" value="0" />
+			<property name="Transport" value="1" />
+			<property name="Craft" value="2" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="1" />
+			<property name="Rules" value="Shadow Patriots - Fixer : React Charisma: After an agent you control declares an action discard a card from your hand: Move a gear card attached to the agent into your hand." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="c9d08105-7d8f-4c68-9426-2e3e9644d47b" name="Jenkins">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="14" />
+			<property name="Charisma" value="6" />
+			<property name="Combat" value="5" />
+			<property name="Transport" value="8" />
+			<property name="Craft" value="5" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="4" />
+			<property name="Rules" value="Shadow Patriots - Wheelman - Majestic - Unique : React Transport: Before Jenkins is moved to a headqueaters by an action: Move the acting agent to headquaters." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="b99ed61a-e00a-4a25-84af-e12279ac7039" name="Mandy Pyne">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="14" />
+			<property name="Charisma" value="5" />
+			<property name="Combat" value="6" />
+			<property name="Transport" value="7" />
+			<property name="Craft" value="6" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Shadow Patriots - Pointman - wheelman - Majestic - Unique : React Transport X: After another player passes during the Engage the Enemy phase: Mandy may perform a mission action. The TN is the highest transport in the opposing mission team." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="19d66e21-3858-4b7c-bd63-33f3cfcec8f6" name="Duncan Whitelock">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="8" />
+			<property name="Charisma" value="4" />
+			<property name="Combat" value="3" />
+			<property name="Transport" value="4" />
+			<property name="Craft" value="3" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Shadow Patriots - Pointman : React Charisma 4: After one of your Pointman agents gains a bonus to a skill from an action: Give another one of your Pointman agents the same bonus." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="0aa010a7-0319-4bf2-b663-c129f5c7ded8" name="Andrei Ruschev">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="5" />
+			<property name="Charisma" value="0" />
+			<property name="Combat" value="2" />
+			<property name="Transport" value="2" />
+			<property name="Craft" value="2" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="The Krypt - Fixer : React Craft: Before a target opposing agent is retired: Move a gear from the target to Andrei." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="828d5c77-048a-4e60-b484-7c62aeddf43a" name="Antony Ruschev">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="13" />
+			<property name="Charisma" value="4" />
+			<property name="Combat" value="5" />
+			<property name="Transport" value="3" />
+			<property name="Craft" value="6" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="The Krypt - Fixer - Unique : Actions on gear cards attached to your agents have their TNs reduced by 3. Your hand size is increased by one while Antony has a active gear attached." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="b36e6f06-aeb7-46e2-80af-b639d078e0ce" name="Hightower">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="8" />
+			<property name="Charisma" value="1" />
+			<property name="Combat" value="5" />
+			<property name="Transport" value="3" />
+			<property name="Craft" value="3" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="The Krypt - Soldier : Mission Combat 7: If Hightower has an attached Firearm that does not have an action that which can wound an opposing agent: Wound an opposing agent." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="607035c4-3fc5-4f4a-a464-9848d0ff415d" name="Edik Noskor">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="14" />
+			<property name="Charisma" value="4" />
+			<property name="Combat" value="3" />
+			<property name="Transport" value="5" />
+			<property name="Craft" value="7" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="4" />
+			<property name="Rules" value="The Krypt - Fixer : React Craft: Before Edik decalres an action during a mission: Target a non-Unique gear and a Mission action on that gear. Edik may perform that action as if the gear were attached to Edik. the action may not discard, retire, or deactivate the targeted gear." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="81afa8f4-548c-4c06-af0f-643a6192707f" name="Gailna Rasvet">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="6" />
+			<property name="Charisma" value="0" />
+			<property name="Combat" value="2" />
+			<property name="Transport" value="5" />
+			<property name="Craft" value="2" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="The Krypt - Wheelman : Mission Transport X: If there is a card attached to the current mission, move target opposing agent to headquarters. The TN is the target's transport or cover whichever is lower." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="4a091f97-7030-4f58-9f7e-c4d027675f9c" name="Master Sargeant Pyotr">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="9" />
+			<property name="Charisma" value="3" />
+			<property name="Combat" value="4" />
+			<property name="Transport" value="4" />
+			<property name="Craft" value="3" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="The Krypt - Snoop - Soldier : Pyotr does not become Exposed due to actions he performs. : React Craft: After Pyotr is targeted with a Baffle, Evade, or Shoot action: If Pyotr's charisma, transport, or combat skill respectively, is higher than the acting agent's cancel the action." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="93b0bb9e-52f9-4deb-ac2e-d6d83b04d951" name="Lila Petrick">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="12" />
+			<property name="Charisma" value="2" />
+			<property name="Combat" value="7" />
+			<property name="Transport" value="6" />
+			<property name="Craft" value="6" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="4" />
+			<property name="Rules" value="The Krypt - Pointman : Intel Craft: Target a solo op in another player's discard pile. Initiate a solo op mission phase with the target as the mission, asigining Lila as the attacking agent, even if she has won a solo op this turn." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="04025be3-6e70-47c6-8e4c-1b1129fab640" name="Colonel Kiril Vavrikova">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="17" />
+			<property name="Charisma" value="5" />
+			<property name="Combat" value="8" />
+			<property name="Transport" value="8" />
+			<property name="Craft" value="7" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="4" />
+			<property name="Rules" value="The Krypt - Pointman - Soldier - Unique : React Transport: Before Kiril is wounded: Prevent the wound. : Mission Craft: Target an opposing non-leader agent with 0 charisma. Retire the agent." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="a86e4c99-f1b4-4d51-8a7a-0eedc9ad7f8b" name="Yegor Tomsky">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="11" />
+			<property name="Charisma" value="3" />
+			<property name="Combat" value="5" />
+			<property name="Transport" value="5" />
+			<property name="Craft" value="5" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="The Krypt - Soldier : Mission Combat 8: If this is a fight mission, wound an opposing agent, If this is a Public mission, expose Yegor. : Mission Transport 8: If this is a chase mission, move an opposing agent to headquarters." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="60911bd4-01d9-45bd-9989-afbccd5b5245" name="Armored Limo">
+			<property name="Type" value="Gear" />
+			<property name="Expense Rating" value="9" />
+			<property name="Charisma" value="1" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="2" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Armor - Vehicle : Cover +4" />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="d50210aa-7986-475f-a216-2813f35c1ba1" name="Cryo-Gun">
+			<property name="Type" value="Gear" />
+			<property name="Expense Rating" value="6" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Gadget : Mission Craft 6: Target an opposing Exposed agent. The next action by an opposing agent at this mission must be declared by the target agent, if possible. You may immediately play another Mission action." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="de7e4c7b-5482-4b40-9e5a-c7c6467b6c78" name="CH-47F Chinook">
+			<property name="Type" value="Gear" />
+			<property name="Expense Rating" value="14" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="2" />
+			<property name="Transport" value="3" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Aircraft - Vehicle : Mission Transport 9:Examine the top 8 cards of your deck, You may reveal to all players one gear card with the Armor and/or Vehicle traits, then attach it to one of your agents at this mission and activate it." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="8ff2765d-ffea-48fa-997b-447cda9b732e" name="Nanotech Builders">
+			<property name="Type" value="Gear" />
+			<property name="Expense Rating" value="8" />
+			<property name="Charisma" value="2" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Gadget : Mission Craft: Attach a gear card from your hand to an agent on your mission team, then activate it. This agent may immediately perform an additional Mission action." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="47d9427c-f87c-46c8-9740-fca7f5c82415" name="Skeletons in the Closet">
+			<property name="Type" value="Gear" />
+			<property name="Expense Rating" value="9" />
+			<property name="Charisma" value="2" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Mission Charisma X: Target an opposing agent. Until the end of the mission, the target may not be target this agent. This action may not be performed during a solo op. The TN is the target's craft." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="0544edf1-045d-49a1-beda-918d2ab20048" name="Felony Scripter">
+			<property name="Type" value="Gear" />
+			<property name="Expense Rating" value="6" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="1" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Gadget : Mission Craft X: Target an opposing agent, if the target is Exposed, move him to headquaters. Otherwise expose the target, The TN is the target's craft." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="0e1b5c98-dd5b-4a87-b064-da41d87f6af6" name="Phase Projector">
+			<property name="Type" value="Gear" />
+			<property name="Expense Rating" value="12" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="1" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Gadget - Armor - Unique : React Craft: After this agent is targeted by an action: Cancel the action." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="5abd31a4-e630-4a99-82b7-c113b8aa7c90" name="ID Mask">
+			<property name="Type" value="Gear" />
+			<property name="Expense Rating" value="6" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="2" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Gadget : React Craft 6: After this agent is targeted by a charisma action: Redirect the action to another agent." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="75d4b5d4-9720-4415-8647-423777b91d98" name="Deja Viewer">
+			<property name="Type" value="Gear" />
+			<property name="Expense Rating" value="7" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="2" />
+			<property name="Craft" value="1" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Mission Transport 5: Target an active gear attached to an opposing agent. If there is another active gear card in play with the same name, retire the target gear." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="28432d60-fff8-4d62-9ced-46070aa92d7c" name="Blink Suit">
+			<property name="Type" value="Gear" />
+			<property name="Expense Rating" value="9" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="1" />
+			<property name="Transport" value="1" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Gadget - Armor : Charisma and transport actions targeting this agent have +3 TN." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="e6477d2b-cee4-4399-8005-56c1e8ad8650" name="Blade-Tipped Boot">
+			<property name="Type" value="Gear" />
+			<property name="Expense Rating" value="3" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Mission Combat 6: Deactivate target active opposing non-leader agent and his attached gear. Until the end of the mission, the agent and his gear may only be activated, individually, as Mission Craft actions." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="efefa897-5bd3-4b10-b43a-f7a82f1c0085" name="Danger Unit">
+			<property name="Type" value="Gear" />
+			<property name="Expense Rating" value="10" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="3" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="4" />
+			<property name="Rules" value="Gadget - Unique : React Craft: After this agent is targeted with a Mission action: If this agent has not yet performed a mission action during this mission cancel the action." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="ba8a576a-f858-42b5-9e6f-f83d173a892e" name="Memory Load">
+			<property name="Type" value="Gear" />
+			<property name="Expense Rating" value="7" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="4" />
+			<property name="Rules" value="Gadget : This agent gains +1 to all base skills for each solo op in your headquarters (maximum of +4)." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="f12124e6-2f7f-482c-83cb-3192bd09e672" name="Little Tam">
+			<property name="Type" value="Gear" />
+			<property name="Expense Rating" value="8" />
+			<property name="Charisma" value="1" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="1" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="React Craft X: After this agent is targeted with a mission action: Increase the TN of the action by 3, The TN is the acting agent's craft." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="6f1e3998-3541-4572-9ad9-d922de22df86" name="Guidance Override">
+			<property name="Type" value="Gear" />
+			<property name="Expense Rating" value="6" />
+			<property name="Charisma" value="2" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Mission Transport: Target an agent that moved into the current mission. Move the agent to headquarters. That agent may not assign or move into mission teams this turn." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="8eaae8f0-f0ad-49a2-bff4-eff2a73b284a" name="Poison Cigar">
+			<property name="Type" value="Gear" />
+			<property name="Expense Rating" value="7" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Fixer or Snoop only. : React Craft X: After an opposing agent targets this agent with a Mission action: Wound the acting agent. The TN is the acting agent's combat." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="08be2cde-1518-4607-b6c9-8fdfc3f780de" name="Jimmy the Rat">
+			<property name="Type" value="Gear" />
+			<property name="Expense Rating" value="3" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Specialist : Mission Combat: Discard this card: Until the end of the mission, the TN of each React is increased by 2." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="2cab6f76-69c4-471b-bc2d-b7f4971892a8" name="Hijacked Signal">
+			<property name="Type" value="Gear" />
+			<property name="Expense Rating" value="6" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Mission Craft 4: Until the end of the turn, actions by Exposed agents have +2 TN. : React Craft 7: After an Exposed agent is targeted with an action that would move him to or from headquarters: Cancel the action." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="d5c42c93-194b-4bf2-b1d7-7c93c0f107ff" name="Swiss Army Belt">
+			<property name="Type" value="Gear" />
+			<property name="Expense Rating" value="7" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Gadget : React Craft: After this agent is assigned to a mission team: Name a skill. This agent gains +2 to  the named skill until the end of the mission." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="ba1a115b-b1ae-45ed-9cfc-389e1527aa53" name="Sword Cane">
+			<property name="Type" value="Gear" />
+			<property name="Expense Rating" value="9" />
+			<property name="Charisma" value="1" />
+			<property name="Combat" value="1" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Melee : Mission Combat 8: Target an oppsoing agent who has not declared an action this mission. Wound the target agent. this is a Melee action. A Faceman may use his charisma instead of combat for this action." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="004c7ceb-d6c1-4b6c-9fd5-9ed383db3348" name="Majestic Branch">
+			<property name="Type" value="Gear" />
+			<property name="Expense Rating" value="10" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="2" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Location - Unique - Bureau : Shadow Patriots : Intel Craft 7: Examine the top 7 cards of your Agenct Deck. You may reveal one action card from among those examined and put it in your hand. Shuffle the remaining cards into your deck." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="2a882cd1-082a-485b-b420-eec83adc448b" name="Eye in the Sky">
+			<property name="Type" value="Gear" />
+			<property name="Expense Rating" value="12" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="2" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Gadget : Intel Craft 8: Activate target card. The Costs must be paid as normal. : Intel Craft 8: Retire target Exposed non-Leader agent with lower Expense. : React Craft: After assigning your Mission Team: You gain +5 Craft for determining initiative for the mission." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="a44ac162-c116-4e2b-a153-dfecb80d8f72" name="Jin-Soo">
+			<property name="Type" value="Leader" />
+			<property name="Expense Rating" value="6" />
+			<property name="Charisma" value="1" />
+			<property name="Combat" value="4" />
+			<property name="Transport" value="1" />
+			<property name="Craft" value="4" />
+			<property name="Level" value="2" />
+			<property name="Bravado" value="" />
+			<property name="Rules" value="Nine Tiger - Soldier : React Combat: After one of your Soldier agents is target with a combat action: Redirect the action. Jin-Shoo may perform this action while at headquarters." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="95935f95-b62e-4cac-9f5e-d457664e75a4" name="Master Pau">
+			<property name="Type" value="Leader" />
+			<property name="Expense Rating" value="9" />
+			<property name="Charisma" value="4" />
+			<property name="Combat" value="7" />
+			<property name="Transport" value="0" />
+			<property name="Craft" value="2" />
+			<property name="Level" value="3" />
+			<property name="Bravado" value="" />
+			<property name="Rules" value="Nine Tiger - Soldier : React Combat: After Master Pau target an enemy agent with an action: Raise the action's TN by 4. The action casuse a wound as an additional effect." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="6c51d29c-da7e-4124-a5a2-83ca3f8fb9d7" name="Madeline Sax">
+			<property name="Type" value="Leader" />
+			<property name="Expense Rating" value="16" />
+			<property name="Charisma" value="7" />
+			<property name="Combat" value="3" />
+			<property name="Transport" value="3" />
+			<property name="Craft" value="8" />
+			<property name="Level" value="4" />
+			<property name="Bravado" value="" />
+			<property name="Rules" value="Banshee Net - Faceman - Project: Pitfall : The TNs of react actions performed by opposing agents are inceased by 2. : Intel Craft 9: Until the end of the turn, your inactive agents in mission teams may not be targeted by enemy actions or agents." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="3b1f49e1-3b0f-45c4-89e5-1f3ea47934c8" name="Stephen Century">
+			<property name="Type" value="Leader" />
+			<property name="Expense Rating" value="6" />
+			<property name="Charisma" value="3" />
+			<property name="Combat" value="5" />
+			<property name="Transport" value="1" />
+			<property name="Craft" value="4" />
+			<property name="Level" value="2" />
+			<property name="Bravado" value="" />
+			<property name="Rules" value="Banshee Net - Pointman - Soldier - Project: Pitfall : React Combat X: After target opposing agent becomes Exposed: Wound that agent. The TN is the target's combat or craft, whichever is higher." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="60bd69f7-1587-4f73-9c9c-1bdc36f8128a" name="Don Boccioni">
+			<property name="Type" value="Leader" />
+			<property name="Expense Rating" value="4" />
+			<property name="Charisma" value="3" />
+			<property name="Combat" value="1" />
+			<property name="Transport" value="1" />
+			<property name="Craft" value="2" />
+			<property name="Level" value="1" />
+			<property name="Bravado" value="" />
+			<property name="Rules" value="Bloodvine - Fixer : React Charisma: Before one of your non-leader agents activates a gear card, give that agent +3 expense for activating that gear." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="0915021d-6f8a-4fc0-bb06-5ce0294a3c28" name="Gilante de Luna">
+			<property name="Type" value="Leader" />
+			<property name="Expense Rating" value="19" />
+			<property name="Charisma" value="8" />
+			<property name="Combat" value="8" />
+			<property name="Transport" value="4" />
+			<property name="Craft" value="5" />
+			<property name="Level" value="4" />
+			<property name="Bravado" value="" />
+			<property name="Rules" value="Bloodvine - Faceman - Soldier : Combat actions performed by enemy agents hae +2 TN. After Gilante resolves a charisma action targeting one enemy agent, wound the target." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="49ece1c8-5d4a-4496-aa64-35c7f19bc3e3" name="Endeavor">
+			<property name="Type" value="Leader" />
+			<property name="Expense Rating" value="6" />
+			<property name="Charisma" value="4" />
+			<property name="Combat" value="4" />
+			<property name="Transport" value="4" />
+			<property name="Craft" value="4" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="Shadow Patriots - Fixer - Majestic : While Endeavour is your leader, before an agent you control declares an action, you may reveal a card from your hand with the Majetic trait. Your agent may declare an action on the revealed card. Discard the card after the action is resolved." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="581da8f0-69b7-4b41-9779-4e89bc325b99" name="Huntress">
+			<property name="Type" value="Leader" />
+			<property name="Expense Rating" value="9" />
+			<property name="Charisma" value="5" />
+			<property name="Combat" value="5" />
+			<property name="Transport" value="5" />
+			<property name="Craft" value="5" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Rules" value="Shadow Patriots - Pointman - Soldier - Majestic : Huntress has +3 expense for activating Majestic agents. While Huntress is your leader our mission team sizle is reduced by 2 (min 1). : React Craft: After an agent targets a Majestic: Increase the TN of the action by +3." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="fca9aee6-57de-4242-9ae6-3e1e1f9a1c2d" name="Valentin Prosvirnin">
+			<property name="Type" value="Leader" />
+			<property name="Expense Rating" value="16" />
+			<property name="Charisma" value="4" />
+			<property name="Combat" value="6" />
+			<property name="Transport" value="8" />
+			<property name="Craft" value="7" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="4" />
+			<property name="Rules" value="The Krypt - Pointman - Wheelman : React Transport: After assiging Valentin to an attacking mission team, search your Agenct Deck for a card that attaches to a mission card and attach it to the mission, paying all costs." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="2e33b8e3-b886-46e9-90f0-2421edef4376" name="Mikhail Prokofiev">
+			<property name="Type" value="Leader" />
+			<property name="Expense Rating" value="7" />
+			<property name="Charisma" value="0" />
+			<property name="Combat" value="3" />
+			<property name="Transport" value="5" />
+			<property name="Craft" value="4" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="2" />
+			<property name="Rules" value="The Krypt - Wheelman : React Transport: After you extended to or from a chase mission, move up to two agents into your mission team from headquters." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+	</cards>
+</set>
