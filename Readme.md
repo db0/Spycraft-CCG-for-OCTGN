@@ -12,7 +12,7 @@ Currently Spycraft CCG does not utilize OCTGN auto-generated proxies to play. Yo
 
 The link below will provide you with a download bundle you can import into OCTGN by the "add o8c" function in the game manager
 
-* [7th Sea Card CCG Images Bundle](http://dbzer0.com/pub/SpycraftCCG/sets/SpycraftCCG-Sets-Bundle.o8c) *(Last Updated 14/05/2013)*
+* [Spycraft CCG Card Images Bundle](http://dbzer0.com/pub/SpycraftCCG/sets/SpycraftCCG-Sets-Bundle.o8c) *(Last Updated 14/05/2013)*
 
 Linkage
 -------
