@@ -4,7 +4,7 @@
       name="Spycraft" 
       id="d1d8cc2c-e817-4b4d-9449-3315bbd3c643" 
       octgnVersion="3.1.15.112" 
-      version="1.0.0.3" 
+      version="1.0.0.4" 
       markersize="16"
       tags="duel espionage objectives AEG"
       description="Spycraft CCG is a espionage themed card game for two players.
@@ -18,9 +18,16 @@
       iconurl="https://raw.github.com/db0/Spycraft-CCG-for-OCTGN/master/spycraft_logo.jpg">
    <scripts>
       <script src="Scripts/actions.py" />
+      <script src="Scripts/constants.py" />
+      <script src="Scripts/generic.py" />
+      <script src="Scripts/meta.py" />
    </scripts>  
    <proxygen definitionsrc="Proxy/proxydef.xml">
    </proxygen>   
+   <globalvariables> 
+     <globalvariable name="Host Cards" value="{}" />      
+     <globalvariable name="Turn" value="0" />      
+   </globalvariables>
 	<card back="Card/back.jpg" front="Card/front.jpg" width="63" height="88" cornerRadius="2">
 		<property name="Type" type="String" hidden="False" ignoreText="False" textKind="Enum" />
 		<property name="Expense Rating" type="String" hidden="False" ignoreText="False" textKind="Enum" />
@@ -36,6 +43,8 @@
 	</card>
 	<table name="Table" visibility="undefined" ordered="False" width="640" height="480" background="Table/Intel.jpg" backgroundStyle="uniformToFill">
 		<groupactions menu="Game...">
+         <groupaction menu="Set up" default="False" shortcut="Ctrl+Shift+S" execute="gameSetup" />
+         <groupaction menu="Concede" default="False" shortcut="Ctrl+Shift+C" execute="concede" />
 			<groupaction menu="Download Sets Card Images." shortcut="Ctrl+G" default="False" execute="download_o8c" />
 		</groupactions>
 		<groupaction menu="Roll d6" default="False" execute="roll6" />

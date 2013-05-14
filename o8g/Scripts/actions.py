@@ -1,3 +1,42 @@
+    # Python Scripts for the Spycraft CCG definition for OCTGN
+    # Copyright (C) 2013  Konstantine Thoukydides and Lord Nat
+
+    # This python script is free software: you can redistribute it and/or modify
+    # it under the terms of the GNU General Public License as published by
+    # the Free Software Foundation, either version 3 of the License, or
+    # (at your option) any later version.
+
+    # This program is distributed in the hope that it will be useful,
+    # but WITHOUT ANY WARRANTY; without even the implied warranty of
+    # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    # GNU General Public License for more details.
+
+    # You should have received a copy of the GNU General Public License
+    # along with this script.  If not, see <http://www.gnu.org/licenses/>.
+
+#---------------------------------------------------------------------------
+# Global Variables
+#---------------------------------------------------------------------------
+
+
+    
+#---------------------------------------------------------------------------
+# Game Setup
+#---------------------------------------------------------------------------
+
+def gameSetup(group, x = 0, y = 0): # WiP
+   if debugVerbosity >= 1: notify(">>> gameSetup(){}".format(extraASDebug())) #Debug
+   mute()
+   global Faction
+   deck = me.piles['Deck']
+   missions = shared.Mission
+   shuffle(missions)
+   shuffle(deck)
+    
+#---------------------------------------------------------------------------
+# Rest
+#---------------------------------------------------------------------------
+    
 def roll6(group, x = 0, y = 0):
     mute()
     n = rnd(1, 6)
@@ -61,33 +100,26 @@ def clear(card, x = 0, y = 0):
     card.highlight = None
     card.target(False)
 
-markerTypes = { 
-    'exposed': ("Exposed marker", "0183c0b8-6a6d-42c5-bedb-94bbc8ca5329"),
-    'baffled': ("Baffled marker", "0415bae0-0c88-4ec6-8169-aeb117318618")
-	}
-
 def expose(card, x = 0, y = 0):
     mute()
-    if card.markers[markerTypes['exposed']] == 0:
+    if card.markers[mdict['exposed']] == 0:
         notify("{} becomes Exposed.".format(card))
-        card.markers[markerTypes['exposed']] = 1
+        card.markers[mdict['exposed']] = 1
     else:
         notify("{} is not Exposed anymore.".format(card))
-        card.markers[markerTypes['exposed']] = 0
+        card.markers[mdict['exposed']] = 0
 
 
 def baffle(card, x = 0, y = 0):
     mute()
-    if card.markers[markerTypes['baffled']] == 0:
+    if card.markers[mdict['baffled']] == 0:
        notify("{} becomes Baffled and is considered Exposed until the end of the mission.".format(card))
-       card.markers[markerTypes['exposed']] += 1
-       card.markers[markerTypes['baffled']] += 1
+       card.markers[mdict['exposed']] += 1
+       card.markers[mdict['baffled']] += 1
     else:
        notify("{} is not baffled anymore.".format(card))
-       card.markers[markerTypes['exposed']] -= 1
-       card.markers[markerTypes['baffled']] -= 1
-
-AbilityColor = "#FF0000"
+       card.markers[mdict['exposed']] -= 1
+       card.markers[mdict['baffled']] -= 1
 
 def ability(card, x = 0, y = 0):
     mute()
