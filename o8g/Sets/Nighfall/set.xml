@@ -1675,7 +1675,7 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
-			<property name="Faction" value="" />
+			<property name="Faction" value="Bloodvine" />
 			<property name="Traits" value="Bureau - Unique" />
 			<property name="Rules" value=" : May only be equipped by a Bloodvine Agent : This Agent gains the Faceman trait: React Charisma: Before the agent takes a wound, discard Fortune House: Prevent the wound." />
 			<property name="Victory Points" value="" />
@@ -1825,9 +1825,9 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="4" />
-			<property name="Faction" value="" />
+			<property name="Faction" value="Nine Tiger" />
 			<property name="Traits" value="Bureau - Unique" />
-			<property name="Rules" value=" : May only be equipped by a Nice Tiger agent : This agent gain the Soldier trait : React Combat: After this agent inflicts a wound, discard Guan Gong Palace: Wound the same target." />
+			<property name="Rules" value=" : May only be equipped by a Nine Tiger agent : This agent gain the Soldier trait : React Combat: After this agent inflicts a wound, discard Guan Gong Palace: Wound the same target." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -3460,7 +3460,7 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="4" />
-			<property name="Faction" value="" />
+			<property name="Faction" value="The Krypt" />
 			<property name="Traits" value="Bureau - Unique" />
 			<property name="Rules" value=" : May only be equiqqed by a Krypt agent, This agent gains the Fixer trait. React Craft: Before this agent takes wound, discard RS-9: Prevent the wound." />
 			<property name="Victory Points" value="" />
