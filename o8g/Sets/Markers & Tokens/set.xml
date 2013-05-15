@@ -59,7 +59,7 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="" />
-			<property name="Faction" value="Banshee Net" />
+			<property name="Faction" value="The Krypt" />
 			<property name="Traits" value="" />
 			<property name="Rules" value="Krypt Leaders May Perform: Intel Craft: Examine a mission in the queue. You may discard the mission" />
 			<property name="Victory Points" value="" />
@@ -74,7 +74,7 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="" />
-			<property name="Faction" value="Nine Tigers" />
+			<property name="Faction" value="Nine Tiger" />
 			<property name="Traits" value="" />
 			<property name="Rules" value="Nine Tigers Leaders May Perform: React Combat: After one of your agents declares a Mission action: The action is performed as if the mission were a fight mission instead of the current mission type." />
 			<property name="Victory Points" value="" />

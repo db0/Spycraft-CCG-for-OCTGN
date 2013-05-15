@@ -1302,7 +1302,7 @@
 			<property name="Bravado" value="" />
 			<property name="Faction" value="Shadow Patriots" />
 			<property name="Traits" value="Faceman" />
-			<property name="Rules" value=" - Faceman : React Charisma: After an action by Dove is redirectd: Redirect the action." />
+			<property name="Rules" value="React Charisma: After an action by Dove is redirectd: Redirect the action." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -2667,7 +2667,7 @@
 			<property name="Bravado" value="" />
 			<property name="Faction" value="Nine Tiger" />
 			<property name="Traits" value="Soldier" />
-			<property name="Rules" value=" - : Mai-Tai's combat actions that inflitct wounds inflict an additional wound. React Craft: After Mai-Tai perform a Mission action: They may immediately preform an additional Mission action." />
+			<property name="Rules" value="Mai-Tai's combat actions that inflitct wounds inflict an additional wound. React Craft: After Mai-Tai perform a Mission action: They may immediately preform an additional Mission action." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -3867,7 +3867,7 @@
 			<property name="Bravado" value="2" />
 			<property name="Faction" value="Nine Tiger" />
 			<property name="Traits" value="Soldier" />
-			<property name="Rules" value="Nine Tiger - Soldier : React Combat X: After one of your agents inflict a wound during a mission: Wound a different opposing agent. The TN is the target's combat plus cover." />
+			<property name="Rules" value="React Combat X: After one of your agents inflict a wound during a mission: Wound a different opposing agent. The TN is the target's combat plus cover." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -3882,7 +3882,7 @@
 			<property name="Bravado" value="" />
 			<property name="Faction" value="Shadow Patriots" />
 			<property name="Traits" value="Pointman" />
-			<property name="Rules" value="Shadow Patriots - Pointman : React Craft: Before slecting a mission to attack after declaring to run or extend a mission: Target any mission in the queue or discard pile." />
+			<property name="Rules" value="React Craft: Before slecting a mission to attack after declaring to run or extend a mission: Target any mission in the queue or discard pile." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
