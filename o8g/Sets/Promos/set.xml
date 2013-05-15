@@ -10,6 +10,8 @@
 			<property name="Craft" value="2" />
 			<property name="Level" value="2" />
 			<property name="Bravado" value="" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Nine Tiger - Soldier : React Combat 6: After an action target one of your soldier agents: Raise the TN of the action by 4." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -23,6 +25,8 @@
 			<property name="Craft" value="5" />
 			<property name="Level" value="2" />
 			<property name="Bravado" value="" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="The Krypt - Fixer : Intel Craft 6: Target a mssion in the discard pile and one in the mission queue. Switch the two mission." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -36,6 +40,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="4" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Vehicle - Aircraft - Unique : Cover +2 : Mission Carft 6: Discard a mission card adjacent to this mission. : Mission Combat X: Retire a vehicle gear in the opposing mission them. The TN is the vehicle's expense." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -49,6 +55,8 @@
 			<property name="Craft" value="0" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="4" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Vehicle - Auto - Armor - Unique : Cover +5 : This agent is aways considered exposed. This agent may not perform charisma actions and mission craft actions. : React Combat: Before this agent suffers a wound: prevent the wound." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -62,6 +70,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="1" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="React Craft: Before one your agents actvates a gear card: Use this agent's expense instead of the activating agent's to activate the gear." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -75,6 +85,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Firearm : Mission Combat: Reduce by 4 the TN of the next combat action this agent performs this turn." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -88,6 +100,8 @@
 			<property name="Craft" value="2" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Freelancer - Pointman : React Craft: One per game, after Bombay is at a mission you win: Bombay permanently gains +4 expense, +1 to all, and your organization affiliation." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -101,6 +115,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="React Transport 5: After an enemy agent move to his headquarters: Wound and expose the enemy agent. Move this agent to your headquarters." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -114,6 +130,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="4" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Gadget : Mission Charisma X: Wound an opposing agent. The TN is the target's cover. If this is a Public mission, expose this agent." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -127,6 +145,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Intel Craft: Name a skill. This agent gains a bonus to the named skill until the end of the turn such that is becomes equal to this current craft." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -140,6 +160,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Vehicle - Auto - Armor : +3 cover.: Mission actions by agents in this agent's team have -1 TN. : Mission Combat X: Wound an opposing agent. Expose this agent if this is a Public mission. The TN is the target's combat or cover, wichever is lower." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -153,6 +175,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Armor : +2 cover : React Combat: Before this agent take a wound, discard Kevlar BDU: Prevent the wound." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -166,6 +190,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="1" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Intel Car" />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -179,6 +205,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="1" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="React Craft X: After this agent is targeted by an action: Cancel the acton. The TN is the acting agent's expense." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -192,6 +220,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="1" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="React Craft: Before this agent activates a gear card, expose him: Reduce the gear's expense by 5." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -205,6 +235,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="React Charisma 4: Play before this agent activates a gear: That agent has +5 expense (+8 if he is a Fixer) for activating the gear." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -218,6 +250,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Intel Craft 7: Target an agent with a budget rating higher than his leader's Retire the agent." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />

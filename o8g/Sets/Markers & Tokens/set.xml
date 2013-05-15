@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="Markers" id="27d05be7-a8a2-4d40-af0f-9c3af6b8f794" gameId="d1d8cc2c-e817-4b4d-9449-3315bbd3c643" gameVersion="1.0.0.0" version="1.0.0.0">
+	<markers>
+		<marker id="0183c0b8-6a6d-42c5-bedb-94bbc8ca5329" name="exposed" />
+		<marker id="0415bae0-0c88-4ec6-8169-aeb117318618" name="baffled" />
+	</markers>
+	<cards>
+		<card id="9f291494-8713-4b7e-bc7c-36b428fc0dd1" name="Banshee Net Leaders">
+			<property name="Type" value="Referece" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="0" />
+			<property name="Combat" value="5" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="" />
+			<property name="Faction" value="Banshee Net" />
+			<property name="Traits" value="" />
+			<property name="Rules" value="Banshee Net Leaders May Perform: Mission Craft: Send an Exposed agend to his headquarters. This leader does not need to be in the mission team to perform this action." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="d9652ea8-8ab7-43b1-b55b-d5a4be74350f" name="Bloodvine Leaders">
+			<property name="Type" value="Referece" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="0" />
+			<property name="Combat" value="5" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="" />
+			<property name="Faction" value="Bloodvine" />
+			<property name="Traits" value="" />
+			<property name="Rules" value="Bloodvine Leaders May Perform: React Craft: After one of your agents is targeted by an action: Redirect the action to one of your lower-expense agends." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="d9652ea8-8ab7-43b1-b55b-d5a4be74350f" name="Franchise Leaders">
+			<property name="Type" value="Referece" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="0" />
+			<property name="Combat" value="5" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="" />
+			<property name="Faction" value="Franchise" />
+			<property name="Traits" value="" />
+			<property name="Rules" value="Franchise Leaders May Perform: Mission Craft: Retire one of your non-leader agends: Raise or lower this mission's objective number by 2." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="d9652ea8-8ab7-43b1-b55b-d5a4be74350f" name="The Krypt Leaders">
+			<property name="Type" value="Referece" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="0" />
+			<property name="Combat" value="5" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="" />
+			<property name="Faction" value="Banshee Net" />
+			<property name="Traits" value="" />
+			<property name="Rules" value="Krypt Leaders May Perform: Intel Craft: Examine a mission in the queue. You may discard the mission" />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="d9652ea8-8ab7-43b1-b55b-d5a4be74350f" name="Nine Tigers Leaders">
+			<property name="Type" value="Referece" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="0" />
+			<property name="Combat" value="5" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="" />
+			<property name="Faction" value="Nine Tigers" />
+			<property name="Traits" value="" />
+			<property name="Rules" value="Nine Tigers Leaders May Perform: React Combat: After one of your agents declares a Mission action: The action is performed as if the mission were a fight mission instead of the current mission type." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="d9652ea8-8ab7-43b1-b55b-d5a4be74350f" name="Shadow Patriot Leaders">
+			<property name="Type" value="Referece" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="0" />
+			<property name="Combat" value="5" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="" />
+			<property name="Faction" value="Shadow Patriots" />
+			<property name="Traits" value="" />
+			<property name="Rules" value="Shadow Patriot Leaders May Perform: React Craft: After you win a mission that is a different type from the last mission you won: Increase the Victory Point value of the mission by +2." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+	</cards>
+</set>

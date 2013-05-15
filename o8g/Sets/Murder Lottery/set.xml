@@ -10,6 +10,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="While this card is attached, this agent gains +2 to all skills. : React Craft: Afer you win a non-solo op mission: Attach this card to one of your agents at the mission." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -23,6 +25,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Intel Charisma 6: In the order of your choosing, target and deactivate all active Firearm and Armor gear. Until the end of the turn, Firearm and Armor gear may only be activated as a Mission Craft action." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -36,6 +40,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="4" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="React Combat 4: Before this agent is retired: Prevent the retirement. Wound this agent, this wound cannot be prevented." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -49,6 +55,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="4" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Mission Combat: Target this agent. If this agent is a Medic, you may target an additional agent. Remove on wound from each target." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -62,6 +70,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="1" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Franchise only. : Intel Craft X: Target an enemy non-leader agent. Until the end of the turn, the target may not perform any action printed on his card. The TN is the target's craft." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -75,6 +85,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="React Craft 7: After an opponent's action activates this card: Discard this card from play. Expose the acting agent and an additional agent. This action may be performed from headquarters." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -88,6 +100,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="React Charisma 7: Before one of your agents activates a gear: Return target gear attached to an opposing agent to its controller's hand. Your gear's expense is reduced by 6 for the purposes of activation." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -101,6 +115,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="1" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Solo-op - Public - Craft +2 : Charisma actions have -2 TN during this solo op. : React Craft:After you assign a mission team to a mission, discard this card: Permanently increase or decrease both the objective and Victory Points of the missions by 2." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -114,6 +130,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="React Craft 4: After another player declares his attacking mission team: Perform up to three &quot;Recruit an Agent&quot; and/or &quot;Requisition Gear&quot; actions. The attacking team is considered to have the highest craft total for determining who performs the first Mission action." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -127,6 +145,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="1" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Faceman only. React Charisma: After this agent declares an action: Change the skill used for actions's TN to charisma. The action becomes a charisma action." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -140,6 +160,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="React Combat 4: After this agent is targeted by a combat action: Cancel the action. The acting player may perform another action." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -153,6 +175,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Wheelman only. : Mission Transport X: If this is a fight mission, move target agent to headquarters. The TN is the target's transport. : Mission Transport X: If this is a chase mission, wound target opposing agent. the TN is the target's combat." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -166,6 +190,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Solo Op - Public - Charisma +2 : Combat and transport actions have +1 TN during this solo op. : React Craft: Defore the Debrief Phase: Examine the top two cards of any player's Agency Deck. You may discard this card to discard the exmined cards." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -179,6 +205,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="React Craft X: After an opposing non-leader agent resolves a craft or combat action: Move that agent to headquarters. The TN is the target's craft." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -192,6 +220,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="React Transport X: After an agent is moved from a mission team to headquarters: Target the agent and move him back into the mission team. wound the agent. The TN is the agent's combat plus transport." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -205,6 +235,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="React Craft X: After an agent declares an action printed on a gear card: Cancel the action and retire the gear. Fixers may add their charisma to their craft for the purposes of meeting the TN of this action. The TN is the gear's expense." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -218,6 +250,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Faceman or Franchise only. : Mission Charisma 8: Until the end of the turn, your maximum team size and mission team size are increased by 1. Another agent on your mission team may immediately perform an additional Mission action." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -231,6 +265,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Solo OP - Public - Craft +2 : Wounds may not be prevented during this solo op. : Mission Craft X: Target an enemy agent that has not performed an action during the mission. Reduce the target's expense to 0. Deactivate all gear attached to the target. the TN is the target's craft." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -244,6 +280,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Combat React X: After this agent is targeted with a Melee action: Wound the target acting agent. The TN is the target's combat." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -257,6 +295,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="React Charisma X: After the end of a mission: Target an enemy agent who was at the mission. Reduce the target's base skills to 0 untill the end of the next mission phase. The TN is the target's expense." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -270,6 +310,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="React Craft: Before this agent discards a card for bravado to meet the TN of an action: Increase that card's bravado by 3." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -283,6 +325,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="May not be performed by a leader. : Intel Craft 6: Draw two cards. Until the end of the turn, this agent may not assign or move into mission teams." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -296,6 +340,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Mission Charisma 8: Firearm and Melee gear cannot be activated until after the end of this mission. In the order of your choosing, target and deactivate all active Firearm and Melee gear." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -309,6 +355,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Solo op - Private - Combat +3 : Agents may not be sent to headquarters during this solo op : React Combat 6: After an enemy agent activates a gear: Retire the target gear." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -322,6 +370,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Mission Craft 4: Wound target opposing Exposed agent. Draw a card." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -335,6 +385,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="While this card is attached, the attacker and defender mission text gains: &quot;The TNs of your charisma actions are increased by 3.&quot; : Mission Charisma 4: Attach this card to the current mission." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -348,6 +400,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="1" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Solo op - Private - Craft +3 : Players may not assign or activate agents during this solo op. : React Craft: Before one of your agents is activated: Deactivate one of your target non-leader agents. The target agent may not be activated this turn." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -361,6 +415,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="1" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="React Craft: Before acticating a non-leader agent: Reduce the target agent's expense by 3 for the purposes of activation. Immediately after being activated, the target agent takes a wound. This wound may not be prevented." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -374,6 +430,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Wheelman only. : Mission Transport: Retire an active Vehicle." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -387,6 +445,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Intrigue - Private - Craft - Bid Value : Attacker: After assigning, bid a value (1-9). The victory points, mission objective, TN, and minimum TN of your actions are equal to your bid. : Defender: After ypu assinging, you may bid a valuse (1-9). If it's higher than the Attacker's bid, attacking agents have no minimum TN, and the victory points, mission objective TN, and the minimum TN for your actions equal your bid." />
 			<property name="Victory Points" value="*" />
 			<property name="Cover Level" value="2" />
@@ -400,6 +460,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Fight - Private - Transport +4 : Attacker: Your non-leader agents may not discard cards for bravado during this mission. : Defender: Your non-leader agents may not discard cards for bravado during this mission." />
 			<property name="Victory Points" value="5" />
 			<property name="Cover Level" value="4" />
@@ -413,6 +475,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Chase - Public - Combat +4 : Attack: If you win this mission, retire any non-leader agent. : Defender: If you win this mission, search your Agency Decl for an agent card, reveal it to your opponents and put it in your hand." />
 			<property name="Victory Points" value="5" />
 			<property name="Cover Level" value="3" />
@@ -426,6 +490,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Intrigue - Public - Charisma +2 : Atacker: Your agents may perform &quot;React Craft: After an Exposed agent declares an action, send this agent to your headquarters: Cancel the action.&quot; : Defender: Your agents may perform &quot;React Craft: After an Exposed agent declares an action, send this agent to your headquarters: Cancel the action.&quot;" />
 			<property name="Victory Points" value="5" />
 			<property name="Cover Level" value="2" />
@@ -439,6 +505,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Fight - Private - Craft +6 : Attacker: Agents activated during this mission have +2 to all skills untril the end of the mission. : Defender: Your agents may perform &quot;React Craft: After an Exposed agent declares an action, send this agent to your headquarters: Cancel the action.&quot;" />
 			<property name="Victory Points" value="6" />
 			<property name="Cover Level" value="5" />
@@ -452,6 +520,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Intel Craft 7: Target an enemy agent. Discard one active or inactive gear attached to the target or all active and inactive gear if the target is Exposed." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -465,6 +535,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Solo op - Private - Charisma +2 : Agents cannot be wounded during this solo op. : React Charisma: After winning this solo op, discard this card: Until the end of the turn, target agent may not assign or move into mission teams." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -478,6 +550,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="React Charisma X: After an agent assigns to a mission: Target the agent. The target must perform the next Mission action taken by his mission team, if possible. The TN is the agent's Charisma." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -491,6 +565,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Mission Charisma 8: If this is not a fight mission, all wounds are prevented until the end of the mission." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -504,6 +580,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Mission Charisma 6: Lower target opposing agent's base skills to 0." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -517,6 +595,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Solo op - Public - Transport +1 : Agent may no move into this solo op. : Intel Transport 7: Reveal the top three cards of the mission deck. You may discard and replace the first mission in the mission queue with a chase mission revealed in this way. Discard the remaining revealed missions." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -530,6 +610,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Solo op - Private - Transport +1 : Agent's base skills may not be charnged during this solo op. : React Transport: Before one of your agents takes a wound: Prevent the wound." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -543,6 +625,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="While this card is attached, the attacker and defender mission text gains: &quot;After both player pass during the Engage the Enemy phase you may move one agent into your mission team from headquarters.&quot; : Mission Transport 5: Attach this card to the current mission." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -556,6 +640,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="1" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Intel Craft 9: Starting with the acting player, each player may search his Agency Deck and then discard pile for a gear, reveal that card to all players, and put it in his hand. The TN of this action is 6 when performed by a Mastermind or Fixer." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -569,6 +655,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="4" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Mission Craft 3: As your first Mission action, if there is no opposing agents, increase the Victory Points of this mission by 2. You may not extend from this mission and may not play another Walk in the Park this turn." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -582,6 +670,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="1" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Mission Craft 8: All Mission actions that are printed on agents and have performed during this mission may be performed an additional time during this mission." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -595,6 +685,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Specialist : Mission Charisma 5: One of your target agents gains +2 combat, +2 transport, and the Soldier trait until the end of the mission or until a player plays or activates a card with &quot;Goodchilde&quot; in the name, whichever comes first. " />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -608,6 +700,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Intel Charisma: Target an Exposed enemy agent. Until the end of the turn, after the target agent assigns or moves to a mission team, expose every active agent on that mission tem until the end of the turn." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -621,6 +715,8 @@
 			<property name="Craft" value="4" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Nine Tiger - Fixer : React Craft: Before one of your agents declares an action printed on a gear card. discard the top card of your deck: Reduce the TN of the action be the discarded card's bravado." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -634,6 +730,8 @@
 			<property name="Craft" value="2" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Nine Tiger - Wheelman : Mission Transport 5: Target any number of wounded agents you control at the current mission: Move the targets to your headquarters. Remove a wound from each target. Bai Gang may perform this action while at headquarters." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -647,6 +745,8 @@
 			<property name="Craft" value="2" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Nine Tiger - Soldier : Intel Combat X: Wound target unwounded non-leader agent. This is a Melee action. The TN is target's combat plus craft." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -660,6 +760,8 @@
 			<property name="Craft" value="4" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Nine Tiget - Soldier - Unique : Mission Combat 6: If Tracer is currently wounded, retire Tracer: Wound an opposing non-leader agent twice." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -673,6 +775,8 @@
 			<property name="Craft" value="2" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Nine Tiger - Soldier : Mission Combat X: Remove a wound from Li Zhen Wan: Wound an opposing agent. The TN is the opposing agent's combat." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -686,6 +790,8 @@
 			<property name="Craft" value="1" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Nine Tiget - Soldier : Intel Combat 7: Wound a non-leader agent you control: Target and Wound an unwounded enemy agent." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -699,6 +805,8 @@
 			<property name="Craft" value="2" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Nine Tiger - Soldier : React Combat X: After Cadet Huang wounds a target opposing non-leader agent, wound Cadet Huang: Wound the target agent again. The TN is the target's combat." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -712,6 +820,8 @@
 			<property name="Craft" value="3" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Nine Tiger - Snoop : Mission Combat: Wound a soldier agent you control at this mission: Remove a wound from a soldier agent you control at this mission." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -725,6 +835,8 @@
 			<property name="Craft" value="0" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="1" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Nine Tiger - Soldier : Mission Combat 5: Target an opposing wounded agent: The target may not perform mission actions until after the mission phase ends." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -738,6 +850,8 @@
 			<property name="Craft" value="5" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Banshee Net - Fixer - Snoop - Unique : Intel Craft 6: Draw 3 cards and place them face up until the end of the turn. You may use these cards as if they were in your hand. Each time you play a card in this manner, discard a card from your hand. Discard the remaining cards at the end of the turn." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -751,6 +865,8 @@
 			<property name="Craft" value="6" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="4" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Banshee Net - Faceman - Snoop - Unique : When you extend the mission phase past the first mission, Simon contributes his Craft to your team's total amount of skill for the extended mission's objective while he is in the mission team (in addition to his normal skill contribution)." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -764,6 +880,8 @@
 			<property name="Craft" value="4" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="4" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Banshee Net - Pointman : Orchid has +1 to all skills for Each Exposed agent in her mission team, excluding herself." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -777,6 +895,8 @@
 			<property name="Craft" value="4" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Banshee Net - Snoop : React Craft: After an opposing agent resolves an action on a gear card: Te acting agent's base skills are reduced by 2 until the end of the mission." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -790,6 +910,8 @@
 			<property name="Craft" value="5" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Banshee Net - Soldier : Mission Craft: Target an opposing Exposed agent: Raise or lower the cover of the mission by 3." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -803,6 +925,8 @@
 			<property name="Craft" value="3" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Banshee Net - Pointman : React Charisma: Before one of your other agents become Exposed, If Filter is not Exposed, expose Filter: Prevent the other agent from becoming Exposed. : Mission Charisma: Remove the Exposed trait from Filter: Expose a target agent." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -816,6 +940,8 @@
 			<property name="Craft" value="1" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="1" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Banshee Net - Wheelman : Mission Transport X: If the opposing mission team has fewer than the maximum number of agents, move an active non-leader agent into the opposing mission team from that player's HQ, the TN is the target's transport." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -829,6 +955,8 @@
 			<property name="Craft" value="3" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Banshee Net - Snoop - Wheelman : Mission Transport: Target an opposing agent without a Vehicle attached. If amelia has a Vehicle attached, wound the target." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -842,6 +970,8 @@
 			<property name="Craft" value="4" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Banshee Net - Fixer : Intel Craft 5: Examine the top 3 cards of another player's Agency Deck. You may choose one of them and place it on the bottom of that player's deck. Return the other two cards to the top of that player's Agenct Deck in any order." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -855,6 +985,8 @@
 			<property name="Craft" value="3" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Bloodvine - Snoop : Mission Charisma: Target an opposing Exposed Agent with base skills of 0. Until the end of the mission, reduce the cover of all agents in the target's mission team to 0." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -868,6 +1000,8 @@
 			<property name="Craft" value="2" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Bloodvine - Faceman : Mision Charisma X: Target an opposing agent. Wound the target. The TN the target's charisma plus transport." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -881,6 +1015,8 @@
 			<property name="Craft" value="5" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Bloodvine - Fixer : Intel Charisma 6: Discard a gear card from your hand: Look at a number of cards from the top of your Agency Deck equal to the expense of the discarded gear. From those cards, you may reveal a non-Unique gear to all players and put it in your hand. Shuffle the remaining cards into your deck." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -894,6 +1030,8 @@
 			<property name="Craft" value="3" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Bloodvine - Soldier : React Charisma: After one of your agents wound an opposing agent with a Mission action: If Helio Mota has more charisma than the wounded agent, he may immediately perform a Mission action." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -907,6 +1045,8 @@
 			<property name="Craft" value="4" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Bloodvine - Medic : Mission Craft 4: Remove a wound from a Bloodvine agent, Dr. deFaria may perform this action from headquarters." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -920,6 +1060,8 @@
 			<property name="Craft" value="3" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Bloodvine - Wheelman : React Transport 7: After a non-leader agent moves into an oppsoing mission team with an action: Wound that agent twice." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -933,6 +1075,8 @@
 			<property name="Craft" value="1" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Bloodvine - Soldier : React Combat: Before Garcia meets the TN of a Charisma action: Garcia may use his combat instead of his charisma to meet the TN." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -946,6 +1090,8 @@
 			<property name="Craft" value="2" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Bloodvine - Faceman - Unique : React Charisma 2: Eagle Eye may perform a Mission action as if the mission were an Intrigue mission instead of the current mission type." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -959,6 +1105,8 @@
 			<property name="Craft" value="3" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Bloodvine - Faceman : Intel Charisma 7: Target a non-leader agent: Neither the target nor Lucia may assign or move into a Mission or Solo-Op this turn." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -972,6 +1120,8 @@
 			<property name="Craft" value="1" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Freelancer - Wheelman : Mission Transport: Move target agent with base skills of 0 to his headquarters." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -985,6 +1135,8 @@
 			<property name="Craft" value="1" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Freelancer - Wheelman : Intel Transport 6: Examine the op six cards of your deck. You may reveal one Vehicle gear card to all players and attach it to Crash. Shuffle the remaining cards back into your deck." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -998,6 +1150,8 @@
 			<property name="Craft" value="0" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Freelancer - Pointman : Mission Combat: Retire DCI Oliver Johnson: Target an enemy leader. The leader's controller must choose to either discard 2 cards now or draw 2 fewer cards during the Debrief phase." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1011,6 +1165,8 @@
 			<property name="Craft" value="2" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Freelancer - Soldier : While there is an inactive agent on the opposing mission team, Delta Fox gains +1 to her base skills. : While there is an inactive agent on her mission team, Delta Fox gains +1 to her base skills." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1024,6 +1180,8 @@
 			<property name="Craft" value="2" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Freelancer - Pointman : While at a mission, Dr. Skipjack gains +1 to all his base skills for each Soldier and each Wheelman in opposing mission team." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1037,6 +1195,8 @@
 			<property name="Craft" value="3" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Freelancer - Faceman - Unique : React Charisma: After on of your agents has his base skills reduced to 0: Give that Agent a skill bonus equal to his original base skills." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1050,6 +1210,8 @@
 			<property name="Craft" value="3" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Freelancer - Medic : React Transport: Before one of your other agents takes a wound: Prevent the wound. Wound Miss West." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1063,6 +1225,8 @@
 			<property name="Craft" value="3" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Freelancer - Snoop : React Craft 3: Before an enemy agent's action draws 1 or more cards: Cancel that action." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1076,6 +1240,8 @@
 			<property name="Craft" value="2" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Freelancer - Pointman : React Craft: After Major Prey is targeted with an action, discard a card from your hand: Raise the TN of the action by the discard's bravado." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1089,6 +1255,8 @@
 			<property name="Craft" value="6" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Freelancer - Faceman - Soldier - Prophet - Unique : No aspect of this card may be copied. : React Craft 7: Before you level 4 leader is retired: The Blue Damsel permanently becomes your level 4 leader. This action may be preformed from headquarters." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1102,6 +1270,8 @@
 			<property name="Craft" value="5" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Freelancer - Snoop : Mission Charisma X: Move any number of Exposed opposing agents to headquarters. The TN is the agents' combined craft, or the numbr of target agents, whichever is higher." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1115,6 +1285,8 @@
 			<property name="Craft" value="3" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Freelancer - Snoop : React Craft: After this agent activates during a mission: Expose target agent. At the end of the turn. Remove the Exposed trait from the target." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1128,6 +1300,8 @@
 			<property name="Craft" value="1" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Freelancer : React Craft: Before your leader takes a wound, wound Frankie: Prevent the wound to your leader." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1141,6 +1315,8 @@
 			<property name="Craft" value="6" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Freelancer - Fixer - Snoop : React Craft: After an Exposed agent is moved to headquarters from a mission team: Wound the agent. : React Craft: After an exposed agent is moved to headquarters from a mission team: Retire a gear attached to the agent." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1154,6 +1330,8 @@
 			<property name="Craft" value="3" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Freelancer - Faceman - Snoop : React Craft: After Whisper successfully resolves a Baffle action: Expose the target of the Baffle action." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1167,6 +1345,8 @@
 			<property name="Craft" value="5" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Shadow Patriots - Pointman - Majestic : React Craft: Before Alexander Knight declares an action: Target a non-leader pointman agent you control. Alexander Knight may declare an action pointed on the target." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1180,6 +1360,8 @@
 			<property name="Craft" value="6" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Shadow Patriots - Fixer - Majestic : Mission Craft X: Target an opposing agent. Lower the target's base skills to equal his lowest base skill. The TN is the target's craft." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1193,6 +1375,8 @@
 			<property name="Craft" value="3" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Shadow Patriots - Pointman : React Transport 4: After on of your Pointman agents successfully resolves a mission action: Emma Davis may perform a mission action." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1206,6 +1390,8 @@
 			<property name="Craft" value="7" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="4" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Shadow Patriots - Faceman - Pointman - Majestic - Unique : React Craft: After an agent you control discards a card for bravado: Draw a card." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1219,6 +1405,8 @@
 			<property name="Craft" value="3" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Shadow Patriots - Wheelman : Mission Transport: Move Casey Briggs to your headquarters: Move target agent from your headquarters into the mission." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1232,6 +1420,8 @@
 			<property name="Craft" value="2" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="1" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Shadow Patriots - Fixer : React Charisma: After an agent you control declares an action discard a card from your hand: Move a gear card attached to the agent into your hand." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1245,6 +1435,8 @@
 			<property name="Craft" value="5" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="4" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Shadow Patriots - Wheelman - Majestic - Unique : React Transport: Before Jenkins is moved to a headqueaters by an action: Move the acting agent to headquaters." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1258,6 +1450,8 @@
 			<property name="Craft" value="6" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Shadow Patriots - Pointman - wheelman - Majestic - Unique : React Transport X: After another player passes during the Engage the Enemy phase: Mandy may perform a mission action. The TN is the highest transport in the opposing mission team." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1271,6 +1465,8 @@
 			<property name="Craft" value="3" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Shadow Patriots - Pointman : React Charisma 4: After one of your Pointman agents gains a bonus to a skill from an action: Give another one of your Pointman agents the same bonus." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1284,6 +1480,8 @@
 			<property name="Craft" value="2" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="The Krypt - Fixer : React Craft: Before a target opposing agent is retired: Move a gear from the target to Andrei." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1297,6 +1495,8 @@
 			<property name="Craft" value="6" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="The Krypt - Fixer - Unique : Actions on gear cards attached to your agents have their TNs reduced by 3. Your hand size is increased by one while Antony has a active gear attached." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1310,6 +1510,8 @@
 			<property name="Craft" value="3" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="The Krypt - Soldier : Mission Combat 7: If Hightower has an attached Firearm that does not have an action that which can wound an opposing agent: Wound an opposing agent." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1323,6 +1525,8 @@
 			<property name="Craft" value="7" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="4" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="The Krypt - Fixer : React Craft: Before Edik decalres an action during a mission: Target a non-Unique gear and a Mission action on that gear. Edik may perform that action as if the gear were attached to Edik. the action may not discard, retire, or deactivate the targeted gear." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1336,6 +1540,8 @@
 			<property name="Craft" value="2" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="The Krypt - Wheelman : Mission Transport X: If there is a card attached to the current mission, move target opposing agent to headquarters. The TN is the target's transport or cover whichever is lower." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1349,6 +1555,8 @@
 			<property name="Craft" value="3" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="The Krypt - Snoop - Soldier : Pyotr does not become Exposed due to actions he performs. : React Craft: After Pyotr is targeted with a Baffle, Evade, or Shoot action: If Pyotr's charisma, transport, or combat skill respectively, is higher than the acting agent's cancel the action." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1362,6 +1570,8 @@
 			<property name="Craft" value="6" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="4" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="The Krypt - Pointman : Intel Craft: Target a solo op in another player's discard pile. Initiate a solo op mission phase with the target as the mission, asigining Lila as the attacking agent, even if she has won a solo op this turn." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1375,6 +1585,8 @@
 			<property name="Craft" value="7" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="4" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="The Krypt - Pointman - Soldier - Unique : React Transport: Before Kiril is wounded: Prevent the wound. : Mission Craft: Target an opposing non-leader agent with 0 charisma. Retire the agent." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1388,6 +1600,8 @@
 			<property name="Craft" value="5" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="The Krypt - Soldier : Mission Combat 8: If this is a fight mission, wound an opposing agent, If this is a Public mission, expose Yegor. : Mission Transport 8: If this is a chase mission, move an opposing agent to headquarters." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1401,6 +1615,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Armor - Vehicle : Cover +4" />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1414,6 +1630,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Gadget : Mission Craft 6: Target an opposing Exposed agent. The next action by an opposing agent at this mission must be declared by the target agent, if possible. You may immediately play another Mission action." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1427,6 +1645,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Aircraft - Vehicle : Mission Transport 9:Examine the top 8 cards of your deck, You may reveal to all players one gear card with the Armor and/or Vehicle traits, then attach it to one of your agents at this mission and activate it." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1440,6 +1660,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Gadget : Mission Craft: Attach a gear card from your hand to an agent on your mission team, then activate it. This agent may immediately perform an additional Mission action." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1453,6 +1675,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Mission Charisma X: Target an opposing agent. Until the end of the mission, the target may not be target this agent. This action may not be performed during a solo op. The TN is the target's craft." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1466,6 +1690,8 @@
 			<property name="Craft" value="1" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Gadget : Mission Craft X: Target an opposing agent, if the target is Exposed, move him to headquaters. Otherwise expose the target, The TN is the target's craft." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1479,6 +1705,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Gadget - Armor - Unique : React Craft: After this agent is targeted by an action: Cancel the action." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1492,6 +1720,8 @@
 			<property name="Craft" value="2" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Gadget : React Craft 6: After this agent is targeted by a charisma action: Redirect the action to another agent." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1505,6 +1735,8 @@
 			<property name="Craft" value="1" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Mission Transport 5: Target an active gear attached to an opposing agent. If there is another active gear card in play with the same name, retire the target gear." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1518,6 +1750,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Gadget - Armor : Charisma and transport actions targeting this agent have +3 TN." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1531,6 +1765,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Mission Combat 6: Deactivate target active opposing non-leader agent and his attached gear. Until the end of the mission, the agent and his gear may only be activated, individually, as Mission Craft actions." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1544,6 +1780,8 @@
 			<property name="Craft" value="3" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="4" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Gadget - Unique : React Craft: After this agent is targeted with a Mission action: If this agent has not yet performed a mission action during this mission cancel the action." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1557,6 +1795,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="4" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Gadget : This agent gains +1 to all base skills for each solo op in your headquarters (maximum of +4)." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1570,6 +1810,8 @@
 			<property name="Craft" value="1" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="React Craft X: After this agent is targeted with a mission action: Increase the TN of the action by 3, The TN is the acting agent's craft." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1583,6 +1825,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Mission Transport: Target an agent that moved into the current mission. Move the agent to headquarters. That agent may not assign or move into mission teams this turn." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1596,6 +1840,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Fixer or Snoop only. : React Craft X: After an opposing agent targets this agent with a Mission action: Wound the acting agent. The TN is the acting agent's combat." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1609,6 +1855,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Specialist : Mission Combat: Discard this card: Until the end of the mission, the TN of each React is increased by 2." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1622,6 +1870,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Mission Craft 4: Until the end of the turn, actions by Exposed agents have +2 TN. : React Craft 7: After an Exposed agent is targeted with an action that would move him to or from headquarters: Cancel the action." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1635,6 +1885,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Gadget : React Craft: After this agent is assigned to a mission team: Name a skill. This agent gains +2 to  the named skill until the end of the mission." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1648,6 +1900,8 @@
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Melee : Mission Combat 8: Target an oppsoing agent who has not declared an action this mission. Wound the target agent. this is a Melee action. A Faceman may use his charisma instead of combat for this action." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1661,6 +1915,8 @@
 			<property name="Craft" value="2" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Location - Unique - Bureau : Shadow Patriots : Intel Craft 7: Examine the top 7 cards of your Agenct Deck. You may reveal one action card from among those examined and put it in your hand. Shuffle the remaining cards into your deck." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1674,6 +1930,8 @@
 			<property name="Craft" value="2" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Gadget : Intel Craft 8: Activate target card. The Costs must be paid as normal. : Intel Craft 8: Retire target Exposed non-Leader agent with lower Expense. : React Craft: After assigning your Mission Team: You gain +5 Craft for determining initiative for the mission." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1687,6 +1945,8 @@
 			<property name="Craft" value="4" />
 			<property name="Level" value="2" />
 			<property name="Bravado" value="" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Nine Tiger - Soldier : React Combat: After one of your Soldier agents is target with a combat action: Redirect the action. Jin-Shoo may perform this action while at headquarters." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1700,6 +1960,8 @@
 			<property name="Craft" value="2" />
 			<property name="Level" value="3" />
 			<property name="Bravado" value="" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Nine Tiger - Soldier : React Combat: After Master Pau target an enemy agent with an action: Raise the action's TN by 4. The action casuse a wound as an additional effect." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1713,6 +1975,8 @@
 			<property name="Craft" value="8" />
 			<property name="Level" value="4" />
 			<property name="Bravado" value="" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Banshee Net - Faceman - Project: Pitfall : The TNs of react actions performed by opposing agents are inceased by 2. : Intel Craft 9: Until the end of the turn, your inactive agents in mission teams may not be targeted by enemy actions or agents." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1726,6 +1990,8 @@
 			<property name="Craft" value="4" />
 			<property name="Level" value="2" />
 			<property name="Bravado" value="" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Banshee Net - Pointman - Soldier - Project: Pitfall : React Combat X: After target opposing agent becomes Exposed: Wound that agent. The TN is the target's combat or craft, whichever is higher." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1739,6 +2005,8 @@
 			<property name="Craft" value="2" />
 			<property name="Level" value="1" />
 			<property name="Bravado" value="" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Bloodvine - Fixer : React Charisma: Before one of your non-leader agents activates a gear card, give that agent +3 expense for activating that gear." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1752,6 +2020,8 @@
 			<property name="Craft" value="5" />
 			<property name="Level" value="4" />
 			<property name="Bravado" value="" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Bloodvine - Faceman - Soldier : Combat actions performed by enemy agents hae +2 TN. After Gilante resolves a charisma action targeting one enemy agent, wound the target." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1765,6 +2035,8 @@
 			<property name="Craft" value="4" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Shadow Patriots - Fixer - Majestic : While Endeavour is your leader, before an agent you control declares an action, you may reveal a card from your hand with the Majetic trait. Your agent may declare an action on the revealed card. Discard the card after the action is resolved." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1778,6 +2050,8 @@
 			<property name="Craft" value="5" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="Shadow Patriots - Pointman - Soldier - Majestic : Huntress has +3 expense for activating Majestic agents. While Huntress is your leader our mission team sizle is reduced by 2 (min 1). : React Craft: After an agent targets a Majestic: Increase the TN of the action by +3." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1791,6 +2065,8 @@
 			<property name="Craft" value="7" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="4" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="The Krypt - Pointman - Wheelman : React Transport: After assiging Valentin to an attacking mission team, search your Agenct Deck for a card that attaches to a mission card and attach it to the mission, paying all costs." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1804,6 +2080,8 @@
 			<property name="Craft" value="4" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
 			<property name="Rules" value="The Krypt - Wheelman : React Transport: After you extended to or from a chase mission, move up to two agents into your mission team from headquters." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
