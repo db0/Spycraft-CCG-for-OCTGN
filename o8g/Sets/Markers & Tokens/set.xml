@@ -20,7 +20,7 @@
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
-		<card id="d9652ea8-8ab7-43b1-b55b-d5a4be74350f" name="Bloodvine Leaders">
+		<card id="8e2ff010-98b5-4884-a39b-100940d4f702" name="Bloodvine Leaders">
 			<property name="Type" value="Referece" />
 			<property name="Expense Rating" value="" />
 			<property name="Charisma" value="0" />
@@ -35,7 +35,7 @@
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
-		<card id="d9652ea8-8ab7-43b1-b55b-d5a4be74350f" name="Franchise Leaders">
+		<card id="6d131915-cb6a-43ca-b2f1-64ac040b0eec" name="Franchise Leaders">
 			<property name="Type" value="Referece" />
 			<property name="Expense Rating" value="" />
 			<property name="Charisma" value="0" />
@@ -50,7 +50,7 @@
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
-		<card id="d9652ea8-8ab7-43b1-b55b-d5a4be74350f" name="The Krypt Leaders">
+		<card id="0d058ed6-51e8-42c7-9cbb-67a3d267c618f" name="The Krypt Leaders">
 			<property name="Type" value="Referece" />
 			<property name="Expense Rating" value="" />
 			<property name="Charisma" value="0" />
@@ -65,7 +65,7 @@
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
-		<card id="d9652ea8-8ab7-43b1-b55b-d5a4be74350f" name="Nine Tigers Leaders">
+		<card id="49f5d0ad-60e2-4810-86b6-5f962f99d9bdf" name="Nine Tigers Leaders">
 			<property name="Type" value="Referece" />
 			<property name="Expense Rating" value="" />
 			<property name="Charisma" value="0" />
@@ -80,7 +80,7 @@
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
-		<card id="d9652ea8-8ab7-43b1-b55b-d5a4be74350f" name="Shadow Patriot Leaders">
+		<card id="bf4bfecd-1d84-4a6f-a787-0986a0fe06b1" name="Shadow Patriot Leaders">
 			<property name="Type" value="Referece" />
 			<property name="Expense Rating" value="" />
 			<property name="Charisma" value="0" />
