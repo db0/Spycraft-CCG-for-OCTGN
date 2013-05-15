@@ -50,7 +50,7 @@
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
-		<card id="0d058ed6-51e8-42c7-9cbb-67a3d267c618f" name="The Krypt Leaders">
+		<card id="0d058ed6-51e8-42c7-9cbb-67a3d267c618" name="The Krypt Leaders">
 			<property name="Type" value="Reference" />
 			<property name="Expense Rating" value="" />
 			<property name="Charisma" value="0" />
@@ -65,7 +65,7 @@
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
-		<card id="49f5d0ad-60e2-4810-86b6-5f962f99d9bdf" name="Nine Tigers Leaders">
+		<card id="49f5d0ad-60e2-4810-86b6-5f962f99d9bd" name="Nine Tigers Leaders">
 			<property name="Type" value="Reference" />
 			<property name="Expense Rating" value="" />
 			<property name="Charisma" value="0" />
