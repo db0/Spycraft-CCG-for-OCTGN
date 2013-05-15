@@ -6,7 +6,7 @@
 	</markers>
 	<cards>
 		<card id="9f291494-8713-4b7e-bc7c-36b428fc0dd1" name="Banshee Net Leaders">
-			<property name="Type" value="Referece" />
+			<property name="Type" value="Reference" />
 			<property name="Expense Rating" value="" />
 			<property name="Charisma" value="0" />
 			<property name="Combat" value="5" />
@@ -21,7 +21,7 @@
 			<property name="Cover Level" value="" />
 		</card>
 		<card id="8e2ff010-98b5-4884-a39b-100940d4f702" name="Bloodvine Leaders">
-			<property name="Type" value="Referece" />
+			<property name="Type" value="Reference" />
 			<property name="Expense Rating" value="" />
 			<property name="Charisma" value="0" />
 			<property name="Combat" value="5" />
@@ -36,7 +36,7 @@
 			<property name="Cover Level" value="" />
 		</card>
 		<card id="6d131915-cb6a-43ca-b2f1-64ac040b0eec" name="Franchise Leaders">
-			<property name="Type" value="Referece" />
+			<property name="Type" value="Reference" />
 			<property name="Expense Rating" value="" />
 			<property name="Charisma" value="0" />
 			<property name="Combat" value="5" />
@@ -51,7 +51,7 @@
 			<property name="Cover Level" value="" />
 		</card>
 		<card id="0d058ed6-51e8-42c7-9cbb-67a3d267c618f" name="The Krypt Leaders">
-			<property name="Type" value="Referece" />
+			<property name="Type" value="Reference" />
 			<property name="Expense Rating" value="" />
 			<property name="Charisma" value="0" />
 			<property name="Combat" value="5" />
@@ -66,7 +66,7 @@
 			<property name="Cover Level" value="" />
 		</card>
 		<card id="49f5d0ad-60e2-4810-86b6-5f962f99d9bdf" name="Nine Tigers Leaders">
-			<property name="Type" value="Referece" />
+			<property name="Type" value="Reference" />
 			<property name="Expense Rating" value="" />
 			<property name="Charisma" value="0" />
 			<property name="Combat" value="5" />
@@ -81,7 +81,7 @@
 			<property name="Cover Level" value="" />
 		</card>
 		<card id="bf4bfecd-1d84-4a6f-a787-0986a0fe06b1" name="Shadow Patriot Leaders">
-			<property name="Type" value="Referece" />
+			<property name="Type" value="Reference" />
 			<property name="Expense Rating" value="" />
 			<property name="Charisma" value="0" />
 			<property name="Combat" value="5" />
@@ -92,6 +92,21 @@
 			<property name="Faction" value="Shadow Patriots" />
 			<property name="Traits" value="" />
 			<property name="Rules" value="Shadow Patriot Leaders May Perform: React Craft: After you win a mission that is a different type from the last mission you won: Increase the Victory Point value of the mission by +2." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="05a8e219-4463-4ec0-a785-cd1c8eb551c8" name="Turn Sequence">
+			<property name="Type" value="Help" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="0" />
+			<property name="Combat" value="5" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
+			<property name="Rules" value="" />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
