@@ -1007,7 +1007,7 @@
 			<property name="Bravado" value="1" />
 			<property name="Faction" value="Banshee Net" />
 			<property name="Traits" value="Snoop" />
-			<property name="Rules" value=" - " />
+			<property name="Rules" value="" />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -3977,7 +3977,7 @@
 			<property name="Bravado" value="2" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="Gadget" />
-			<property name="Rules" value=" - Faceman or Pointman only. : React Craft X: After this agen is targeted by a craft or charisma action, discard Smartskin: Cancel the action. The TN is the acting agent's craft." />
+			<property name="Rules" value="Faceman or Pointman only. : React Craft X: After this agen is targeted by a craft or charisma action, discard Smartskin: Cancel the action. The TN is the acting agent's craft." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>

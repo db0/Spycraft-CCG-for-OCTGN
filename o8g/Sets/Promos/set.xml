@@ -15,9 +15,9 @@
 			<property name="Craft" value="2" />
 			<property name="Level" value="2" />
 			<property name="Bravado" value="" />
-			<property name="Faction" value="" />
-			<property name="Traits" value="" />
-			<property name="Rules" value="Nine Tiger - Soldier : React Combat 6: After an action target one of your soldier agents: Raise the TN of the action by 4." />
+			<property name="Faction" value="Nine Tiger" />
+			<property name="Traits" value="Soldier" />
+			<property name="Rules" value="React Combat 6: After an action target one of your soldier agents: Raise the TN of the action by 4." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -30,9 +30,9 @@
 			<property name="Craft" value="5" />
 			<property name="Level" value="2" />
 			<property name="Bravado" value="" />
-			<property name="Faction" value="" />
-			<property name="Traits" value="" />
-			<property name="Rules" value="The Krypt - Fixer : Intel Craft 6: Target a mssion in the discard pile and one in the mission queue. Switch the two mission." />
+			<property name="Faction" value="The Krypt" />
+			<property name="Traits" value="Fixer" />
+			<property name="Rules" value="Intel Craft 6: Target a mssion in the discard pile and one in the mission queue. Switch the two mission." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -46,8 +46,8 @@
 			<property name="Level" value="" />
 			<property name="Bravado" value="4" />
 			<property name="Faction" value="" />
-			<property name="Traits" value="" />
-			<property name="Rules" value="Vehicle - Aircraft - Unique : Cover +2 : Mission Carft 6: Discard a mission card adjacent to this mission. : Mission Combat X: Retire a vehicle gear in the opposing mission them. The TN is the vehicle's expense." />
+			<property name="Traits" value="Vehicle - Aircraft - Unique" />
+			<property name="Rules" value="Cover +2 : Mission Carft 6: Discard a mission card adjacent to this mission. : Mission Combat X: Retire a vehicle gear in the opposing mission them. The TN is the vehicle's expense." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -61,8 +61,8 @@
 			<property name="Level" value="" />
 			<property name="Bravado" value="4" />
 			<property name="Faction" value="" />
-			<property name="Traits" value="" />
-			<property name="Rules" value="Vehicle - Auto - Armor - Unique : Cover +5 : This agent is aways considered exposed. This agent may not perform charisma actions and mission craft actions. : React Combat: Before this agent suffers a wound: prevent the wound." />
+			<property name="Traits" value="Vehicle - Auto - Armor - Unique" />
+			<property name="Rules" value="Cover +5 : This agent is aways considered exposed. This agent may not perform charisma actions and mission craft actions. : React Combat: Before this agent suffers a wound: prevent the wound." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -91,8 +91,8 @@
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
 			<property name="Faction" value="" />
-			<property name="Traits" value="" />
-			<property name="Rules" value="Firearm : Mission Combat: Reduce by 4 the TN of the next combat action this agent performs this turn." />
+			<property name="Traits" value="Firearm" />
+			<property name="Rules" value="Mission Combat: Reduce by 4 the TN of the next combat action this agent performs this turn." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -105,9 +105,9 @@
 			<property name="Craft" value="2" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
-			<property name="Faction" value="" />
-			<property name="Traits" value="" />
-			<property name="Rules" value="Freelancer - Pointman : React Craft: One per game, after Bombay is at a mission you win: Bombay permanently gains +4 expense, +1 to all, and your organization affiliation." />
+			<property name="Faction" value="Freelancer" />
+			<property name="Traits" value="Pointman" />
+			<property name="Rules" value="React Craft: One per game, after Bombay is at a mission you win: Bombay permanently gains +4 expense, +1 to all, and your organization affiliation." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -136,8 +136,8 @@
 			<property name="Level" value="" />
 			<property name="Bravado" value="4" />
 			<property name="Faction" value="" />
-			<property name="Traits" value="" />
-			<property name="Rules" value="Gadget : Mission Charisma X: Wound an opposing agent. The TN is the target's cover. If this is a Public mission, expose this agent." />
+			<property name="Traits" value="Gadget" />
+			<property name="Rules" value="Mission Charisma X: Wound an opposing agent. The TN is the target's cover. If this is a Public mission, expose this agent." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -166,8 +166,8 @@
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
 			<property name="Faction" value="" />
-			<property name="Traits" value="" />
-			<property name="Rules" value="Vehicle - Auto - Armor : +3 cover.: Mission actions by agents in this agent's team have -1 TN. : Mission Combat X: Wound an opposing agent. Expose this agent if this is a Public mission. The TN is the target's combat or cover, wichever is lower." />
+			<property name="Traits" value="Vehicle - Auto - Armor" />
+			<property name="Rules" value="+3 cover.: Mission actions by agents in this agent's team have -1 TN. : Mission Combat X: Wound an opposing agent. Expose this agent if this is a Public mission. The TN is the target's combat or cover, wichever is lower." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -181,8 +181,8 @@
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
 			<property name="Faction" value="" />
-			<property name="Traits" value="" />
-			<property name="Rules" value="Armor : +2 cover : React Combat: Before this agent take a wound, discard Kevlar BDU: Prevent the wound." />
+			<property name="Traits" value="Armor" />
+			<property name="Rules" value="+2 cover : React Combat: Before this agent take a wound, discard Kevlar BDU: Prevent the wound." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -197,7 +197,7 @@
 			<property name="Bravado" value="1" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="" />
-			<property name="Rules" value="Intel Car" />
+			<property name="Rules" value="Intel Craft 6: Your opponent's next actions this turn has +4 TN. You may perform an Intel action immediately after this one." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
