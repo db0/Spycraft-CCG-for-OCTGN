@@ -2627,7 +2627,7 @@
 			<property name="Bravado" value="3" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="Vehicle - Auto : React Transport 9" />
-			<property name="Rules" value=": After this agent is targeted by a transport action: Cancel the action." />
+			<property name="Rules" value="After this agent is targeted by a transport action: Cancel the action." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>

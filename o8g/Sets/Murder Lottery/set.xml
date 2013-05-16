@@ -361,7 +361,7 @@
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
 			<property name="Faction" value="" />
-			<property name="Traits" value="Solo op - Private - Combat +3" />
+			<property name="Traits" value="Solo Op - Private - Combat +3" />
 			<property name="Rules" value="Agents may not be sent to headquarters during this solo op : React Combat 6: After an enemy agent activates a gear: Retire the target gear." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -406,7 +406,7 @@
 			<property name="Level" value="" />
 			<property name="Bravado" value="1" />
 			<property name="Faction" value="" />
-			<property name="Traits" value="Solo op - Private - Craft +3" />
+			<property name="Traits" value="Solo Op - Private - Craft +3" />
 			<property name="Rules" value="Players may not assign or activate agents during this solo op. : React Craft: Before one of your agents is activated: Deactivate one of your target non-leader agents. The target agent may not be activated this turn." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -541,7 +541,7 @@
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
 			<property name="Faction" value="" />
-			<property name="Traits" value="Solo op - Private - Charisma +2" />
+			<property name="Traits" value="Solo Op - Private - Charisma +2" />
 			<property name="Rules" value="Agents cannot be wounded during this solo op. : React Charisma: After winning this solo op, discard this card: Until the end of the turn, target agent may not assign or move into mission teams." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -601,7 +601,7 @@
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
 			<property name="Faction" value="" />
-			<property name="Traits" value="Solo op - Public - Transport +1" />
+			<property name="Traits" value="Solo Op - Public - Transport +1" />
 			<property name="Rules" value="Agent may no move into this solo op. : Intel Transport 7: Reveal the top three cards of the mission deck. You may discard and replace the first mission in the mission queue with a chase mission revealed in this way. Discard the remaining revealed missions." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -616,7 +616,7 @@
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
 			<property name="Faction" value="" />
-			<property name="Traits" value="Solo op - Private - Transport +1" />
+			<property name="Traits" value="Solo Op - Private - Transport +1" />
 			<property name="Rules" value="Agent's base skills may not be charnged during this solo op. : React Transport: Before one of your agents takes a wound: Prevent the wound." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1456,7 +1456,7 @@
 			<property name="Level" value="" />
 			<property name="Bravado" value="3" />
 			<property name="Faction" value="Shadow Patriots" />
-			<property name="Traits" value="Pointman - wheelman - Majestic - Unique" />
+			<property name="Traits" value="Pointman - Wheelman - Majestic - Unique" />
 			<property name="Rules" value="React Transport X: After another player passes during the Engage the Enemy phase: Mandy may perform a mission action. The TN is the highest transport in the opposing mission team." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />

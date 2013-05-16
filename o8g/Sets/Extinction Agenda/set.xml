@@ -17,7 +17,7 @@
 			<property name="Bravado" value="." />
 			<property name="Faction" value="Freelancer" />
 			<property name="Traits" value="Snoop" />
-			<property name="Rules" value=": Craft React: After activating 2nt Lt. Chavez: Examine a target inactive card." />
+			<property name="Rules" value="Craft React: After activating 2nt Lt. Chavez: Examine a target inactive card." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -616,8 +616,8 @@
 			<property name="Level" value="4" />
 			<property name="Bravado" value="" />
 			<property name="Faction" value="Franchise" />
-			<property name="Traits" value="Mastermind - Fixer - Henchman" />
-			<property name="Rules" value=": Gerhard : Intel Craft: Search your deck for 1 or 2 copies of &quot;The Zero Sum&quot;. Put them in your hand. : Mission Craft: Retire an agent on your mission team: The opposing player must target and sound two of his agents or retire all gents on his mission team." />
+			<property name="Traits" value="Mastermind - Fixer - Henchman: Gerhard" />
+			<property name="Rules" value="Intel Craft: Search your deck for 1 or 2 copies of &quot;The Zero Sum&quot;. Put them in your hand. : Mission Craft: Retire an agent on your mission team: The opposing player must target and sound two of his agents or retire all gents on his mission team." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -811,8 +811,8 @@
 			<property name="Level" value="3" />
 			<property name="Bravado" value="" />
 			<property name="Faction" value="Franchise" />
-			<property name="Traits" value="Soldier - Master" />
-			<property name="Rules" value="The  - : Dr. Kholera : React Transport: After an action targets Dr. Kholera: Redirected the action to Gerhard. : React Transport: After Gerhard activates: Search your discard pile, then Agency Deck, for an &quot;Armored Trenchcoat&quot; and a Firearm gear. Equip the cards to him." />
+			<property name="Traits" value="Soldier - Master: Dr. Kholera" />
+			<property name="Rules" value="Dr. Kholera : React Transport: After an action targets Dr. Kholera: Redirected the action to Gerhard. : React Transport: After Gerhard activates: Search your discard pile, then Agency Deck, for an &quot;Armored Trenchcoat&quot; and a Firearm gear. Equip the cards to him." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
