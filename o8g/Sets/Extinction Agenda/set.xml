@@ -62,7 +62,7 @@
 			<property name="Bravado" value="1" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="" />
-			<property name="Rules" value="Fixer only : Intel Craft 6: Examine the top three cards of your Agenct Deck and rearrange them in any order: Draw a card." />
+			<property name="Rules" value="Fixer only&#xD;&#xA;Intel Craft 6: Examine the top three cards of your Agenct Deck and rearrange them in any order: Draw a card." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -122,7 +122,7 @@
 			<property name="Bravado" value="2" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="Armor" />
-			<property name="Rules" value="+2 Cover. : React Combat 6: Before this agent takes a wound: Prevent the wound," />
+			<property name="Rules" value="+2 Cover.&#xD;&#xA;React Combat 6: Before this agent takes a wound: Prevent the wound," />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -152,7 +152,7 @@
 			<property name="Bravado" value="2" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="" />
-			<property name="Rules" value="Soldier only. : May not be performed by a leader. : Mission Combat X : Retire this agent: Retire an opposing agent with expense equal to or lower than this agent's. The TN is the target's combat." />
+			<property name="Rules" value="Soldier only.&#xD;&#xA;May not be performed by a leader.&#xD;&#xA;Mission Combat X: Retire this agent: Retire an opposing agent with expense equal to or lower than this agent's. The TN is the target's combat." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -167,7 +167,7 @@
 			<property name="Bravado" value="3" />
 			<property name="Faction" value="Banshee Net" />
 			<property name="Traits" value="" />
-			<property name="Rules" value="Banshee Net only : Intel Craft: Perform up to three consecutive Intel actions with your non-leader agents." />
+			<property name="Rules" value="Banshee Net only&#xD;&#xA;Intel Craft: Perform up to three consecutive Intel actions with your non-leader agents." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -182,7 +182,7 @@
 			<property name="Bravado" value="3" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="" />
-			<property name="Rules" value="Faceman only. : Intel Charisma: Examine the top 10 cards of your deck. You may reveal one Specialist card to all other players and put it in your hand. Shuffle the remaining cards into your deck." />
+			<property name="Rules" value="Faceman only.&#xD;&#xA;Intel Charisma: Examine the top 10 cards of your deck. You may reveal one Specialist card to all other players and put it in your hand. Shuffle the remaining cards into your deck." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -242,7 +242,7 @@
 			<property name="Bravado" value="3" />
 			<property name="Faction" value="Franchise" />
 			<property name="Traits" value="" />
-			<property name="Rules" value="The Franchise only. : Intel Craft 6: Discard a card, then eveal all but one card in your hand: Search your Agency Deck for a non-Unique card and put it in your hand." />
+			<property name="Rules" value="The Franchise only.&#xD;&#xA;Intel Craft 6: Discard a card, then eveal all but one card in your hand: Search your Agency Deck for a non-Unique card and put it in your hand." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -272,7 +272,7 @@
 			<property name="Bravado" value="3" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="Firearm" />
-			<property name="Rules" value="Your Agenct Deck may contain up to six copies of Beretta Model 92. : An agent with Beretta Model 92 equipped may have two Firearms equipped. If this agent has another Beretta Model 92 attached, this agent gains +1 combat and +1 cover." />
+			<property name="Rules" value="Your Agenct Deck may contain up to six copies of Beretta Model 92.&#xD;&#xA;An agent with Beretta Model 92 equipped may have two Firearms equipped. If this agent has another Beretta Model 92 attached, this agent gains +1 combat and +1 cover." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -302,7 +302,7 @@
 			<property name="Bravado" value="2" />
 			<property name="Faction" value="Freelancer" />
 			<property name="Traits" value="Soldier - Wheelman - Unique" />
-			<property name="Rules" value="Mission Transport X: Send an opposing Freelancer agent to headquarters. The TN is the target's transport plus craft. : Mission Combat X: Wound an opposing Freelancer agent. The TN is the target's combat plus cover." />
+			<property name="Rules" value="Mission Transport X: Send an opposing Freelancer agent to headquarters. The TN is the target's transport plus craft.&#xD;&#xA;Mission Combat X: Wound an opposing Freelancer agent. The TN is the target's combat plus cover." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -347,7 +347,7 @@
 			<property name="Bravado" value="3" />
 			<property name="Faction" value="Shadow Patriots" />
 			<property name="Traits" value="" />
-			<property name="Rules" value="Shadow Patriots only. : React Craft: After the Attacker and Defender consecutively pass at a mission: This agent may perform one Mission action." />
+			<property name="Rules" value="Shadow Patriots only.&#xD;&#xA;React Craft: After the Attacker and Defender consecutively pass at a mission: This agent may perform one Mission action." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -362,7 +362,7 @@
 			<property name="Bravado" value="3" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="" />
-			<property name="Rules" value="Leader only. : Mission Combat 4: Give another agent a bonus to one of his skills equal to your leader's level, plus 2 if there is no opposing leader." />
+			<property name="Rules" value="Leader only.&#xD;&#xA;Mission Combat 4: Give another agent a bonus to one of his skills equal to your leader's level, plus 2 if there is no opposing leader." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -437,7 +437,7 @@
 			<property name="Bravado" value="3" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="" />
-			<property name="Rules" value="Fixer only. : React Craft: After an agent declares an action that may only be performed by a Faceman, Fixer, Pointman, Snoop, Soldier, or Wheelman: Cancel the action." />
+			<property name="Rules" value="Fixer only.&#xD;&#xA;React Craft: After an agent declares an action that may only be performed by a Faceman, Fixer, Pointman, Snoop, Soldier, or Wheelman: Cancel the action." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -452,7 +452,7 @@
 			<property name="Bravado" value="4" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="" />
-			<property name="Rules" value="Snoop only. : React Craft: After one of your agents is targeted by an action that would expose or gain control of him: Cancel the action." />
+			<property name="Rules" value="Snoop only.&#xD;&#xA;React Craft: After one of your agents is targeted by an action that would expose or gain control of him: Cancel the action." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -511,8 +511,8 @@
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
 			<property name="Faction" value="" />
-			<property name="Traits" value="" />
-			<property name="Rules" value="Faceman only. : Specialist : Intel Charisma X: Target a non-leader agent. Put this card into play, face-up. This card becomes an exact copy of the target agent's printed card. Discard this card at the end of the turn. The TN is the target's expense." />
+			<property name="Traits" value="Specialist" />
+			<property name="Rules" value="Faceman only.&#xD;&#xA;Intel Charisma X: Target a non-leader agent. Put this card into play, face-up. This card becomes an exact copy of the target agent's printed card. Discard this card at the end of the turn. The TN is the target's expense." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -527,7 +527,7 @@
 			<property name="Bravado" value="" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="Fight - Private - Craft +4" />
-			<property name="Rules" value="Atacker: Your Fixer and Snoop agents may perform: &quot;Mission Craft 5: Lower the Objective Number for this mission by 1.&quot; : Defender: Your Soldier and Pointman agents my perform: &quot;Mission Combat: Increase the Objective Number for this mission by 1.&quot;" />
+			<property name="Rules" value="Atacker: Your Fixer and Snoop agents may perform: &quot;Mission Craft 5: Lower the Objective Number for this mission by 1.&quot;&#xD;&#xA;Defender: Your Soldier and Pointman agents my perform: &quot;Mission Combat: Increase the Objective Number for this mission by 1.&quot;" />
 			<property name="Victory Points" value="5" />
 			<property name="Cover Level" value="5" />
 		</card>
@@ -542,7 +542,7 @@
 			<property name="Bravado" value="3" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="" />
-			<property name="Rules" value="If this card is discarded from your hand due to an opponent's card effect, draw two cards. : React Transport: Before an opponent forces you to discard one or more cards from your hand: Place a card in your hand on top of your Agency Deck. Draw two cards after the discarding action resolves." />
+			<property name="Rules" value="If this card is discarded from your hand due to an opponent's card effect, draw two cards.&#xD;&#xA;React Transport: Before an opponent forces you to discard one or more cards from your hand: Place a card in your hand on top of your Agency Deck. Draw two cards after the discarding action resolves." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -572,7 +572,7 @@
 			<property name="Bravado" value="1" />
 			<property name="Faction" value="Franchise" />
 			<property name="Traits" value="" />
-			<property name="Rules" value="The Franchise only. : React Carft 5: After an enemy agent targets one of your cards with a mission action., discard a card: Cancel the action. This agent does not need to be on a mission team to perform this action." />
+			<property name="Rules" value="The Franchise only.&#xD;&#xA;React Carft 5: After an enemy agent targets one of your cards with a mission action., discard a card: Cancel the action. This agent does not need to be on a mission team to perform this action." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -587,7 +587,7 @@
 			<property name="Bravado" value="" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="Intrigue - Public - Transport +4" />
-			<property name="Rules" value="Attacker: Your agents may perform actions as if this were a Fight mission. : Defender: Your agents may perform: &quot;Mission Transport 5: Send an opposing Exposed agent to his headquarters.&quot;" />
+			<property name="Rules" value="Attacker: Your agents may perform actions as if this were a Fight mission.&#xD;&#xA;Defender: Your agents may perform: &quot;Mission Transport 5: Send an opposing Exposed agent to his headquarters.&quot;" />
 			<property name="Victory Points" value="7" />
 			<property name="Cover Level" value="5" />
 		</card>
@@ -602,7 +602,7 @@
 			<property name="Bravado" value="" />
 			<property name="Faction" value="Bloodvine" />
 			<property name="Traits" value="Faceman" />
-			<property name="Rules" value="React Charisma: After an enemy agent performs a React to one of your actions: Wound the reacting agent. : Intel Charisma: Retire an agent that is not controlled by his owner." />
+			<property name="Rules" value="React Charisma: After an enemy agent performs a React to one of your actions: Wound the reacting agent.&#xD;&#xA;Intel Charisma: Retire an agent that is not controlled by his owner." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -617,7 +617,7 @@
 			<property name="Bravado" value="" />
 			<property name="Faction" value="Franchise" />
 			<property name="Traits" value="Mastermind - Fixer - Henchman: Gerhard" />
-			<property name="Rules" value="Intel Craft: Search your deck for 1 or 2 copies of &quot;The Zero Sum&quot;. Put them in your hand. : Mission Craft: Retire an agent on your mission team: The opposing player must target and sound two of his agents or retire all gents on his mission team." />
+			<property name="Rules" value="Intel Craft: Search your deck for 1 or 2 copies of &quot;The Zero Sum&quot;. Put them in your hand.&#xD;&#xA;Mission Craft: Retire an agent on your mission team: The opposing player must target and sound two of his agents or retire all gents on his mission team." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -632,7 +632,7 @@
 			<property name="Bravado" value="3" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="" />
-			<property name="Rules" value="Wheelman only. : React Transport X: After this agent is targeted by an action that would send him to headquarters: Cancel the action. If this agent has a vehicle attached, would the acting agent. The TN is the acting agent's transport." />
+			<property name="Rules" value="Wheelman only.&#xD;&#xA;React Transport X: After this agent is targeted by an action that would send him to headquarters: Cancel the action. If this agent has a vehicle attached, would the acting agent. The TN is the acting agent's transport." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -812,7 +812,7 @@
 			<property name="Bravado" value="" />
 			<property name="Faction" value="Franchise" />
 			<property name="Traits" value="Soldier - Master: Dr. Kholera" />
-			<property name="Rules" value="Dr. Kholera : React Transport: After an action targets Dr. Kholera: Redirected the action to Gerhard. : React Transport: After Gerhard activates: Search your discard pile, then Agency Deck, for an &quot;Armored Trenchcoat&quot; and a Firearm gear. Equip the cards to him." />
+			<property name="Rules" value="Dr. Kholera&#xD;&#xA;React Transport: After an action targets Dr. Kholera: Redirected the action to Gerhard.&#xD;&#xA;React Transport: After Gerhard activates: Search your discard pile, then Agency Deck, for an &quot;Armored Trenchcoat&quot; and a Firearm gear. Equip the cards to him." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -827,7 +827,7 @@
 			<property name="Bravado" value="2" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="" />
-			<property name="Rules" value="Pointman only. : Mission Craft 6: Until an action targeting this agent is successfully performed, opposing agents cannot target other agents in your mission team. You may immediately play another Mission action." />
+			<property name="Rules" value="Pointman only.&#xD;&#xA;Mission Craft 6: Until an action targeting this agent is successfully performed, opposing agents cannot target other agents in your mission team. You may immediately play another Mission action." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -887,7 +887,7 @@
 			<property name="Bravado" value="4" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="" />
-			<property name="Rules" value="+1 cover. : React Transport: After this agent is targeted by an action from a card with &quot;Outbreak&quot;, &quot;Plague&quot;, &quot;Poison&quot;, or &quot;Biological&quot; in the title: Cancel the action." />
+			<property name="Rules" value="+1 cover.&#xD;&#xA;React Transport: After this agent is targeted by an action from a card with &quot;Outbreak&quot;, &quot;Plague&quot;, &quot;Poison&quot;, or &quot;Biological&quot; in the title: Cancel the action." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -917,7 +917,7 @@
 			<property name="Bravado" value="2" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="" />
-			<property name="Rules" value="After Hidden Laboratory is activated, expose this agent if you are not a Franchise player. : Intel Craft 8: Discard a card: Search your discard pile, then Agency Deck, for a card with &quot;Plague&quot;, &quot;Poison&quot;, or &quot;Outbreak&quot; in the title. At the end of the turn, remove from the game all cards with the same title in your hand and discard pile." />
+			<property name="Rules" value="After Hidden Laboratory is activated, expose this agent if you are not a Franchise player.&#xD;&#xA;Intel Craft 8: Discard a card: Search your discard pile, then Agency Deck, for a card with &quot;Plague&quot;, &quot;Poison&quot;, or &quot;Outbreak&quot; in the title. At the end of the turn, remove from the game all cards with the same title in your hand and discard pile." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -992,7 +992,7 @@
 			<property name="Bravado" value="2" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="Gadget - Vehicle - Aircraft" />
-			<property name="Rules" value="React Transport 8: After a Mission action targets this agent, move him to headquarters: Cancel the action. : Mission Transport 8: Move this agent from your headquarters into your mission team." />
+			<property name="Rules" value="React Transport 8: After a Mission action targets this agent, move him to headquarters: Cancel the action.&#xD;&#xA;Mission Transport 8: Move this agent from your headquarters into your mission team." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -1037,7 +1037,7 @@
 			<property name="Bravado" value="2" />
 			<property name="Faction" value="Nine Tiger" />
 			<property name="Traits" value="" />
-			<property name="Rules" value="Nine Tiger only. : Intel Combat 7: Until the end of the next Mission Phase, your agents may use their combat instead of their craft to determine the starting player at a mission." />
+			<property name="Rules" value="Nine Tiger only.&#xD;&#xA;Intel Combat 7: Until the end of the next Mission Phase, your agents may use their combat instead of their craft to determine the starting player at a mission." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -1217,7 +1217,7 @@
 			<property name="Bravado" value="1" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="Melee" />
-			<property name="Rules" value="Soldier only : Mission Combat X: Wound a target opposing enemy agent twice. If this is a Public mission, expose this agent. This is a Melee action. The TN is the target's combat plus expense." />
+			<property name="Rules" value="Soldier only&#xD;&#xA;Mission Combat X: Wound a target opposing enemy agent twice. If this is a Public mission, expose this agent. This is a Melee action. The TN is the target's combat plus expense." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -1277,7 +1277,7 @@
 			<property name="Bravado" value="" />
 			<property name="Faction" value="Banshee Net" />
 			<property name="Traits" value="Snoop" />
-			<property name="Rules" value="Mission Craft: Expose all opposing agents. : Intel Craft X: Target an Exposed agent. The target may not assign or move into a mission team this turn. The TN is the target's expense." />
+			<property name="Rules" value="Mission Craft: Expose all opposing agents.&#xD;&#xA;Intel Craft X: Target an Exposed agent. The target may not assign or move into a mission team this turn. The TN is the target's expense." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -1292,7 +1292,7 @@
 			<property name="Bravado" value="2" />
 			<property name="Faction" value="The Krypt" />
 			<property name="Traits" value="" />
-			<property name="Rules" value="The Krypt only. : React Craft 3: Before this agent declares an action: Enemy agents may not perform Reacts to the action. Draw a card." />
+			<property name="Rules" value="The Krypt only.&#xD;&#xA;React Craft 3: Before this agent declares an action: Enemy agents may not perform Reacts to the action. Draw a card." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -1307,7 +1307,7 @@
 			<property name="Bravado" value="" />
 			<property name="Faction" value="Shadow Patriots" />
 			<property name="Traits" value="Pointman" />
-			<property name="Rules" value="Intel Craft: Remove a wound from an agent: Wound him at the beginning of next turn. : Intel Craft X: Wound an unwounded agent. Remove a wound from the target at the end of the turn. The TN is the target's expense." />
+			<property name="Rules" value="Intel Craft: Remove a wound from an agent: Wound him at the beginning of next turn.&#xD;&#xA;Intel Craft X: Wound an unwounded agent. Remove a wound from the target at the end of the turn. The TN is the target's expense." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -1382,7 +1382,7 @@
 			<property name="Bravado" value="" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="Intrigue - Private - Charisma +4" />
-			<property name="Rules" value="Attacker: Your agents with expense above 8 have +2 charisma during this mission. Your agents with expense below 7 have -2 charisma during this missions. : Defender: Your agents may perform: &quot;Mission Charisma: Wound an opposing Exposed agent.&quot;" />
+			<property name="Rules" value="Attacker: Your agents with expense above 8 have +2 charisma during this mission. Your agents with expense below 7 have -2 charisma during this missions.&#xD;&#xA;Defender: Your agents may perform: &quot;Mission Charisma: Wound an opposing Exposed agent.&quot;" />
 			<property name="Victory Points" value="6" />
 			<property name="Cover Level" value="1" />
 		</card>
@@ -1427,7 +1427,7 @@
 			<property name="Bravado" value="2" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="" />
-			<property name="Rules" value="Soldier only. : Mission Combat X: Wound a target opposing agent. If this is a Public mission, expose this agent. This is a Melee action. The TN is the target's combat.--" />
+			<property name="Rules" value="Soldier only.&#xD;&#xA;Mission Combat X: Wound a target opposing agent. If this is a Public mission, expose this agent. This is a Melee action. The TN is the target's combat.--" />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -1442,7 +1442,7 @@
 			<property name="Bravado" value="3" />
 			<property name="Faction" value="Banshee Net" />
 			<property name="Traits" value="Soldier" />
-			<property name="Rules" value="React Combat After an Exposed agent targets Pinpoint with an action: Cancel it. : Mission Combat 10: Retire Pinpoint: Wound an opposing Leader, if the Leader is Exposed, wound him again." />
+			<property name="Rules" value="React Combat After an Exposed agent targets Pinpoint with an action: Cancel it.&#xD;&#xA;Mission Combat 10: Retire Pinpoint: Wound an opposing Leader, if the Leader is Exposed, wound him again." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -1517,7 +1517,7 @@
 			<property name="Bravado" value="1" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="" />
-			<property name="Rules" value="Pointman only. : React Craft 7: Before the &quot;Engage the Enemy&quot; phase of a Mission: This agent may perform one Mission card." />
+			<property name="Rules" value="Pointman only.&#xD;&#xA;React Craft 7: Before the &quot;Engage the Enemy&quot; phase of a Mission: This agent may perform one Mission card." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -1547,7 +1547,7 @@
 			<property name="Bravado" value="4" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="Vehicle - Boat" />
-			<property name="Rules" value="React Charisma: After an action targets one of your agents at headquarters: Increase the TN of the action by 5. : Mission Transport: Move up to two of your agents from headquarters into your mission team." />
+			<property name="Rules" value="React Charisma: After an action targets one of your agents at headquarters: Increase the TN of the action by 5.&#xD;&#xA;Mission Transport: Move up to two of your agents from headquarters into your mission team." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -1577,7 +1577,7 @@
 			<property name="Bravado" value="" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="Fight - Private - Combat +4" />
-			<property name="Rules" value="Attacker: If you win the mission, the Defender must discard his hand. : Defender: If you win the mission, draw 2 cards and remove the Exposed trait from all your agents." />
+			<property name="Rules" value="Attacker: If you win the mission, the Defender must discard his hand.&#xD;&#xA;Defender: If you win the mission, draw 2 cards and remove the Exposed trait from all your agents." />
 			<property name="Victory Points" value="4" />
 			<property name="Cover Level" value="4" />
 		</card>
@@ -1622,7 +1622,7 @@
 			<property name="Bravado" value="" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="Chase - Public - Transport +4" />
-			<property name="Rules" value="Attacker: Your agents may perform no more than 4 Mission actions in total at this mission. : Defender: Your agents may perform no more then 4 Mission actions in total at this mission." />
+			<property name="Rules" value="Attacker: Your agents may perform no more than 4 Mission actions in total at this mission.&#xD;&#xA;Defender: Your agents may perform no more then 4 Mission actions in total at this mission." />
 			<property name="Victory Points" value="6" />
 			<property name="Cover Level" value="3" />
 		</card>
@@ -1637,7 +1637,7 @@
 			<property name="Bravado" value="" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="Chase - Public - Combat +4" />
-			<property name="Rules" value="Attacker: If you win the mission, remove a wound from each of your agents. Your agents may perform: &quot;Mission Combat 7: Wound an unwounded opposing agent.&quot; : Defender&quot; If you win that mission remove a wound from each of your agents. Your agents may perform: &quot;Mission Combat 7: Wound an unwounded opposing agent.&quot;" />
+			<property name="Rules" value="Attacker: If you win the mission, remove a wound from each of your agents. Your agents may perform: &quot;Mission Combat 7: Wound an unwounded opposing agent.&quot;&#xD;&#xA;Defender&quot; If you win that mission remove a wound from each of your agents. Your agents may perform: &quot;Mission Combat 7: Wound an unwounded opposing agent.&quot;" />
 			<property name="Victory Points" value="4" />
 			<property name="Cover Level" value="3" />
 		</card>
@@ -1712,7 +1712,7 @@
 			<property name="Bravado" value="2" />
 			<property name="Faction" value="The Krypt" />
 			<property name="Traits" value="Soldier" />
-			<property name="Rules" value="Sam has +3 expense to activate gear. : React Combat: Before Sam is retired or moved to headquarters: Move any active and inactive gear attached to Sam Hain to other agents in your mission team." />
+			<property name="Rules" value="Sam has +3 expense to activate gear.&#xD;&#xA;React Combat: Before Sam is retired or moved to headquarters: Move any active and inactive gear attached to Sam Hain to other agents in your mission team." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -1727,7 +1727,7 @@
 			<property name="Bravado" value="4" />
 			<property name="Faction" value="Franchise" />
 			<property name="Traits" value="Bureau - Unique" />
-			<property name="Rules" value="May only be equipped by a Franchise leader. : +6 cover. : React Charisma: After an action targets this agent, discard Secret Base: Cancel the Action. This action cannot be canceled." />
+			<property name="Rules" value="May only be equipped by a Franchise leader.&#xD;&#xA;+6 cover.&#xD;&#xA;React Charisma: After an action targets this agent, discard Secret Base: Cancel the Action. This action cannot be canceled." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -1892,7 +1892,7 @@
 			<property name="Bravado" value="3" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="" />
-			<property name="Rules" value="Snoop only. : Intel Craft: Examine the top 7 cards of target player's Agency Deck and rearrange them in any order. Examine up to 2 inactive cards or up to 2 cards in target player's hand." />
+			<property name="Rules" value="Snoop only.&#xD;&#xA;Intel Craft: Examine the top 7 cards of target player's Agency Deck and rearrange them in any order. Examine up to 2 inactive cards or up to 2 cards in target player's hand." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -2012,7 +2012,7 @@
 			<property name="Bravado" value="" />
 			<property name="Faction" value="The Krypt" />
 			<property name="Traits" value="Fixer - Soldier" />
-			<property name="Rules" value="Intel Craft: Reveal the mission queue. Until the end of the turn, opponents must discard 2 cards after targeting a mission. : Mission Craft 7: If you are the Attacker, discard the current mission and replace it with any face-up mission in the queue. You are not running that mission." />
+			<property name="Rules" value="Intel Craft: Reveal the mission queue. Until the end of the turn, opponents must discard 2 cards after targeting a mission.&#xD;&#xA;Mission Craft 7: If you are the Attacker, discard the current mission and replace it with any face-up mission in the queue. You are not running that mission." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -2087,7 +2087,7 @@
 			<property name="Bravado" value="" />
 			<property name="Faction" value="Nine Tiger" />
 			<property name="Traits" value="Soldier" />
-			<property name="Rules" value="Your Soldier agents may use combat instead of their craft for any purpose. : React Combat: After an agent targets the Ninth Immortal with an action: Wound the acting agent." />
+			<property name="Rules" value="Your Soldier agents may use combat instead of their craft for any purpose.&#xD;&#xA;React Combat: After an agent targets the Ninth Immortal with an action: Wound the acting agent." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -2177,7 +2177,7 @@
 			<property name="Bravado" value="3" />
 			<property name="Faction" value="Shadow Patriots " />
 			<property name="Traits" value="Faceman" />
-			<property name="Rules" value="-  : Intel Charisma: Target a mission in the queue. Permenently increase the Victory Point value of the mission by 1." />
+			<property name="Rules" value="Intel Charisma: Target a mission in the queue. Permenently increase the Victory Point value of the mission by 1." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -2222,7 +2222,7 @@
 			<property name="Bravado" value="" />
 			<property name="Faction" value="Bloodvine" />
 			<property name="Traits" value="Faceman" />
-			<property name="Rules" value="React Charisma: After an action targets one of your agents: Raise the TN by +4. : React Charisma X: After an action targets Trent Jacobs: Redirect the action. The TN is the acting agent's craft plus charisma." />
+			<property name="Rules" value="React Charisma: After an action targets one of your agents: Raise the TN by +4.&#xD;&#xA;React Charisma X: After an action targets Trent Jacobs: Redirect the action. The TN is the acting agent's craft plus charisma." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -2297,7 +2297,7 @@
 			<property name="Bravado" value="3" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="" />
-			<property name="Rules" value="Wheelman only. : Mision Transport X: Target a Vehicle gear equipped to a target agent. Move the gear to this agent. The TN is the gear's expense." />
+			<property name="Rules" value="Wheelman only.&#xD;&#xA;Mision Transport X: Target a Vehicle gear equipped to a target agent. Move the gear to this agent. The TN is the gear's expense." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>

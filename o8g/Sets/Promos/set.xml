@@ -47,7 +47,7 @@
 			<property name="Bravado" value="4" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="Vehicle - Aircraft - Unique" />
-			<property name="Rules" value="Cover +2 : Mission Carft 6: Discard a mission card adjacent to this mission. : Mission Combat X: Retire a vehicle gear in the opposing mission them. The TN is the vehicle's expense." />
+			<property name="Rules" value="Cover +2&#xD;&#xA;Mission Carft 6: Discard a mission card adjacent to this mission.&#xD;&#xA;Mission Combat X: Retire a vehicle gear in the opposing mission them. The TN is the vehicle's expense." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -62,7 +62,7 @@
 			<property name="Bravado" value="4" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="Vehicle - Auto - Armor - Unique" />
-			<property name="Rules" value="Cover +5 : This agent is aways considered exposed. This agent may not perform charisma actions and mission craft actions. : React Combat: Before this agent suffers a wound: prevent the wound." />
+			<property name="Rules" value="Cover +5&#xD;&#xA;This agent is aways considered exposed. This agent may not perform charisma actions and mission craft actions.&#xD;&#xA;React Combat: Before this agent suffers a wound: prevent the wound." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -167,7 +167,7 @@
 			<property name="Bravado" value="3" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="Vehicle - Auto - Armor" />
-			<property name="Rules" value="+3 cover.: Mission actions by agents in this agent's team have -1 TN. : Mission Combat X: Wound an opposing agent. Expose this agent if this is a Public mission. The TN is the target's combat or cover, wichever is lower." />
+			<property name="Rules" value="+3 cover.: Mission actions by agents in this agent's team have -1 TN.&#xD;&#xA;Mission Combat X: Wound an opposing agent. Expose this agent if this is a Public mission. The TN is the target's combat or cover, wichever is lower." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -182,7 +182,7 @@
 			<property name="Bravado" value="2" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="Armor" />
-			<property name="Rules" value="+2 cover : React Combat: Before this agent take a wound, discard Kevlar BDU: Prevent the wound." />
+			<property name="Rules" value="+2 cover&#xD;&#xA;React Combat: Before this agent take a wound, discard Kevlar BDU: Prevent the wound." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
