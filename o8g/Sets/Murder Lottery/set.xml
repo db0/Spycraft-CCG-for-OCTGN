@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="Murder Lottery" id="951a1644-c998-4ff5-8af0-637556acf35e" gameId="d1d8cc2c-e817-4b4d-9449-3315bbd3c643" gameVersion="1.0.0.0" version="1.0.0.0">
+<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" 
+     name="Murder Lottery" 
+     id="951a1644-c998-4ff5-8af0-637556acf35e" 
+     gameId="d1d8cc2c-e817-4b4d-9449-3315bbd3c643" 
+     gameVersion="1.0.0.0" 
+     version="1.0.0.0">
 	<cards>
 		<card id="5f07ef0f-c92b-4885-b646-4548e1d25e87" name="Experience Counts">
 			<property name="Type" value="Action" />

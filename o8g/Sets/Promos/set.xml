@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="Promos" id="fddf62b4-0134-4b33-8f21-0d4f36d3f5c9" gameId="d1d8cc2c-e817-4b4d-9449-3315bbd3c643"  gameVersion="1.0.0.0" version="1.0.0.0">
+<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" 
+     name="Promos" 
+     id="fddf62b4-0134-4b33-8f21-0d4f36d3f5c9" 
+     gameId="d1d8cc2c-e817-4b4d-9449-3315bbd3c643"  
+     gameVersion="1.0.0.0" 
+     version="1.0.0.0">
 	<cards>
 		<card id="d9652ea8-8ab7-43b1-b55b-d5a4be74350f" name="Groundfire">
 			<property name="Type" value="Leader" />

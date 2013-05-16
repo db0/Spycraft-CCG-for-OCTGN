@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="Markers" id="27d05be7-a8a2-4d40-af0f-9c3af6b8f794" gameId="d1d8cc2c-e817-4b4d-9449-3315bbd3c643" gameVersion="1.0.0.0" version="1.0.0.0">
+<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" 
+     name="Markers" 
+     id="27d05be7-a8a2-4d40-af0f-9c3af6b8f794" 
+     gameId="d1d8cc2c-e817-4b4d-9449-3315bbd3c643" 
+     gameVersion="1.0.0.0" 
+     version="1.0.0.0">
 	<markers>
 		<marker id="0183c0b8-6a6d-42c5-bedb-94bbc8ca5329" name="exposed" />
 		<marker id="0415bae0-0c88-4ec6-8169-aeb117318618" name="baffled" />

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="Extinction Agenda" id="1a3df23d-6c44-4e7b-a74d-9431780d0826" gameId="d1d8cc2c-e817-4b4d-9449-3315bbd3c643" gameVersion="1.0.0.0" version="1.0.0.0">
+<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" 
+     name="Extinction Agenda" 
+     id="1a3df23d-6c44-4e7b-a74d-9431780d0826" 
+     gameId="d1d8cc2c-e817-4b4d-9449-3315bbd3c643" 
+     gameVersion="1.0.0.0" 
+     version="1.0.0.0">
 	<cards>
 		<card id="5f88f51c-8bf6-41e3-b38d-18212e9cef06" name="2nt Lt. Chavez">
 			<property name="Type" value="Agent" />

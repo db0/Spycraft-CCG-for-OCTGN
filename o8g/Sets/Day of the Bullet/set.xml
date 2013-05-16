@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="Day of the Bullet" id="44a997e7-4605-46f6-801e-141f95677587" gameId="d1d8cc2c-e817-4b4d-9449-3315bbd3c643" gameVersion="1.0.0.0" version="1.0.0.0">
+<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" 
+     name="Day of the Bullet" 
+     id="44a997e7-4605-46f6-801e-141f95677587" 
+     gameId="d1d8cc2c-e817-4b4d-9449-3315bbd3c643" 
+     gameVersion="1.0.0.0" 
+     version="1.0.0.0">
 	<cards>
 		<card id="a3a4069a-8e05-494c-ab61-8dd776ed304e" name="An Offer You Can't Refuse">
 			<property name="Type" value="Action" />

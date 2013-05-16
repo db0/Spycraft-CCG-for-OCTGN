@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="Nighfall" id="6d78ef02-2ce1-4499-9fc7-9480eb5c54c0" gameId="d1d8cc2c-e817-4b4d-9449-3315bbd3c643"  gameVersion="1.0.0.0" version="1.0.0.0">
+<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" 
+     name="Nighfall" 
+     id="6d78ef02-2ce1-4499-9fc7-9480eb5c54c0" 
+     gameId="d1d8cc2c-e817-4b4d-9449-3315bbd3c643"  
+     gameVersion="1.0.0.0" 
+     version="1.0.0.0">
 	<cards>
 		<card id="dd57e2f7-89cb-458c-a2e0-15eeeb2edead" name="3-D Modeling">
 			<property name="Type" value="Action" />
