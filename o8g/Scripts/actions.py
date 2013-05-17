@@ -18,6 +18,7 @@
 # Global Variables
 #---------------------------------------------------------------------------
 
+Faction = None
 
     
 #---------------------------------------------------------------------------
@@ -25,14 +26,31 @@
 #---------------------------------------------------------------------------
 
 def gameSetup(group, x = 0, y = 0): # WiP
+   debugNotify(">>> RDaccessX()") #Debug
    if debugVerbosity >= 1: notify(">>> gameSetup(){}".format(extraASDebug())) #Debug
    mute()
    global Faction
+   if Faction and not confirm("Are you sure you want to setup for a new game? (This action should only be done after a table reset)"): return
+   resetAll()
    deck = me.piles['Deck']
+   leadersDeck = me.piles['Leaders']
    missions = shared.Mission
+   debugNotify("Arranging Leaders",2)
+   for leader in leadersDeck:
+      leader.moveTo(leadersDeck,num(leader.level)) # This function will move each leader card at the index of the leader deck, according to its level. So level 1 leader will be top, and level 4 will be bottom
+      if not Faction: Faction = leader.Faction
+      elif Faction != leader.Faction 
+         if not confirm(":::Illegal Deck:::\n\nYou have leader of different factions in your leader deck.\n\nProceed Anyway?"): return
+         else: notify(":::Warning::: {}'s Leader deck has different factions!".format(me))
+   if Faction == "Banshee Net": table.create("9f291494-8713-4b7e-bc7c-36b428fc0dd1",(playerside * -380) - 25, (playerside * 20) + yaxisMove,1,True) # Creating a dummy card to cover that player's source pile
+   debugNotify("Preparing Mission Deck",2)
    shuffle(missions)
+   
    shuffle(deck)
+   debugNotify("<<< RDaccessX()") #Debug
     
+
+
 #---------------------------------------------------------------------------
 # Rest
 #---------------------------------------------------------------------------

@@ -414,6 +414,14 @@ def multiChoice(title, options,card): # This displays a choice where the player 
 # Generic
 #---------------------------------------------------------------------------
 
+def debugNotify(msg = 'Debug Ping!', level = 1):
+   if not re.search(r'<<<',msg) and not re.search(r'>>>',msg):
+      hashes = '#' 
+      for iter in range(level): hashes += '#' # We add extra hashes at the start of debug messages equal to the level of the debug+1, to make them stand out more
+      msg = hashes + ' ' +  msg
+   if re.search(r'<<<',msg): level = 3 # We always request level debug logs to display function exist notifications.
+   if debugVerbosity >= level: notify(msg)
+
 def Pass(group, x = 0, y = 0): # Player says pass. A very common action.
    notify('{} Passes.'.format(me))
 
@@ -542,11 +550,27 @@ def findMarker(card, markerDesc): # Goes through the markers on the card and loo
    if debugVerbosity >= 3: notify("<<< findMarker() by returning: {}".format(foundKey))
    return foundKey
    
+def prepPile(group): # This function prepares a pile for scripting by turning all cards face up so that they can be read by python
+   debugNotify(">>> prepPile()") #Debug
+   cover = table.create("91f77ea1-93ed-4375-83bd-d1ee0a1419fe",0,0,1,True) # Creating a dummy card to cover that player's source pile
+   cover.moveTo(group) # Moving that dummy card on top of their source pile
+   for c in group: c.isFaceUp = True # We flip all cards in the player's deck face up so that we can grab their properties
+   rnd(1,100) # Small delay to allow OCTGN to read properties
+   debugNotify("<<< prepPile()") #Debug
+   return cover # we return the cover card so that we can pass it to restorePile() to delete it afterwards
+
+def restorePile(group, cover): # This pile returns a pike visibility to the default, by turning all cards face down again.
+   debugNotify(">>> restorePile()") #Debug
+   for c in group: c.isFaceUp = False # We hide again the source pile cards.
+   rnd(1,100) # Small delay to allow OCTGN to finish 
+   cover.moveTo(me.ScriptingPile) # we cannot delete cards so we just hide it.
+   debugNotify("<<< restorePile()") #Debug
+   
 #---------------------------------------------------------------------------
 # Card Placement functions
 #---------------------------------------------------------------------------
 
-def cwidth(card, divisor = 10):
+def cwidth(card = None, divisor = 10):
    #if debugVerbosity >= 1: notify(">>> cwidth(){}".format(extraASDebug())) #Debug
 # This function is used to always return the width of the card plus an offset that is based on the percentage of the width of the card used.
 # The smaller the number given, the less the card is divided into pieces and thus the larger the offset added.
@@ -555,20 +579,20 @@ def cwidth(card, divisor = 10):
 # Thus, no matter what the size of the table and cards becomes, the distances used will be relatively the same.
 # The default is to return an offset equal to 1/10 of the card width. A divisor of 0 means no offset.
    if divisor == 0: offset = 0
-   else: offset = card.width() / divisor
-   return (card.width() + offset)
+   else: offset = CardWidth / divisor
+   return (CardWidth + offset)
 
-def cheight(card, divisor = 10):
+def cheight(card = None, divisor = 10):
    #if debugVerbosity >= 1: notify(">>> cheight(){}".format(extraASDebug())) #Debug
    if divisor == 0: offset = 0
-   else: offset = card.height() / divisor
-   return (card.height() + offset)
+   else: offset = CardHeight / divisor
+   return (CardHeight + offset)
 
-def yaxisMove(card):
+def yaxisMove(card = None):
    #if debugVerbosity >= 1: notify(">>> yaxisMove(){}".format(extraASDebug())) #Debug
 # Variable to move the cards played by player 2 on a 2-sided table, more towards their own side. 
 # Player's 2 axis will fall one extra card length towards their side.
 # This is because of bug #146 (https://github.com/kellyelton/OCTGN/issues/146)
-   if me.hasInvertedTable(): cardmove = -cheight(card)
+   if me.hasInvertedTable(): cardmove = -CardHeight
    else: cardmove = 0
    return cardmove

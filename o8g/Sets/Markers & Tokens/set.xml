@@ -115,5 +115,20 @@
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
+		<card id="91f77ea1-93ed-4375-83bd-d1ee0a1419fe" name="Cover">
+			<property name="Type" value="Scripting" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="0" />
+			<property name="Combat" value="5" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
+			<property name="Rules" value="" />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
 	</cards>
 </set>

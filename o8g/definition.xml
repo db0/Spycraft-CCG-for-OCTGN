@@ -7,7 +7,7 @@
       version="1.0.0.8" 
       markersize="16"
       tags="duel espionage objectives AEG"
-      description="Spycraft CCG is a espionage themed card game for two players.
+      description="Spycraft CCG is a espionage-themed card game for 2-6 players.
       &#xD;&#xD;&#xD;Espionage is a grand shadow play in which every act is an ideological war and every actor carries the fate of nations in his armor-lined briefcase. The greatest among them are silent soldiers of private wars ... wars fought behind the scenes for reasons we never truly understand. They lie, cheat, and steal to protect truth, integrity, and security. They kill to save lives. Spies specialize in treachery so no one else has to, and find honor in conviction alone.
       &#xD;&#xD;The Spycraft CCG brings these anti-heroes to life, in a world where they have outlived their utility as government pawns. What happens when spies strike out on their own to change the world they helped to destroy? How far will they go to save it? Welcome to the first step toward a very different future...
       &#xd;&#xd;Automation rank: D
@@ -26,7 +26,7 @@
    </proxygen>   
    <globalvariables> 
      <globalvariable name="Host Cards" value="{}" />      
-     <globalvariable name="Turn" value="0" />      
+     <globalvariable name="currentMissions" value="{}" />      
    </globalvariables>
 	<card back="Card/back.jpg" front="Card/front.jpg" width="63" height="88" cornerRadius="2">
 		<property name="Type" type="String" hidden="False" ignoreText="False" textKind="Enum" />
@@ -71,6 +71,9 @@
 			<groupaction menu="Shuffle into Deck" default="False" execute="shuffleIntoDeck" />
 		</group>
 		<group name="Leaders" visibility="me" ordered="False" width="63" height="88" icon="Groups/IconLeadership.png" collapsed="False" />
+		<group name="Victory Pile" visibility="all" ordered="False" width="63" height="88" shortcut="F8" icon="Groups/vp.png" collapsed="True" />
+		<group name="Removed from Game" visibility="all" ordered="False" width="63" height="88" shortcut="F8" icon="Groups/removed.png" collapsed="True" />
+		<group name="ScriptingPile" visibility="me" ordered="False" width="63" height="88" shortcut="F8" icon="Groups/scripting.png" collapsed="True" />
 		<counter name="victory" default="0" reset="False" icon="Counters/vp.png" />
 		<counter name="brief" default="0" reset="False" icon="Counters/briefcase-icon.png" />
 	</player>

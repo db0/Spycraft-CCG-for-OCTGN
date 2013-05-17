@@ -14,7 +14,7 @@
 			<property name="Transport" value="4" />
 			<property name="Craft" value="4" />
 			<property name="Level" value="" />
-			<property name="Bravado" value="." />
+			<property name="Bravado" value="3" />
 			<property name="Faction" value="Freelancer" />
 			<property name="Traits" value="Snoop" />
 			<property name="Rules" value="Craft React: After activating 2nt Lt. Chavez: Examine a target inactive card." />

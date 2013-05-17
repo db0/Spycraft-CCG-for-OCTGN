@@ -6,3 +6,5 @@ mdict = { # A dictionary which holds all the hard coded markers (in the markers 
 
 AbilityColor = "#FF0000"
 
+CardWidth = 63
+CardHeight = 88
