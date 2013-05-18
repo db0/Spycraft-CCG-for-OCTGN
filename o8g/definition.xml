@@ -4,7 +4,7 @@
       name="Spycraft" 
       id="d1d8cc2c-e817-4b4d-9449-3315bbd3c643" 
       octgnVersion="3.1.15.112" 
-      version="1.0.0.9" 
+      version="1.0.0.35" 
       markersize="16"
       tags="duel espionage objectives AEG"
       description="Spycraft CCG is a espionage-themed card game for 2-6 players.
@@ -73,9 +73,9 @@
 			<groupaction menu="Shuffle into Deck" default="False" execute="shuffleIntoDeck" />
 		</group>
 		<group name="Leaders" visibility="me" ordered="False" width="63" height="88" icon="Groups/IconLeadership.png" collapsed="False" />
-		<group name="Victory Pile" visibility="all" ordered="False" width="63" height="88" shortcut="F8" icon="Groups/vp.png" collapsed="True" />
-		<group name="Removed from Game" visibility="all" ordered="False" width="63" height="88" shortcut="F8" icon="Groups/removed.png" collapsed="True" />
-		<group name="ScriptingPile" visibility="me" ordered="False" width="63" height="88" shortcut="F8" icon="Groups/scripting.png" collapsed="True" />
+		<group name="Victory Pile" visibility="all" ordered="False" width="63" height="88" icon="Groups/vp.png" collapsed="True" />
+		<group name="Removed from Game" visibility="all" ordered="False" width="63" height="88" icon="Groups/removed.png" collapsed="True" />
+		<group name="ScriptingPile" visibility="me" ordered="False" width="63" height="88" icon="Groups/scripting.png" collapsed="True" />
 		<counter name="victory" default="0" reset="False" icon="Counters/vp.png" />
 		<counter name="brief" default="0" reset="False" icon="Counters/briefcase-icon.png" />
 	</player>
