@@ -14,6 +14,10 @@
     # You should have received a copy of the GNU General Public License
     # along with this script.  If not, see <http://www.gnu.org/licenses/>.
 
+import re, time
+
+debugVerbosity = -1 # At -1, means no debugging messages display
+    
 def ofwhom(Autoscript, controller = me):  # WiP
    if debugVerbosity >= 1: notify(">>> ofwhom(){}".format(extraASDebug(Autoscript))) #Debug
    targetPL = None
@@ -38,16 +42,16 @@ def ofwhom(Autoscript, controller = me):  # WiP
    return targetPL
 
 def resetAll(): # Clears all the global variables in order to start a new game.
-   global Faction
-   if debugVerbosity >= 1: notify(">>> resetAll(){}".format(extraASDebug())) #Debug
+   global Faction, debugVerbosity
+   debugNotify(">>> resetAll()") #Debug
    mute()
    Faction = None
    hostCards = eval(getGlobalVariable('Host Cards'))
    hostCards.clear()
    setGlobalVariable('Host Cards',str(hostCards))
+   setGlobalVariable('currentMissions', '[]')
    if len(players) > 1: debugVerbosity = -1 # Reset means normal game.
    elif debugVerbosity != -1 and confirm("Reset Debug Verbosity?"): debugVerbosity = -1 
-   setGlobalVariable('Turn','0')
    debugNotify("<<< resetAll()") #Debug
    
 def prepMission(card, GameSetup = False): 
@@ -79,7 +83,7 @@ def prepMission(card, GameSetup = False):
 #------------------------------------------------------------------------------
    
 def TrialError(group, x=0, y=0): # Debugging
-   global Side, debugVerbosity
+   global debugVerbosity
    mute()
    ######## Testing Corner ########
    #findTarget('Targeted-atVehicle_and_Fighter_or_Character_and_nonWookie')

@@ -4,7 +4,7 @@
       name="Spycraft" 
       id="d1d8cc2c-e817-4b4d-9449-3315bbd3c643" 
       octgnVersion="3.1.15.112" 
-      version="1.0.0.36" 
+      version="1.0.0.42" 
       markersize="16"
       tags="duel espionage objectives AEG"
       description="Spycraft CCG is a espionage-themed card game for 2-6 players.
@@ -90,6 +90,6 @@
 		<section name="Leaders" group="Leaders" />
 	</deck>
 	<sharedDeck>
-		<section name="Mission" group="Mission" />
+		<section name="Missions" group="Missions" />
 	</sharedDeck>
 </game>

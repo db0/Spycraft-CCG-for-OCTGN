@@ -14,6 +14,9 @@
     # You should have received a copy of the GNU General Public License
     # along with this script.  If not, see <http://www.gnu.org/licenses/>.
 
+
+import re
+
 #---------------------------------------------------------------------------
 # Global Variables
 #---------------------------------------------------------------------------
@@ -27,30 +30,38 @@ Faction = None
 
 def gameSetup(group, x = 0, y = 0): # WiP
    debugNotify(">>> gameSetup()") #Debug
-   if debugVerbosity >= 1: notify(">>> gameSetup(){}".format(extraASDebug())) #Debug
    mute()
    global Faction
    if Faction and not confirm("Are you sure you want to setup for a new game? (This action should only be done after a table reset)"): return
+   debugNotify("Resetting All", 2) #Debug
    resetAll()
+   debugNotify("Choosing Side", 2) #Debug
    chooseSide()
+   debugNotify("Setting Deck Variables", 2) #Debug
    deck = me.piles['Deck']
    leadersDeck = me.piles['Leaders']
    missionDeck = shared.Missions
    debugNotify("Arranging Leaders",2)
+   if len(missionDeck) == 0: 
+      delayed_whisper(":::ERROR::: Please load the mission deck before setting up the game")
+      return
    if len(leadersDeck) < 4 and not confirm(":::Illegal Deck:::\n\nYou must have at least 4 leaders in your leader deck.\n\nProceed Anyway?"): return
    for leader in leadersDeck:
-      leader.moveTo(leadersDeck,num(leader.level)) # This function will move each leader card at the index of the leader deck, according to its level. So level 1 leader will be top, and level 4 will be bottom
+      leader.moveTo(leadersDeck,num(leader.level) - 1) # This function will move each leader card at the index of the leader deck, according to its level. So level 1 leader will be top, and level 4 will be bottom
       if not Faction: Faction = leader.Faction
       elif Faction != leader.Faction:
          if not confirm(":::Illegal Deck:::\n\nYou have leader of different factions in your leader deck.\n\nProceed Anyway?"): return
-         else: notify(":::Warning::: {}'s Leader deck has different factions!".format(me))
+         else: 
+            notify(":::Warning::: {}'s Leader deck has different factions!".format(me))
+            Faction = leader.Faction
    debugNotify("Setting Reference Cards",2)
-   if Faction == "Banshee Net": table.create("9f291494-8713-4b7e-bc7c-36b428fc0dd1",(playerside * -380) - 25, (playerside * 20) + yaxisMove,1,True) # Creating a the player's faction reference card.
-   if Faction == "Bloodvine": table.create("8e2ff010-98b5-4884-a39b-100940d4f702",(playerside * -380) - 25, (playerside * 20) + yaxisMove,1,True) # Creating a the player's faction reference card.
-   if Faction == "Franchise": table.create("6d131915-cb6a-43ca-b2f1-64ac040b0eec",(playerside * -380) - 25, (playerside * 20) + yaxisMove,1,True) # Creating a the player's faction reference card.
-   if Faction == "The Krypt": table.create("0d058ed6-51e8-42c7-9cbb-67a3d267c618",(playerside * -380) - 25, (playerside * 20) + yaxisMove,1,True) # Creating a the player's faction reference card.
-   if Faction == "Nine Tiger": table.create("49f5d0ad-60e2-4810-86b6-5f962f99d9bd",(playerside * -380) - 25, (playerside * 20) + yaxisMove,1,True) # Creating a the player's faction reference card.
-   if Faction == "Shadow Patriots": table.create("bf4bfecd-1d84-4a6f-a787-0986a0fe06b1",(playerside * -380) - 25, (playerside * 20) + yaxisMove,1,True) # Creating a the player's faction reference card.
+   debugNotify("playerside = {}. yaxisMove = {}".format(playerside,yaxisMove),4)
+   if Faction == "Banshee Net": table.create("9f291494-8713-4b7e-bc7c-36b428fc0dd1",playerside * -380, (playerside * 20) + yaxisMove,1,True) # Creating a the player's faction reference card.
+   if Faction == "Bloodvine": table.create("8e2ff010-98b5-4884-a39b-100940d4f702",playerside * -380, (playerside * 20) + yaxisMove,1,True) # Creating a the player's faction reference card.
+   if Faction == "Franchise": table.create("6d131915-cb6a-43ca-b2f1-64ac040b0eec",playerside * -380, (playerside * 20) + yaxisMove,1,True) # Creating a the player's faction reference card.
+   if Faction == "The Krypt": table.create("0d058ed6-51e8-42c7-9cbb-67a3d267c618",playerside * -380, (playerside * 20) + yaxisMove,1,True) # Creating a the player's faction reference card.
+   if Faction == "Nine Tiger": table.create("49f5d0ad-60e2-4810-86b6-5f962f99d9bd",playerside * -380, (playerside * 20) + yaxisMove,1,True) # Creating a the player's faction reference card.
+   if Faction == "Shadow Patriots": table.create("bf4bfecd-1d84-4a6f-a787-0986a0fe06b1",playerside * -380, (playerside * 20) + yaxisMove,1,True) # Creating a the player's faction reference card.
    debugNotify("Moving First Leader to table",2)
    leadersDeck.top().moveToTable(0, (playerside * 100) + yaxisMove()) # Top card in the leaders deck should be the player's level 1 leader.
    debugNotify("Preparing Mission Deck",2)

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <deck game="d1d8cc2c-e817-4b4d-9449-3315bbd3c643" shared="true">
-  <section name="Mission">
+  <section name="Missions">
     <card qty="1" id="6c4a2809-c94b-4e38-873b-4f353438dd8c">Air Chase Over Nice</card>
     <card qty="1" id="45142ebd-bf33-472d-b643-c4c5dbce6d30">A Night at the Opera</card>
     <card qty="1" id="b45ffe4f-2d0a-41c6-9c01-31d47a67c8c4">Containment</card>

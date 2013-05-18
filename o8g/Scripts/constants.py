@@ -8,3 +8,6 @@ AbilityColor = "#FF0000"
 
 CardWidth = 63
 CardHeight = 88
+
+Xaxis = 'x'
+Yaxis = 'y'

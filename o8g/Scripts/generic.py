@@ -438,7 +438,7 @@ def delayed_whisper(text): # Because whispers for some reason execute before not
    whisper(text)
    
 def chooseSide(): # Called from many functions to check if the player has chosen a side for this game.
-   if debugVerbosity >= 1: notify(">>> chooseSide(){}".format(extraASDebug())) #Debug
+   debugNotify(">>> chooseSide()") #Debug
    mute()
    global playerside, playeraxis
    if playerside == None:  # Has the player selected a side yet? If not, then...
@@ -448,7 +448,7 @@ def chooseSide(): # Called from many functions to check if the player has chosen
      else:
         playeraxis = Yaxis
         playerside = 1
-   if debugVerbosity >= 4: notify("<<< chooseSide(){}".format(extraASDebug())) #Debug
+   debugNotify("<<< chooseSide()") #Debug
 
 def displaymatch(match):
    if match is None:
