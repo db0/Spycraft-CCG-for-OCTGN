@@ -4,7 +4,7 @@
       name="Spycraft" 
       id="d1d8cc2c-e817-4b4d-9449-3315bbd3c643" 
       octgnVersion="3.1.15.112" 
-      version="1.0.0.8" 
+      version="1.0.0.9" 
       markersize="16"
       tags="duel espionage objectives AEG"
       description="Spycraft CCG is a espionage-themed card game for 2-6 players.
@@ -26,7 +26,7 @@
    </proxygen>   
    <globalvariables> 
      <globalvariable name="Host Cards" value="{}" />      
-     <globalvariable name="currentMissions" value="{}" />      
+     <globalvariable name="currentMissions" value="[]" />      
    </globalvariables>
 	<card back="Card/back.jpg" front="Card/front.jpg" width="63" height="88" cornerRadius="2">
 		<property name="Type" type="String" hidden="False" ignoreText="False" textKind="Enum" />
@@ -43,11 +43,12 @@
 		<property name="Victory Points" type="String" hidden="False" ignoreText="False" />
 		<property name="Cover Level" type="String" hidden="False" ignoreText="False" />
 	</card>
-	<table name="Table" visibility="undefined" ordered="False" width="640" height="480" background="Table/Intel.jpg" backgroundStyle="uniformToFill">
+	<table name="Table" visibility="undefined" ordered="False" width="800" height="450" background="Table/Intel.jpg" backgroundStyle="uniformToFill">
 		<groupactions menu="Game...">
          <groupaction menu="Set up" default="False" shortcut="Ctrl+Shift+S" execute="gameSetup" />
          <groupaction menu="Concede" default="False" shortcut="Ctrl+Shift+C" execute="concede" />
 			<groupaction menu="Download Sets Card Images." shortcut="Ctrl+G" default="False" execute="download_o8c" />
+         <groupaction menu="Debug" default="False" shortcut="Ctrl+Shift+D" execute="TrialError" /> 
 		</groupactions>
 		<groupaction menu="Roll d6" default="False" execute="roll6" />
 		<cardaction menu="Retire" default="False" shortcut="del" execute="retire" />
@@ -57,6 +58,7 @@
 		<cardaction menu="Expose/Clear" default="False" execute="expose" />
 		<cardaction menu="Baffle/Clear" default="False" execute="baffle" />
 		<cardaction menu="Clear" default="False" shortcut="esc" execute="clear" />
+      <cardaction menu="Show Card Position" default="False" shortcut="Ctrl+Shift+X" execute="ShowPosC" />
 	</table>
 	<player summary="{#victory} / {#brief} / {#Hand}">
 		<hand name="Hand" visibility="me" ordered="False" width="63" height="88" icon="Groups/hand.jpg">
@@ -78,7 +80,7 @@
 		<counter name="brief" default="0" reset="False" icon="Counters/briefcase-icon.png" />
 	</player>
 	<shared>
-		<group name="Mission" visibility="none" ordered="False" width="63" height="88" icon="Groups/H_Mission_50.png" collapsed="False">
+		<group name="Missions" visibility="none" ordered="False" width="63" height="88" icon="Groups/H_Mission_50.png" collapsed="False">
 			<groupaction menu="Shuffle" default="False" execute="shuffle" />
 		</group>
 		<group name="Mission Discard" visibility="all" ordered="False" width="63" height="88" icon="Groups/graveyard.png" collapsed="False" />

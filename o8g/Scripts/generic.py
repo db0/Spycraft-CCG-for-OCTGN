@@ -596,3 +596,13 @@ def yaxisMove(card = None):
    if me.hasInvertedTable(): cardmove = -CardHeight
    else: cardmove = 0
    return cardmove
+
+def ShowPos(group, x=0,y=0):
+   if debugVerbosity >= 1: 
+      notify('x={}, y={}'.format(x,y))
+      
+def ShowPosC(card, x=0,y=0):
+   if debugVerbosity >= 1: 
+      notify(">>> ShowPosC(){}".format(extraASDebug())) #Debug
+      x,y = card.position
+      notify('card x={}, y={}'.format(x,y))      

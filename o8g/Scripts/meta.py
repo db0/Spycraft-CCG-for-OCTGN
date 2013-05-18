@@ -54,41 +54,55 @@ def prepMission(card, GameSetup = False):
 # Function stores into a shared variable the current missions, so that everyone can look them up and re-arrange them.
 # This function also reorganizes the missions on the table
    debugNotify(">>> prepMission()") #Debug
-   currentMissions = eval(me.getGlobalVariable('currentMissions'))
-   destroyedObjectives = eval(getGlobalVariable('destroyedObjectives'))
-   for card_id in destroyedObjectives: 
-      try:
-         currentMissions.remove(card_id) # Removing destroyed objectives before checking.
-         destroyedObjectives.remove(card_id) # When we successfully remove an objective stored in this list, we clear it as well, so that we don't check it again in the future.
-      except ValueError: pass # If an exception is thrown, it means that destroyed objective does not exist in this objective list
+   currMissionsVar = getGlobalVariable('currentMissions')
+   if currMissionsVar == 'CHECKED OUT':
+      delayed_whisper(":::ATTENTION::: Another player's scripts are manipulating the mission queue. Please try again later") 
+      return 'ABORT'
+   setGlobalVariable('currentMissions','CHECKED OUT') # If the missions var is not being manipulated by another, we set it as checked out ourselves.
+   currentMissions = eval(currMissionsVar)
    currentMissions.append(card._id)
    debugNotify("About to iterate the list: {}".format(currentMissions),2)
-   if GameSetup:
-      for iter in range(len(currentMissions)):
-         Objective = Card(currentMissions[iter])
-         Objective.moveToTable((playerside * -315) - 25, (playerside * -10) + (70 * iter * playerside) + yaxisMove(Objective), True)
-         Objective.highlight = ObjectiveSetupColor # During game setup, we put the objectives face down so that the players can draw their hands before we reveal them.
-         Objective.orientation = Rot90
-   else:
-      for iter in range(len(currentMissions)):
-         Objective = Card(currentMissions[iter])
-         Objective.moveToTable((playerside * -315) - 25, (playerside * -10) + (70 * iter * playerside) + yaxisMove(Objective))
-         xPos, yPos = Objective.position
-         countCaptures = 0
-         debugNotify("About to retrieve captured cards",2) #Debug      
-         capturedCards = eval(getGlobalVariable('Captured Cards'))
-         for capturedC in capturedCards: # once we move our objectives around, we want to move their captured cards with them as well.
-            if capturedCards[capturedC] == Objective._id:
-               debugNotify("Moved Objective has Captured cards. Moving them...",2)
-               countCaptures += 1
-               Card(capturedC).moveToTable(xPos - (cwidth(Objective) * playerside / 2 * countCaptures), yPos, True)
-               Card(capturedC).sendToBack()
-         #Objective.orientation = Rot90
-      rnd(1,100) # We put a delay here to allow the table to read the card autoscripts before we try to execute them.
-      debugNotify("About to set destroyedObjectives",2) #Debug      
-      setGlobalVariable('destroyedObjectives', str(destroyedObjectives))
-      debugNotify("About to execure play Scripts",2) #Debug      
-      executePlayScripts(card, 'PLAY')
+   for iter in range(len(currentMissions)):
+      Mission = Card(currentMissions[iter])
+      if iter - 1 > 0: missionFaceDown = True # Last three missions are face down
+      else: missionFaceDown = False # First two missions are face up
+      Mission.moveToTable(cwidth() * (3 - iter), 0, missionFaceDown)
+      if missionFaceDown: Mission.orientation = Rot90
+      else: Mission.orientation = Rot0
+      # rnd(1,100) # We put a delay here to allow the table to read the card autoscripts before we try to execute them.
    debugNotify("About to set currentMissions",2) #Debug      
-   me.setGlobalVariable('currentMissions', str(currentMissions))
+   setGlobalVariable('currentMissions', str(currentMissions))
    debugNotify("<<< prepMission()") #Debug
+   
+#------------------------------------------------------------------------------
+# Debugging
+#------------------------------------------------------------------------------
+   
+def TrialError(group, x=0, y=0): # Debugging
+   global Side, debugVerbosity
+   mute()
+   ######## Testing Corner ########
+   #findTarget('Targeted-atVehicle_and_Fighter_or_Character_and_nonWookie')
+   #BotD.moveToTable(0,0) 
+   ###### End Testing Corner ######
+   #notify("### Setting Debug Verbosity")
+   if debugVerbosity >=0: 
+      if debugVerbosity == 0: 
+         debugVerbosity = 1
+         #ImAProAtThis() # At debug level 1, we also disable all warnings
+      elif debugVerbosity == 1: debugVerbosity = 2
+      elif debugVerbosity == 2: debugVerbosity = 3
+      elif debugVerbosity == 3: debugVerbosity = 4
+      else: debugVerbosity = 0
+      notify("Debug verbosity is now: {}".format(debugVerbosity))
+      return
+   notify("### Checking Players")
+   for player in players:
+      if player.name == 'db0' or player.name == 'dbzer0': debugVerbosity = 0
+   notify("### Checking Debug Validity")
+   if not (len(players) == 1 or debugVerbosity >= 0): 
+      whisper("This function is only for development purposes")
+      return
+   notify("### Setting Table Side")
+   if not playerside:  # If we've already run this command once, don't recreate the cards.
+      chooseSide()
