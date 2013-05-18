@@ -82,7 +82,7 @@ def draw(group, x = 0, y = 0):
     group[0].moveTo(me.hand)
     notify("{} draws a card.".format(me))
 
-def drawMany(group = me.piles['Command Deck'], count = None, destination = None, silent = False):
+def drawMany(group = me.piles['Deck'], count = None, destination = None, silent = False):
    debugNotify(">>> drawMany()") #Debug
    debugNotify("source: {}".format(group.name),2)
    debugNotify("destination: {}".format(destination.name),2)
