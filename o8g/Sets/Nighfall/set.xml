@@ -352,7 +352,7 @@
 			<property name="Cover Level" value="" />
 		</card>
 		<card id="f58d7241-71bb-4b65-be11-ddc537199820" name="Bail out!">
-			<property name="Type" value="action" />
+			<property name="Type" value="Action" />
 			<property name="Expense Rating" value="" />
 			<property name="Charisma" value="" />
 			<property name="Combat" value="" />
@@ -1458,8 +1458,8 @@
 			<property name="Faction" value="" />
 			<property name="Traits" value="Chase - Private - Charisma +5" />
 			<property name="Rules" value="Attack: After a transport action removes an agent from this mission, wound him. Defender: After a transport action removes an agent from this mission, wound him." />
-			<property name="Victory Points" value="" />
-			<property name="Cover Level" value="" />
+			<property name="Victory Points" value="6" />
+			<property name="Cover Level" value="6" />
 		</card>
 		<card id="467bbf51-32f5-4ac6-9fa8-3856b1a69958" name="Explosive Pen">
 			<property name="Type" value="Gear" />
@@ -1623,8 +1623,8 @@
 			<property name="Faction" value="" />
 			<property name="Traits" value="Chase - Public - Combat +2" />
 			<property name="Rules" value="Attacker: After one of your agents preforms a mission action, send the active agent at the mission with the lowest transport to their headquarters (your choice if there is a tie).&#xD;&#xA;Defender:  After one of your agents preforms a mission action, send the active agent at the mission with the lowest transport to their headquarters (your choice if there is a tie)." />
-			<property name="Victory Points" value="" />
-			<property name="Cover Level" value="" />
+			<property name="Victory Points" value="5" />
+			<property name="Cover Level" value="3" />
 		</card>
 		<card id="33bee5c7-3ee2-4a62-9baf-0d1e744cc3a1" name="Flipside">
 			<property name="Type" value="Agent" />
@@ -3558,8 +3558,8 @@
 			<property name="Faction" value="" />
 			<property name="Traits" value="Fight - Public - Combat +5" />
 			<property name="Rules" value="Attacker: Your agents may preform the following: &quot;React: After this agent retires an opposing leader: Reduce this mission's objective by 4&quot;&#xD;&#xA;Defender: Your agents may preform the following: &quot;React: After this agent retires an opposing leader: Increase this mission's objective by 4&quot;" />
-			<property name="Victory Points" value="" />
-			<property name="Cover Level" value="" />
+			<property name="Victory Points" value="5" />
+			<property name="Cover Level" value="5" />
 		</card>
 		<card id="4827ef4f-48ad-4cb4-8012-efade6418089" name="Safety Slugs Only!">
 			<property name="Type" value="Mission" />
@@ -3903,7 +3903,7 @@
 			<property name="Faction" value="" />
 			<property name="Traits" value="Intrigue - Private - Transport +4" />
 			<property name="Rules" value="Attacker: Your inactive agents may nor be targeted by enemy agents&#xD;&#xA;Defender: Your agents my preform &quot;Mission Craft X: Send an opposing agent to his headquarters. The TN is the target's transport.&quot;" />
-			<property name="Victory Points" value="" />
+			<property name="Victory Points" value="5" />
 			<property name="Cover Level" value="" />
 		</card>
 		<card id="5c0a491d-0f1e-4e81-b4e9-2147c594db5b" name="Slander">
@@ -4668,8 +4668,8 @@
 			<property name="Faction" value="" />
 			<property name="Traits" value="Intrigue - Private - Charisma +2" />
 			<property name="Rules" value="Attacker: At the end of this mission before the winner is determined, send all of your agents but one to your headquarters.&#xD;&#xA;Defender: At the end of this mission before the winner is determined, send all of your agents but one to your headquarters." />
-			<property name="Victory Points" value="" />
-			<property name="Cover Level" value="" />
+			<property name="Victory Points" value="5" />
+			<property name="Cover Level" value="2" />
 		</card>
 		<card id="8931dcfd-7949-400b-b261-30a19dd4c79b" name="The Twins Arrive">
 			<property name="Type" value="Action" />

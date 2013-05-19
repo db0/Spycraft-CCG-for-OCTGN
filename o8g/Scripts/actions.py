@@ -47,6 +47,7 @@ def gameSetup(group, x = 0, y = 0): # WiP
       return
    if len(leadersDeck) < 4 and not confirm(":::Illegal Deck:::\n\nYou must have at least 4 leaders in your leader deck.\n\nProceed Anyway?"): return
    for leader in leadersDeck:
+      debugNotify("Moving {} ({}) to pos {}".format(leader, leader.level, num(leader.level) - 1),2)
       leader.moveTo(leadersDeck,num(leader.level) - 1) # This function will move each leader card at the index of the leader deck, according to its level. So level 1 leader will be top, and level 4 will be bottom
       if not Faction: Faction = leader.Faction
       elif Faction != leader.Faction:
@@ -55,15 +56,16 @@ def gameSetup(group, x = 0, y = 0): # WiP
             notify(":::Warning::: {}'s Leader deck has different factions!".format(me))
             Faction = leader.Faction
    debugNotify("Setting Reference Cards",2)
-   debugNotify("playerside = {}. yaxisMove = {}".format(playerside,yaxisMove),4)
-   if Faction == "Banshee Net": table.create("9f291494-8713-4b7e-bc7c-36b428fc0dd1",playerside * -380, (playerside * 20) + yaxisMove,1,True) # Creating a the player's faction reference card.
-   if Faction == "Bloodvine": table.create("8e2ff010-98b5-4884-a39b-100940d4f702",playerside * -380, (playerside * 20) + yaxisMove,1,True) # Creating a the player's faction reference card.
-   if Faction == "Franchise": table.create("6d131915-cb6a-43ca-b2f1-64ac040b0eec",playerside * -380, (playerside * 20) + yaxisMove,1,True) # Creating a the player's faction reference card.
-   if Faction == "The Krypt": table.create("0d058ed6-51e8-42c7-9cbb-67a3d267c618",playerside * -380, (playerside * 20) + yaxisMove,1,True) # Creating a the player's faction reference card.
-   if Faction == "Nine Tiger": table.create("49f5d0ad-60e2-4810-86b6-5f962f99d9bd",playerside * -380, (playerside * 20) + yaxisMove,1,True) # Creating a the player's faction reference card.
-   if Faction == "Shadow Patriots": table.create("bf4bfecd-1d84-4a6f-a787-0986a0fe06b1",playerside * -380, (playerside * 20) + yaxisMove,1,True) # Creating a the player's faction reference card.
+   debugNotify("playerside = {}. yaxisMove = {}".format(playerside,yaxisMove()),4)
+   if Faction == "Banshee Net": table.create("9f291494-8713-4b7e-bc7c-36b428fc0dd1",playerside * -380, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
+   if Faction == "Bloodvine": table.create("8e2ff010-98b5-4884-a39b-100940d4f702",playerside * -380, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
+   if Faction == "Franchise": table.create("6d131915-cb6a-43ca-b2f1-64ac040b0eec",playerside * -380, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
+   if Faction == "The Krypt": table.create("0d058ed6-51e8-42c7-9cbb-67a3d267c618",playerside * -380, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
+   if Faction == "Nine Tiger": table.create("49f5d0ad-60e2-4810-86b6-5f962f99d9bd",playerside * -380, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
+   if Faction == "Shadow Patriots": table.create("bf4bfecd-1d84-4a6f-a787-0986a0fe06b1",playerside * -380, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
    debugNotify("Moving First Leader to table",2)
-   leadersDeck.top().moveToTable(0, (playerside * 100) + yaxisMove()) # Top card in the leaders deck should be the player's level 1 leader.
+   rnd(1,10) # Delay
+   leadersDeck.top().moveToTable(0, (playerside * 130) + yaxisMove()) # Top card in the leaders deck should be the player's level 1 leader.
    debugNotify("Preparing Mission Deck",2)
    currMissionsVar = getGlobalVariable('currentMissions')
    if currMissionsVar != 'CHECKED OUT':
@@ -81,13 +83,21 @@ def gameSetup(group, x = 0, y = 0): # WiP
 #---------------------------------------------------------------------------
 # Rest
 #---------------------------------------------------------------------------
+
+def defaultAction(card, x = 0, y = 0):
+   debugNotify(">>> defaultAction()") #Debug
+   mute()
+   if not card.isFaceUp: act(card)
+   elif card.Type == 'Mission': winMission(card)
+   else: ability(card)
+   debugNotify("<<< defaultAction()") #Debug
     
 def roll6(group, x = 0, y = 0):
     mute()
     n = rnd(1, 6)
     notify("{} rolls {} on a 6-sided die.".format(me, n))
 
-def draw(group, x = 0, y = 0):
+def draw(group = me.piles['Deck'], x = 0, y = 0):
     if len(group) == 0: return
     mute()
     group[0].moveTo(me.hand)
@@ -96,7 +106,7 @@ def draw(group, x = 0, y = 0):
 def drawMany(group = me.piles['Deck'], count = None, destination = None, silent = False):
    debugNotify(">>> drawMany()") #Debug
    debugNotify("source: {}".format(group.name),2)
-   debugNotify("destination: {}".format(destination.name),2)
+   if destination: debugNotify("destination: {}".format(destination.name),2)
    mute()
    if destination == None: destination = me.hand
    SSize = len(group)
@@ -116,35 +126,83 @@ def drawMany(group = me.piles['Deck'], count = None, destination = None, silent 
 def shuffle(group, x = 0, y = 0):
     group.shuffle()
 
-def play(card, x = 0, y = 0):
+def smartPlay(card, x = 0, y = 0):
     mute()
-    src = card.group
-    card.moveToTable(0, 90)
-    card.isFaceUp = False
-    notify("{} plays a card face-down from his hand.".format(me))
+    if card.Type == 'Gear': playGear(card)
+    elif card.Type == 'Action': playAction(card)
+    else: playAgent(card)
 
-def retire(card, x = 0, y = 0):
+def playAgent(card, x = 0, y = 0):
     mute()
-    src = card.group
-    card.moveTo(me.Discard)
-    notify("{} retires {}.".format(me, card))
+    card.moveToTable(playerside * -300, yaxisMove(),True)
+    notify("{} recruits an agent from their hand.".format(me))
+
+def playGear(card, x = 0, y = 0):
+    mute()
+    card.moveToTable(playerside * -220, yaxisMove(),True)
+    notify("{} requisitions a gear from their hand.".format(me))
+
+def playAction(card, x = 0, y = 0):
+    mute()
+    card.moveToTable(playerside * 300, yaxisMove() + cwidth())
+    if re.search(r'Solo Op',card.Traits):
+      notify("{} begins the {} Solo Op.".format(me, card))
+      draw()
+    else: notify("{} attempts to play {}.".format(me, card))
+
+def winMission(card, x = 0, y = 0):
+   mute()
+   if card.Type == 'Mission' and confirm("Have you just won {}?".format(card.name)): 
+      if scrubMission(card) == 'ABORT': return
+      if prepMission(shared.Missions.top()) == 'ABORT': return
+      card.moveTo(me.piles['Victory Pile'])
+      me.counters['Victory Points'].value += num(card.properties['Victory Points'])
+      notify("{} wins {} and gains {} VP.".format(me, card, card.properties['Victory Points']))
+   else: whisper(":::ERROR::: You can only win missions")      
+
+def winTargetMission(group, x = 0, y = 0):
+   for card in table:
+      if card.targetedBy and card.targetedBy == me: winMission(card)
+
+def discard(card, x = 0, y = 0):
+   mute()
+   if fetchProperty(card, 'Type') != 'Mission': 
+      card.moveTo(card.owner.Discard)
+      if card.Type == 'Agent' or card.Type == 'Leader': notify("{} retires {}.".format(me, card))
+      else: notify("{} trashes {}.".format(me, card))
+   else: 
+      if scrubMission(card) == 'ABORT': return
+      if prepMission(shared.Missions.top()) == 'ABORT': return
+      card.moveTo(shared.piles['Mission Discard'])
+      notify("{} discards {}.".format(me, card))
+      
+def discardFromHand(card):
+   mute()
+   card.moveTo(me.Discard)
+   notify("{} discards {}.".format(me, card))
 
 def shuffleIntoDeck(group = me.Discard):
-    mute()
-    Deck = me.Deck
-    for c in group: c.moveTo(Deck)
-    random = rnd(100, 1000)
-    Deck.shuffle()
-    notify("{} shuffles his {} into his Deck.".format(me, group.name))
+   mute()
+   Deck = me.Deck
+   for c in group: c.moveTo(Deck)
+   random = rnd(100, 1000)
+   Deck.shuffle()
+   notify("{} shuffles his {} into his Deck.".format(me, group.name))
 
 def act(card, x = 0, y = 0):
-    mute()
-    if card.isFaceUp:
-        notify("{} Deactivates {}".format(me, card))
-        card.isFaceUp = False
-    else:
-        card.isFaceUp = True
-        notify("{} Activates {}".format(me, card))
+   debugNotify(">>> act()") #Debug
+   mute()
+   if card.isFaceUp:
+      notify("{} Deactivates {}".format(me, card))
+      card.isFaceUp = False
+   else:
+      card.isFaceUp = True
+      rnd(1,10) 
+      if card.Type == 'Mission': 
+         notify("{} Reveals {}".format(me, card))
+         card.orientation = Rot0
+      else: notify("{} Activates {}".format(me, card))
+   debugNotify("<<< act()") #Debug
 
 def wound(card, x = 0, y = 0):
     mute()
@@ -187,4 +245,19 @@ def ability(card, x = 0, y = 0):
 
 def download_o8c(group,x=0,y=0):
    openUrl("http://dbzer0.com/pub/SpycraftCCG/sets/SpycraftCCG-Sets-Bundle.o8c")
-    
+
+def inspectCard(card, x = 0, y = 0): # This function shows the player the card text, to allow for easy reading until High Quality scans are procured.
+   debugNotify(">>> inspectCard()") #Debug
+   #if debugVerbosity > 0: finalTXT = 'AutoScript: {}\n\n AutoAction: {}'.format(CardsAS.get(card.model,''),CardsAA.get(card.model,''))
+   if card.Type == 'Reference':
+      information("This is the {} Leader Ability Reference card.\
+                 \nIt does not have any abilities itself but it informs you which built-in ability your leaders have.".format(card.Faction))
+   else:          
+      finalTXT = "{}\n\nTraits:{}\n\nCard Text: {}".format(card.name, card.Traits, card.Rules)
+      information("{}".format(finalTXT))
+
+def inspectTargetCard(group, x = 0, y = 0): # This function shows the player the card text, to allow for easy reading until High Quality scans are procured.
+   debugNotify(">>> inspectTargetCard()") #Debug
+   for card in table:
+      if card.targetedBy and card.targetedBy == me: inspectCard(card)
+   

@@ -18,6 +18,12 @@ import re, time
 
 debugVerbosity = -1 # At -1, means no debugging messages display
     
+Automations = {'Play'    : True, # If True, game will automatically trigger card effects when playing or double-clicking on cards. Requires specific preparation in the sets.
+               'WinForms'               : True, # If True, game will use the custom Windows Forms for displaying multiple-choice menus and information pop-ups
+               'Placement'              : True, # If True, game will try to auto-place cards on the table after you paid for them.
+               'Start/End-of-Turn/Phase': True, # If True, game will automatically trigger effects happening at the start of the player's turn, from cards they control.                
+              }
+    
 def ofwhom(Autoscript, controller = me):  # WiP
    if debugVerbosity >= 1: notify(">>> ofwhom(){}".format(extraASDebug(Autoscript))) #Debug
    targetPL = None
@@ -54,7 +60,7 @@ def resetAll(): # Clears all the global variables in order to start a new game.
    elif debugVerbosity != -1 and confirm("Reset Debug Verbosity?"): debugVerbosity = -1 
    debugNotify("<<< resetAll()") #Debug
    
-def prepMission(card, GameSetup = False): 
+def prepMission(card, silent = False): 
 # Function stores into a shared variable the current missions, so that everyone can look them up and re-arrange them.
 # This function also reorganizes the missions on the table
    debugNotify(">>> prepMission()") #Debug
@@ -68,15 +74,34 @@ def prepMission(card, GameSetup = False):
    debugNotify("About to iterate the list: {}".format(currentMissions),2)
    for iter in range(len(currentMissions)):
       Mission = Card(currentMissions[iter])
-      if iter - 1 > 0: missionFaceDown = True # Last three missions are face down
+      if iter - 1 > 0 and not Mission.isFaceUp: missionFaceDown = True # Last three missions are face down unless they were already face up
       else: missionFaceDown = False # First two missions are face up
-      Mission.moveToTable(cwidth() * (3 - iter), 0, missionFaceDown)
+      Mission.moveToTable(cheight() * (3 - iter), (cheight(0) / -2) + 8, missionFaceDown)
       if missionFaceDown: Mission.orientation = Rot90
-      else: Mission.orientation = Rot0
+      else: 
+         Mission.orientation = Rot0
+         if not Mission.isFaceUp: Mission.isFaceUp = True # Backup check
       # rnd(1,100) # We put a delay here to allow the table to read the card autoscripts before we try to execute them.
    debugNotify("About to set currentMissions",2) #Debug      
    setGlobalVariable('currentMissions', str(currentMissions))
+   if not silent: notify(":> Mission Queue Updated!")
    debugNotify("<<< prepMission()") #Debug
+
+def scrubMission(card):
+# Function cleans a mission card from the shared variable which shows which missions are on the table
+   debugNotify(">>> scrubMission()") #Debug
+   currMissionsVar = getGlobalVariable('currentMissions')
+   if currMissionsVar == 'CHECKED OUT':
+      delayed_whisper(":::ATTENTION::: Another player's scripts are manipulating the mission queue. Please try again later") 
+      return 'ABORT'
+   setGlobalVariable('currentMissions','CHECKED OUT') # If the missions var is not being manipulated by another, we set it as checked out ourselves.
+   debugNotify("About to remove mission",2)
+   currentMissions = eval(currMissionsVar)
+   currentMissions.remove(card._id)
+   debugNotify("About to set currentMissions",2) #Debug      
+   setGlobalVariable('currentMissions', str(currentMissions))
+   debugNotify("<<< scrubMission()") #Debug
+
    
 #------------------------------------------------------------------------------
 # Debugging
@@ -110,3 +135,7 @@ def TrialError(group, x=0, y=0): # Debugging
    notify("### Setting Table Side")
    if not playerside:  # If we've already run this command once, don't recreate the cards.
       chooseSide()
+
+def extraASDebug(Autoscript = None):
+   if Autoscript and debugVerbosity >= 3: return ". Autoscript:{}".format(Autoscript)
+   else: return ''

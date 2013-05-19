@@ -1252,7 +1252,7 @@
 			<property name="Cover Level" value="" />
 		</card>
 		<card id="52684aeb-919d-4a85-9f26-b399f377739f" name="Reynolds">
-			<property name="Type" value="agent" />
+			<property name="Type" value="Agent" />
 			<property name="Expense Rating" value="5" />
 			<property name="Charisma" value="1" />
 			<property name="Combat" value="2" />
@@ -1972,7 +1972,7 @@
 			<property name="Cover Level" value="" />
 		</card>
 		<card id="96e67631-ed62-4f72-826f-4b75c4c1ad21" name="Hypnosis Lenses">
-			<property name="Type" value="gear" />
+			<property name="Type" value="Gear" />
 			<property name="Expense Rating" value="5" />
 			<property name="Charisma" value="2" />
 			<property name="Combat" value="" />
