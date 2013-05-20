@@ -56,8 +56,7 @@ def resetAll(): # Clears all the global variables in order to start a new game.
    hostCards.clear()
    setGlobalVariable('Host Cards',str(hostCards))
    setGlobalVariable('currentMissions', '[]')
-   if len(players) > 1: debugVerbosity = -1 # Reset means normal game.
-   elif debugVerbosity != -1 and confirm("Reset Debug Verbosity?"): debugVerbosity = -1 
+   if debugVerbosity != -1 and confirm("Reset Debug Verbosity?"): debugVerbosity = -1 
    debugNotify("<<< resetAll()") #Debug
    
 def prepMission(card, silent = False): 
@@ -139,3 +138,9 @@ def TrialError(group, x=0, y=0): # Debugging
 def extraASDebug(Autoscript = None):
    if Autoscript and debugVerbosity >= 3: return ". Autoscript:{}".format(Autoscript)
    else: return ''
+
+def fixMissions(group, x = 0, y = 0): 
+   setGlobalVariable('currentMissions', '[]')
+   for card in table:
+      if fetchProperty(card, 'Type') == 'Mission':
+         prepMission(card, True)

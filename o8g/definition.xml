@@ -4,7 +4,7 @@
       name="Spycraft" 
       id="d1d8cc2c-e817-4b4d-9449-3315bbd3c643" 
       octgnVersion="3.1.15.112" 
-      version="1.0.1.4" 
+      version="1.0.1.6" 
       markersize="16"
       tags="duel espionage objectives AEG"
       description="Spycraft CCG is a espionage-themed card game for 2-6 players.
@@ -54,11 +54,16 @@
          <groupaction menu="Set up" default="False" shortcut="Ctrl+Shift+S" execute="gameSetup" />
          <groupaction menu="Concede" default="False" shortcut="Ctrl+Shift+C" execute="concede" />
 			<groupaction menu="Download Sets Card Images." shortcut="Ctrl+G" default="False" execute="download_o8c" />
+         <groupaction menu="Unstick Mission Queue" default="False" shortcut="Ctrl+Shift+D" execute="fixMissions" /> 
          <groupaction menu="Debug" default="False" shortcut="Ctrl+Shift+D" execute="TrialError" /> 
 		</groupactions>
+      <groupactions menu="Phases...">
+         <groupaction menu="Start new Intel Phase." default="False" shortcut="F1" execute="goToIntel" />
+         <groupaction menu="Proceed to Debriefing." default="False" shortcut="F12" execute="goToDebrief" />
+      </groupactions>
 		<groupaction menu="Roll d6" default="False" execute="roll6" />
 		<cardaction menu="Retire Agent/Discard Card" default="False" shortcut="del" execute="discard" />
-		<cardaction menu="Activate/Deactivate" default="False" shortcut="ctrl+a" execute="act" />
+		<cardaction menu="Activate/Deactivate" default="False" shortcut="ctrl+a" execute="activate" />
 		<cardaction menu="Wound/Unwound" default="False" shortcut="ctrl+w" execute="wound" />
 		<cardaction menu="Use Ability" default="False" shortcut="ctrl+b" execute="ability" />
 		<cardaction menu="Expose/Clear" default="False" execute="expose" />

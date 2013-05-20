@@ -68,8 +68,10 @@ def gameSetup(group, x = 0, y = 0): # WiP
    leadersDeck.top().moveToTable(0, (playerside * 130) + yaxisMove()) # Top card in the leaders deck should be the player's level 1 leader.
    debugNotify("Preparing Mission Deck",2)
    currMissionsVar = getGlobalVariable('currentMissions')
+   debugNotify("currMissionsVar = {}".format(currMissionsVar),2)
    if currMissionsVar != 'CHECKED OUT':
       currentMissions = eval(currMissionsVar)
+      debugNotify("currentMissions = {}".format(currentMissions),4)
       if len(currentMissions) == 0: 
          shuffle(missionDeck)
          startingMissions = missionDeck.top(5)
@@ -87,7 +89,7 @@ def gameSetup(group, x = 0, y = 0): # WiP
 def defaultAction(card, x = 0, y = 0):
    debugNotify(">>> defaultAction()") #Debug
    mute()
-   if not card.isFaceUp: act(card)
+   if not card.isFaceUp: activate(card)
    elif card.Type == 'Mission': winMission(card)
    else: ability(card)
    debugNotify("<<< defaultAction()") #Debug
@@ -189,8 +191,8 @@ def shuffleIntoDeck(group = me.Discard):
    Deck.shuffle()
    notify("{} shuffles his {} into his Deck.".format(me, group.name))
 
-def act(card, x = 0, y = 0):
-   debugNotify(">>> act()") #Debug
+def activate(card, x = 0, y = 0):
+   debugNotify(">>> activate()") #Debug
    mute()
    if card.isFaceUp:
       notify("{} Deactivates {}".format(me, card))
@@ -202,7 +204,7 @@ def act(card, x = 0, y = 0):
          notify("{} Reveals {}".format(me, card))
          card.orientation = Rot0
       else: notify("{} Activates {}".format(me, card))
-   debugNotify("<<< act()") #Debug
+   debugNotify("<<< activate()") #Debug
 
 def wound(card, x = 0, y = 0):
     mute()
@@ -240,8 +242,10 @@ def baffle(card, x = 0, y = 0):
 
 def ability(card, x = 0, y = 0):
     mute()
-    card.highlight = AbilityColor
-    notify('{} activates the ability on {}'.format(me, card))
+    card.markers[mdict['TextAction']] += 1
+    if card.markers[mdict['TextAction']] > 1: extraTXT = ' {}'.format(numOrder(card.markers[mdict['TextAction']])) # The extra text only displays if the player uses a second or third printed ability on the same card.
+    else: extraTXT = ''
+    notify('{} uses the a{} printed ability on {}.'.format(me, extraTXT, card))
 
 def download_o8c(group,x=0,y=0):
    openUrl("http://dbzer0.com/pub/SpycraftCCG/sets/SpycraftCCG-Sets-Bundle.o8c")

@@ -436,7 +436,23 @@ def num (s):
 def delayed_whisper(text): # Because whispers for some reason execute before notifys
    rnd(1,10)
    whisper(text)
-   
+
+def numOrder(num):
+    """Return the ordinal for each place in a zero-indexed list.
+
+    list[0] (the first item) returns '1st', list[1] return '2nd', etc.
+    """
+    def int_to_ordinal(i):
+        """Return the ordinal for an integer."""
+        # if i is a teen (e.g. 14, 113, 2517), append 'th'
+        if 10 <= i % 100 < 20:
+            return str(i) + 'th'
+        # elseif i ends in 1, 2 or 3 append 'st', 'nd' or 'rd'
+        # otherwise append 'th'
+        else:
+            return  str(i) + {1 : 'st', 2 : 'nd', 3 : 'rd'}.get(i % 10, "th")
+    return int_to_ordinal(num + 1)
+    
 def chooseSide(): # Called from many functions to check if the player has chosen a side for this game.
    debugNotify(">>> chooseSide()") #Debug
    mute()
