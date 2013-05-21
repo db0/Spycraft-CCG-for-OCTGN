@@ -91,7 +91,7 @@ def defaultAction(card, x = 0, y = 0):
    mute()
    if not card.isFaceUp: activate(card)
    elif card.Type == 'Mission': winMission(card)
-   else: ability(card)
+   else: useText(card)
    debugNotify("<<< defaultAction()") #Debug
     
 def roll6(group, x = 0, y = 0):
@@ -123,6 +123,7 @@ def drawMany(group = me.piles['Deck'], count = None, destination = None, silent 
    if not silent: notify("{} draws {} cards.".format(me, count))
    debugNotify("<<< drawMany() with return: {}".format(count))
    return count
+
 
     
 def shuffle(group, x = 0, y = 0):
@@ -208,46 +209,27 @@ def activate(card, x = 0, y = 0):
       else: notify("{} Activates {}".format(me, card))
    debugNotify("<<< activate()") #Debug
 
-def wound(card, x = 0, y = 0):
-    mute()
-    card.orientation ^= Rot90
-    if card.orientation & Rot90 == Rot90:
-        notify('{} is wounded.'.format(card))
-    else:
-        notify('{} is unwounded.'.format(card))
 
-def clear(card, x = 0, y = 0):
-    notify("{} clears {}.".format(me, card))
-    card.highlight = None
-    card.target(False)
-
-def expose(card, x = 0, y = 0):
-    mute()
-    if card.markers[mdict['exposed']] == 0:
-        notify("{} becomes Exposed.".format(card))
-        card.markers[mdict['exposed']] = 1
-    else:
-        notify("{} is not Exposed anymore.".format(card))
-        card.markers[mdict['exposed']] = 0
-
-
-def baffle(card, x = 0, y = 0):
-    mute()
-    if card.markers[mdict['baffled']] == 0:
-       notify("{} becomes Baffled and is considered Exposed until the end of the mission.".format(card))
-       card.markers[mdict['exposed']] += 1
-       card.markers[mdict['baffled']] += 1
-    else:
-       notify("{} is not baffled anymore.".format(card))
-       card.markers[mdict['exposed']] -= 1
-       card.markers[mdict['baffled']] -= 1
-
-def ability(card, x = 0, y = 0):
+def useText(card, x = 0, y = 0):
     mute()
     card.markers[mdict['TextAction']] += 1
     if card.markers[mdict['TextAction']] > 1: extraTXT = ' {}'.format(numOrder(card.markers[mdict['TextAction']])) # The extra text only displays if the player uses a second or third printed ability on the same card.
     else: extraTXT = ''
     notify('{} uses the a{} printed ability on {}.'.format(me, extraTXT, card))
+
+def useMission(card, x = 0, y = 0):
+    mute()
+    card.markers[mdict['MissionAction']] += 1
+    if card.markers[mdict['MissionAction']] > 1: extraTXT = ' {}'.format(numOrder(card.markers[mdict['MissionAction']])) # The extra text only displays if the player uses a second or third printed ability on the same card.
+    else: extraTXT = ''
+    notify('{} uses the a{} mission ability on {}.'.format(me, extraTXT, card))
+
+def useDefault(card, x = 0, y = 0):
+    mute()
+    card.markers[mdict['DefaultMission']] += 1
+    if card.markers[mdict['DefaultMission']] > 1: extraTXT = ' for the {} time'.format(numOrder(card.markers[mdict['DefaultMission']])) # The extra text only displays if the player uses a second or third printed ability on the same card.
+    else: extraTXT = ''
+    notify('{} uses the default mission action{} with {}.'.format(me, extraTXT, card))
 
 def download_o8c(group,x=0,y=0):
    openUrl("http://dbzer0.com/pub/SpycraftCCG/sets/SpycraftCCG-Sets-Bundle.o8c")
@@ -267,3 +249,46 @@ def inspectTargetCard(group, x = 0, y = 0): # This function shows the player the
    for card in table:
       if card.targetedBy and card.targetedBy == me: inspectCard(card)
    
+#---------------------------------------------------------------------------
+# Agent Status
+#---------------------------------------------------------------------------
+
+def clear(card, x = 0, y = 0):
+    notify("{} clears {}.".format(me, card))
+    card.highlight = None
+    card.target(False)
+
+def wound(card, x = 0, y = 0):
+    mute()
+    card.orientation ^= Rot90
+    if card.orientation & Rot90 == Rot90:
+        notify('{} is wounded.'.format(card))
+    else:
+        notify('{} is unwounded.'.format(card))
+
+def expose(card, x = 0, y = 0):
+    mute()
+    if card.markers[mdict['exposed']] == 0:
+        notify("{} becomes Exposed.".format(card))
+        card.markers[mdict['exposed']] = 1
+    else:
+        notify("{} is not Exposed anymore.".format(card))
+        card.markers[mdict['exposed']] = 0
+
+
+def baffle(card, x = 0, y = 0):
+    mute()
+    if card.markers[mdict['baffled']] == 0:
+       notify("{} becomes Baffled, loses all skill points, and is considered Exposed until the end of the mission.".format(card))
+       card.markers[mdict['baffled']] = 1
+    else:
+       notify("{} is not baffled anymore.".format(card))
+       card.markers[mdict['baffled']] = 0
+
+#---------------------------------------------------------------------------
+# Hand Actions
+#---------------------------------------------------------------------------
+
+#---------------------------------------------------------------------------
+# Pile Actions
+#---------------------------------------------------------------------------

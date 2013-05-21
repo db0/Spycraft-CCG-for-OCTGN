@@ -6,11 +6,15 @@
      gameVersion="1.0.0.0" 
      version="1.0.0.0">
 	<markers>
-		<marker id="0183c0b8-6a6d-42c5-bedb-94bbc8ca5329" name="exposed" />
-		<marker id="0415bae0-0c88-4ec6-8169-aeb117318618" name="baffled" />
-		<marker id="2f9409af-726e-4c57-b65d-1007250c9b81" name="snoop" />
-		<marker id="96aab548-6e02-4509-b583-6cc318469465" name="brief" />
+		<marker id="0183c0b8-6a6d-42c5-bedb-94bbc8ca5329" name="Exposed" />
+		<marker id="0415bae0-0c88-4ec6-8169-aeb117318618" name="Baffled" />
+		<marker id="2f9409af-726e-4c57-b65d-1007250c9b81" name="Used Snoop" />
+		<marker id="96aab548-6e02-4509-b583-6cc318469465" name="Used Brief" />
+		<marker id="72179c7a-9087-49f8-8a93-010b284cfa6e" name="Briefed" />
+		<marker id="c964be10-521f-4cc0-a3a9-5c0def322110" name="Fresh Leader" />
+		<marker id="cdf63a20-808d-4789-b192-da69a870719c" name="Demoted" />
 		<marker id="69a2514e-9d49-4f8d-8408-dc069625e07c" name="Mission Action Taken" />
+		<marker id="c3dcf14d-65ae-4356-b702-f4b8fda91313" name="Default Mission Action Taken" />
 		<marker id="05a5f34f-e4d2-4ee0-9906-b03f70b02a01" name="Text Action Taken" />
 	</markers>
 	<cards>
