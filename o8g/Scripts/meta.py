@@ -55,7 +55,8 @@ def resetAll(): # Clears all the global variables in order to start a new game.
    hostCards = eval(getGlobalVariable('Host Cards'))
    hostCards.clear()
    setGlobalVariable('Host Cards',str(hostCards))
-   setGlobalVariable('currentMissions', '[]')
+   if len(shared.Missions) == 24: setGlobalVariable('currentMissions', '[]') # If the mission deck is exactly 24 cards, then it means it's a fresh game, and we clean the mission queue,
+                                                                         # If it's less, then it means the mission queue has already been setup by another player so we don't do it again.
    if debugVerbosity != -1 and confirm("Reset Debug Verbosity?"): debugVerbosity = -1 
    debugNotify("<<< resetAll()") #Debug
    
@@ -75,7 +76,7 @@ def prepMission(card, silent = False):
       Mission = Card(currentMissions[iter])
       if iter - 1 > 0 and not Mission.isFaceUp: missionFaceDown = True # Last three missions are face down unless they were already face up
       else: missionFaceDown = False # First two missions are face up
-      Mission.moveToTable(cheight() * (3 - iter), (cheight(0) / -2) + 8, missionFaceDown)
+      Mission.moveToTable(cheight() * (2 - iter), (cheight(0) / -2) + 8, missionFaceDown)
       if missionFaceDown: Mission.orientation = Rot90
       else: 
          Mission.orientation = Rot0
@@ -144,3 +145,13 @@ def fixMissions(group, x = 0, y = 0):
    for card in table:
       if fetchProperty(card, 'Type') == 'Mission':
          prepMission(card, True)
+   notify("{} has re-scanned the Mission Queue".format(me))
+         
+def debugMissions(group, x = 0, y = 0): 
+   missionsVar = getGlobalVariable('currentMissions')
+   debugNotify("Sh.Var: {}".format(missionsVar),1)
+   if missionsVar != "CHECKED OUT":
+      missionsList = eval(missionsVar)
+      debugNotify("len = {}".format(len(missionsList)),1)
+      debugNotify("missions: {}".format([Card(mission) for mission in missionsList]), 1)         
+   else: debugNotify("Mission Queue is checked out",1)

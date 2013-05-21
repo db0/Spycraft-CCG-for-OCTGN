@@ -34,8 +34,8 @@ def gameSetup(group, x = 0, y = 0): # WiP
    global Faction
    if Faction and not confirm("Are you sure you want to setup for a new game? (This action should only be done after a table reset)"): return
    debugNotify("Resetting All", 2) #Debug
-   resetAll()
    debugNotify("Choosing Side", 2) #Debug
+   resetAll()
    chooseSide()
    debugNotify("Setting Deck Variables", 2) #Debug
    deck = me.piles['Deck']
@@ -136,17 +136,17 @@ def smartPlay(card, x = 0, y = 0):
 
 def playAgent(card, x = 0, y = 0):
     mute()
-    card.moveToTable(playerside * -300, yaxisMove(),True)
+    card.moveToTable(playerside * -300, yaxisMove() + (cwidth() * playerside),True)
     notify("{} recruits an agent from their hand.".format(me))
 
 def playGear(card, x = 0, y = 0):
     mute()
-    card.moveToTable(playerside * -220, yaxisMove(),True)
+    card.moveToTable(playerside * -220, yaxisMove() + (cwidth() * playerside),True)
     notify("{} requisitions a gear from their hand.".format(me))
 
 def playAction(card, x = 0, y = 0):
     mute()
-    card.moveToTable(playerside * 300, yaxisMove() + cwidth())
+    card.moveToTable(playerside * 300, yaxisMove() + (cwidth() * playerside))
     if re.search(r'Solo Op',card.Traits):
       notify("{} begins the {} Solo Op.".format(me, card))
       draw()

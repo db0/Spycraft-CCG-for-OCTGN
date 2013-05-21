@@ -4,7 +4,7 @@
       name="Spycraft" 
       id="d1d8cc2c-e817-4b4d-9449-3315bbd3c643" 
       octgnVersion="3.1.15.112" 
-      version="1.0.1.6" 
+      version="1.0.1.10" 
       markersize="16"
       tags="duel espionage objectives AEG"
       description="Spycraft CCG is a espionage-themed card game for 2-6 players.
@@ -54,7 +54,8 @@
          <groupaction menu="Set up" default="False" shortcut="Ctrl+Shift+S" execute="gameSetup" />
          <groupaction menu="Concede" default="False" shortcut="Ctrl+Shift+C" execute="concede" />
 			<groupaction menu="Download Sets Card Images." shortcut="Ctrl+G" default="False" execute="download_o8c" />
-         <groupaction menu="Unstick Mission Queue" default="False" shortcut="Ctrl+Shift+D" execute="fixMissions" /> 
+         <groupaction menu="Unstick Mission Queue" default="False" shortcut="Ctrl+Shift+M" execute="fixMissions" /> 
+<!--         <groupaction menu="Display Missions Queue" default="False" execute="debugMissions" />  -->
          <groupaction menu="Debug" default="False" shortcut="Ctrl+Shift+D" execute="TrialError" /> 
 		</groupactions>
       <groupactions menu="Phases...">
@@ -73,7 +74,7 @@
       <groupaction menu="Win Target Mission" default="False" shortcut="ctrl+W" execute="winTargetMission" />
       <cardaction menu="Inspect" default="False" shortcut="Ctrl+I" execute="inspectCard" />
       <groupaction menu="Inspect Target" default="False" shortcut="Ctrl+I" execute="inspectTargetCard" />
-      <cardaction menu="Show Card Position" default="False" shortcut="Ctrl+Shift+X" execute="ShowPosC" />
+<!--      <cardaction menu="Show Card Position" default="False" shortcut="Ctrl+Shift+X" execute="ShowPosC" /> -->
 	</table>
 	<player summary="{#Victory Points} VP/ {#brief} Brief/ {#Hand} Cards">
 		<hand name="Hand" visibility="me" ordered="False" width="63" height="88" icon="Groups/hand.jpg">

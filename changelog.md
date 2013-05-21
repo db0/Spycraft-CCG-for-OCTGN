@@ -1,6 +1,12 @@
 Changelog - Spycraft CCG OCTGN Game Definition
 ===============================================
 
+### 1.0.2.x
+
+* Fixed b0rked mutliplayer mission queue
+* Fixed placement of 2nd player cards and mission queue a bit
+* Added a function under the game menu to get the mission queue unstuck if it gets stuck
+
 ### 1.0.1.x
 
 * Game setup function now functional. After one player has loaded the mission deck and you've loaded your deck, 
