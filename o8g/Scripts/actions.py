@@ -82,8 +82,9 @@ def gameSetup(group, x = 0, y = 0): # WiP
    drawMany(deck, 7, silent = True)
    debugNotify("<<< gameSetup()") #Debug
     
+
 #---------------------------------------------------------------------------
-# Rest
+# Table Card Actions
 #---------------------------------------------------------------------------
 
 def defaultAction(card, x = 0, y = 0):
@@ -94,40 +95,121 @@ def defaultAction(card, x = 0, y = 0):
    else: useText(card)
    debugNotify("<<< defaultAction()") #Debug
     
-def roll6(group, x = 0, y = 0):
-    mute()
-    n = rnd(1, 6)
-    notify("{} rolls {} on a 6-sided die.".format(me, n))
-
-def draw(group = me.piles['Deck'], x = 0, y = 0):
-    if len(group) == 0: return
-    mute()
-    group[0].moveTo(me.hand)
-    notify("{} draws a card.".format(me))
-
-def drawMany(group = me.piles['Deck'], count = None, destination = None, silent = False):
-   debugNotify(">>> drawMany()") #Debug
-   debugNotify("source: {}".format(group.name),2)
-   if destination: debugNotify("destination: {}".format(destination.name),2)
+def activate(card, x = 0, y = 0):
+   debugNotify(">>> activate()") #Debug
    mute()
-   if destination == None: destination = me.hand
-   SSize = len(group)
-   if SSize == 0: return 0
-   if count == None: count = askInteger("Draw how many cards?", 5)
-   if count == None: return 0
-   if count > SSize : 
-      count = SSize
-      delayed_whisper("You do not have enough cards in your deck to complete this action. Will draw as many as possible")
-   for c in group.top(count): 
-      c.moveTo(destination)
-   if not silent: notify("{} draws {} cards.".format(me, count))
-   debugNotify("<<< drawMany() with return: {}".format(count))
-   return count
+   if card.isFaceUp:
+      notify("{} Deactivates {}".format(me, card))
+      card.isFaceUp = False
+   else:
+      card.isFaceUp = True
+      rnd(1,10) 
+      if card.Type == 'Mission': 
+         notify("{} Reveals {}".format(me, card))
+         card.orientation = Rot0
+      else: notify("{} Activates {}".format(me, card))
+   debugNotify("<<< activate()") #Debug
 
+def discard(card, x = 0, y = 0):
+   mute()
+   if fetchProperty(card, 'Type') != 'Mission': 
+      card.moveTo(card.owner.Discard)
+      if card.Type == 'Agent' or card.Type == 'Leader': notify("{} retires {}.".format(me, card))
+      else: notify("{} trashes {}.".format(me, card))
+   else: 
+      if scrubMission(card) == 'ABORT': return
+      if prepMission(shared.Missions.top()) == 'ABORT': return
+      card.moveTo(shared.piles['Mission Discard'])
+      notify("{} discards {}.".format(me, card))
+      
+def useText(card, x = 0, y = 0):
+    mute()
+    card.markers[mdict['TextAction']] += 1
+    if card.markers[mdict['TextAction']] > 1: extraTXT = ' {}'.format(numOrder(card.markers[mdict['TextAction']])) # The extra text only displays if the player uses a second or third printed ability on the same card.
+    else: extraTXT = ''
+    notify('{} uses the a{} printed ability on {}.'.format(me, extraTXT, card))
 
+def useMission(card, x = 0, y = 0):
+    mute()
+    card.markers[mdict['MissionAction']] += 1
+    if card.markers[mdict['MissionAction']] > 1: extraTXT = ' {}'.format(numOrder(card.markers[mdict['MissionAction']])) # The extra text only displays if the player uses a second or third printed ability on the same card.
+    else: extraTXT = ''
+    notify('{} uses the a{} mission ability on {}.'.format(me, extraTXT, card))
+
+def useDefault(card, x = 0, y = 0):
+    mute()
+    card.markers[mdict['DefaultMission']] += 1
+    if card.markers[mdict['DefaultMission']] > 1: extraTXT = ' for the {} time'.format(numOrder(card.markers[mdict['DefaultMission']])) # The extra text only displays if the player uses a second or third printed ability on the same card.
+    else: extraTXT = ''
+    notify('{} uses the default mission action{} with {}.'.format(me, extraTXT, card))
     
-def shuffle(group, x = 0, y = 0):
-    group.shuffle()
+def winMission(card, x = 0, y = 0):
+   mute()
+   if card.Type == 'Mission' and confirm("Have you just won {}?".format(card.name)): 
+      if scrubMission(card) == 'ABORT': return
+      if prepMission(shared.Missions.top()) == 'ABORT': return
+      card.moveTo(me.piles['Victory Pile'])
+      me.counters['Victory Points'].value += num(card.properties['Victory Points'])
+      notify("{} wins {} and gains {} VP.".format(me, card, card.properties['Victory Points']))
+   else: whisper(":::ERROR::: You can only win missions")      
+
+def winTargetMission(group, x = 0, y = 0):
+   for card in table:
+      if card.targetedBy and card.targetedBy == me: winMission(card)
+    
+def inspectCard(card, x = 0, y = 0): # This function shows the player the card text, to allow for easy reading until High Quality scans are procured.
+   debugNotify(">>> inspectCard()") #Debug
+   #if debugVerbosity > 0: finalTXT = 'AutoScript: {}\n\n AutoAction: {}'.format(CardsAS.get(card.model,''),CardsAA.get(card.model,''))
+   if card.Type == 'Reference':
+      information("This is the {} Leader Ability Reference card.\
+                 \nIt does not have any abilities itself but it informs you which built-in ability your leaders have.".format(card.Faction))
+   else:          
+      finalTXT = "{}\n\nTraits:{}\n\nCard Text: {}".format(card.name, card.Traits, card.Rules)
+      information("{}".format(finalTXT))
+
+def inspectTargetCard(group, x = 0, y = 0): # This function shows the player the card text, to allow for easy reading until High Quality scans are procured.
+   debugNotify(">>> inspectTargetCard()") #Debug
+   for card in table:
+      if card.targetedBy and card.targetedBy == me: inspectCard(card)
+    
+#---------------------------------------------------------------------------
+# Agent Status
+#---------------------------------------------------------------------------
+
+def clear(card, x = 0, y = 0):
+    notify("{} clears {}.".format(me, card))
+    card.highlight = None
+    card.target(False)
+
+def wound(card, x = 0, y = 0):
+    mute()
+    card.orientation ^= Rot90
+    if card.orientation & Rot90 == Rot90:
+        notify('{} is wounded.'.format(card))
+    else:
+        notify('{} is unwounded.'.format(card))
+
+def expose(card, x = 0, y = 0):
+    mute()
+    if card.markers[mdict['exposed']] == 0:
+        notify("{} becomes Exposed.".format(card))
+        card.markers[mdict['exposed']] = 1
+    else:
+        notify("{} is not Exposed anymore.".format(card))
+        card.markers[mdict['exposed']] = 0
+
+def baffle(card, x = 0, y = 0):
+    mute()
+    if card.markers[mdict['baffled']] == 0:
+       notify("{} becomes Baffled, loses all skill points, and is considered Exposed until the end of the mission.".format(card))
+       card.markers[mdict['baffled']] = 1
+    else:
+       notify("{} is not baffled anymore.".format(card))
+       card.markers[mdict['baffled']] = 0
+
+#---------------------------------------------------------------------------
+# Hand Actions
+#---------------------------------------------------------------------------
 
 def smartPlay(card, x = 0, y = 0):
     mute()
@@ -155,32 +237,6 @@ def playAction(card, x = 0, y = 0):
       draw()
     else: notify("{} attempts to play {}.".format(me, card))
 
-def winMission(card, x = 0, y = 0):
-   mute()
-   if card.Type == 'Mission' and confirm("Have you just won {}?".format(card.name)): 
-      if scrubMission(card) == 'ABORT': return
-      if prepMission(shared.Missions.top()) == 'ABORT': return
-      card.moveTo(me.piles['Victory Pile'])
-      me.counters['Victory Points'].value += num(card.properties['Victory Points'])
-      notify("{} wins {} and gains {} VP.".format(me, card, card.properties['Victory Points']))
-   else: whisper(":::ERROR::: You can only win missions")      
-
-def winTargetMission(group, x = 0, y = 0):
-   for card in table:
-      if card.targetedBy and card.targetedBy == me: winMission(card)
-
-def discard(card, x = 0, y = 0):
-   mute()
-   if fetchProperty(card, 'Type') != 'Mission': 
-      card.moveTo(card.owner.Discard)
-      if card.Type == 'Agent' or card.Type == 'Leader': notify("{} retires {}.".format(me, card))
-      else: notify("{} trashes {}.".format(me, card))
-   else: 
-      if scrubMission(card) == 'ABORT': return
-      if prepMission(shared.Missions.top()) == 'ABORT': return
-      card.moveTo(shared.piles['Mission Discard'])
-      notify("{} discards {}.".format(me, card))
-      
 def discardFromHand(card):
    mute()
    card.moveTo(me.Discard)
@@ -194,101 +250,48 @@ def shuffleIntoDeck(group = me.Discard):
    Deck.shuffle()
    notify("{} shuffles his {} into his Deck.".format(me, group.name))
 
-def activate(card, x = 0, y = 0):
-   debugNotify(">>> activate()") #Debug
+#---------------------------------------------------------------------------
+# Pile Actions
+#---------------------------------------------------------------------------
+
+def draw(group = me.piles['Deck'], x = 0, y = 0):
+    if len(group) == 0: return
+    mute()
+    group[0].moveTo(me.hand)
+    notify("{} draws a card.".format(me))
+
+def drawMany(group = me.piles['Deck'], count = None, destination = None, silent = False):
+   debugNotify(">>> drawMany()") #Debug
+   debugNotify("source: {}".format(group.name),2)
+   if destination: debugNotify("destination: {}".format(destination.name),2)
    mute()
-   if card.isFaceUp:
-      notify("{} Deactivates {}".format(me, card))
-      card.isFaceUp = False
-   else:
-      card.isFaceUp = True
-      rnd(1,10) 
-      if card.Type == 'Mission': 
-         notify("{} Reveals {}".format(me, card))
-         card.orientation = Rot0
-      else: notify("{} Activates {}".format(me, card))
-   debugNotify("<<< activate()") #Debug
+   if destination == None: destination = me.hand
+   SSize = len(group)
+   if SSize == 0: return 0
+   if count == None: count = askInteger("Draw how many cards?", 5)
+   if count == None: return 0
+   if count > SSize : 
+      count = SSize
+      delayed_whisper("You do not have enough cards in your deck to complete this action. Will draw as many as possible")
+   for c in group.top(count): 
+      c.moveTo(destination)
+   if not silent: notify("{} draws {} cards.".format(me, count))
+   debugNotify("<<< drawMany() with return: {}".format(count))
+   return count
+    
+def shuffle(group, x = 0, y = 0):
+    group.shuffle()
 
+#---------------------------------------------------------------------------
+# Rest
+#---------------------------------------------------------------------------
 
-def useText(card, x = 0, y = 0):
+def roll6(group, x = 0, y = 0):
     mute()
-    card.markers[mdict['TextAction']] += 1
-    if card.markers[mdict['TextAction']] > 1: extraTXT = ' {}'.format(numOrder(card.markers[mdict['TextAction']])) # The extra text only displays if the player uses a second or third printed ability on the same card.
-    else: extraTXT = ''
-    notify('{} uses the a{} printed ability on {}.'.format(me, extraTXT, card))
-
-def useMission(card, x = 0, y = 0):
-    mute()
-    card.markers[mdict['MissionAction']] += 1
-    if card.markers[mdict['MissionAction']] > 1: extraTXT = ' {}'.format(numOrder(card.markers[mdict['MissionAction']])) # The extra text only displays if the player uses a second or third printed ability on the same card.
-    else: extraTXT = ''
-    notify('{} uses the a{} mission ability on {}.'.format(me, extraTXT, card))
-
-def useDefault(card, x = 0, y = 0):
-    mute()
-    card.markers[mdict['DefaultMission']] += 1
-    if card.markers[mdict['DefaultMission']] > 1: extraTXT = ' for the {} time'.format(numOrder(card.markers[mdict['DefaultMission']])) # The extra text only displays if the player uses a second or third printed ability on the same card.
-    else: extraTXT = ''
-    notify('{} uses the default mission action{} with {}.'.format(me, extraTXT, card))
+    n = rnd(1, 6)
+    notify("{} rolls {} on a 6-sided die.".format(me, n))
 
 def download_o8c(group,x=0,y=0):
    openUrl("http://dbzer0.com/pub/SpycraftCCG/sets/SpycraftCCG-Sets-Bundle.o8c")
 
-def inspectCard(card, x = 0, y = 0): # This function shows the player the card text, to allow for easy reading until High Quality scans are procured.
-   debugNotify(">>> inspectCard()") #Debug
-   #if debugVerbosity > 0: finalTXT = 'AutoScript: {}\n\n AutoAction: {}'.format(CardsAS.get(card.model,''),CardsAA.get(card.model,''))
-   if card.Type == 'Reference':
-      information("This is the {} Leader Ability Reference card.\
-                 \nIt does not have any abilities itself but it informs you which built-in ability your leaders have.".format(card.Faction))
-   else:          
-      finalTXT = "{}\n\nTraits:{}\n\nCard Text: {}".format(card.name, card.Traits, card.Rules)
-      information("{}".format(finalTXT))
-
-def inspectTargetCard(group, x = 0, y = 0): # This function shows the player the card text, to allow for easy reading until High Quality scans are procured.
-   debugNotify(">>> inspectTargetCard()") #Debug
-   for card in table:
-      if card.targetedBy and card.targetedBy == me: inspectCard(card)
-   
-#---------------------------------------------------------------------------
-# Agent Status
-#---------------------------------------------------------------------------
-
-def clear(card, x = 0, y = 0):
-    notify("{} clears {}.".format(me, card))
-    card.highlight = None
-    card.target(False)
-
-def wound(card, x = 0, y = 0):
-    mute()
-    card.orientation ^= Rot90
-    if card.orientation & Rot90 == Rot90:
-        notify('{} is wounded.'.format(card))
-    else:
-        notify('{} is unwounded.'.format(card))
-
-def expose(card, x = 0, y = 0):
-    mute()
-    if card.markers[mdict['exposed']] == 0:
-        notify("{} becomes Exposed.".format(card))
-        card.markers[mdict['exposed']] = 1
-    else:
-        notify("{} is not Exposed anymore.".format(card))
-        card.markers[mdict['exposed']] = 0
-
-
-def baffle(card, x = 0, y = 0):
-    mute()
-    if card.markers[mdict['baffled']] == 0:
-       notify("{} becomes Baffled, loses all skill points, and is considered Exposed until the end of the mission.".format(card))
-       card.markers[mdict['baffled']] = 1
-    else:
-       notify("{} is not baffled anymore.".format(card))
-       card.markers[mdict['baffled']] = 0
-
-#---------------------------------------------------------------------------
-# Hand Actions
-#---------------------------------------------------------------------------
-
-#---------------------------------------------------------------------------
-# Pile Actions
-#---------------------------------------------------------------------------
+    
