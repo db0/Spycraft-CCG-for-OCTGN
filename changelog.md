@@ -7,6 +7,9 @@ Changelog - Spycraft CCG OCTGN Game Definition
 * Fixed placement of 2nd player cards and mission queue a bit
 * Added a function under the game menu to get the mission queue unstuck if it gets stuck
 * Game will auto peek face down cards you play
+* Added Brief ability 
+* Added Snoop ability
+* Added Mission Action and Default Mission Action
 
 ### 1.0.1.x
 

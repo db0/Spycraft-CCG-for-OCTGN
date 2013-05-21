@@ -67,7 +67,7 @@ def gameSetup(group, x = 0, y = 0): # WiP
    rnd(1,10) # Delay
    firstLeader = leadersDeck.top()
    firstLeader.moveToTable(0, (playerside * 130) + yaxisMove()) # Top card in the leaders deck should be the player's level 1 leader.
-   firstLeader.markers[mdict['Fresh']] += 1
+   #firstLeader.markers[mdict['Fresh']] += 1
    debugNotify("Preparing Mission Deck",2)
    currMissionsVar = getGlobalVariable('currentMissions')
    debugNotify("currMissionsVar = {}".format(currMissionsVar),2)
@@ -138,7 +138,7 @@ def useMission(card, x = 0, y = 0):
     else: extraTXT = ''
     notify('{} uses the a{} mission ability on {}.'.format(me, extraTXT, card))
 
-def useDefault(card, x = 0, y = 0):
+def useDefaultMission(card, x = 0, y = 0):
     mute()
     card.markers[mdict['DefaultMission']] += 1
     if card.markers[mdict['DefaultMission']] > 1: extraTXT = ' for the {} time'.format(numOrder(card.markers[mdict['DefaultMission']])) # The extra text only displays if the player uses a second or third printed ability on the same card.
@@ -199,7 +199,7 @@ def brief(card, x = 0, y = 0):
    if card.markers[mdict['Brief']] > 0 and not confirm("{} has already briefed a leader this turn. Proceed anyway?".format(card.name)): return
    targetCard = None
    for c in table:
-      if c.targetedBy and c.targetedBy == me and not c.isFaceUp and fetchProperty(card, 'Type') == 'Leader':
+      if c.targetedBy and c.targetedBy == me and not c.isFaceUp and fetchProperty(c, 'Type') == 'Leader':
          targetCard = c
          break
    if not targetCard: 
@@ -320,6 +320,12 @@ def drawMany(group = me.piles['Deck'], count = None, destination = None, silent 
     
 def shuffle(group, x = 0, y = 0):
     group.shuffle()
+
+#---------------------------------------------------------------------------
+# Phases
+#---------------------------------------------------------------------------
+
+   
 
 #---------------------------------------------------------------------------
 # Rest
