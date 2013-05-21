@@ -137,11 +137,13 @@ def smartPlay(card, x = 0, y = 0):
 def playAgent(card, x = 0, y = 0):
     mute()
     card.moveToTable(playerside * -300, yaxisMove() + (cwidth() * playerside),True)
+    card.peek()
     notify("{} recruits an agent from their hand.".format(me))
 
 def playGear(card, x = 0, y = 0):
     mute()
     card.moveToTable(playerside * -220, yaxisMove() + (cwidth() * playerside),True)
+    card.peek()
     notify("{} requisitions a gear from their hand.".format(me))
 
 def playAction(card, x = 0, y = 0):
