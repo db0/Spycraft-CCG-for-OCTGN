@@ -73,7 +73,7 @@
 		<cardaction menu="Use Default Mission Action" default="False" shortcut="Alt+D" execute="useDefaultMission" />
 		<cardaction menu="Snoop Target Card" default="False" shortcut="Ctrl+S" execute="snoop" />
 		<cardaction menu="Brief Target Leader" default="False" shortcut="Ctrl+B" execute="brief" />
-		<cardaction menu="Clear" default="False" shortcut="esc" shortcut="Ctrl+C"  execute="clear" />
+		<cardaction menu="Clear Used Abilities" default="False" shortcut="Ctrl+C"  execute="clear" />
 		<cardaction menu="Win Mission" default="False" shortcut="Ctrl+W" execute="winMission" />
       <groupaction menu="Win Target Mission" default="False" shortcut="Ctrl+W" execute="winTargetMission" />
       <cardaction menu="Inspect" default="False" shortcut="Ctrl+I" execute="inspectCard" />
@@ -86,6 +86,7 @@
 			<cardaction menu="Play Action" default="False" execute="playAction" />
 			<cardaction menu="Play as Face-Down Agent" default="False" execute="playAgent" />
 			<cardaction menu="Play as Face-Down Gear" default="False" execute="playGear" />
+         <cardaction menu="Inspect" default="False" shortcut="Ctrl+I" execute="inspectCard" />
 			<cardaction menu="Discard" default="False" execute="discardFromHand" />
 		</hand>
 		<group name="Deck" visibility="none" ordered="False" width="63" height="88" icon="Groups/deck.png" collapsed="False">

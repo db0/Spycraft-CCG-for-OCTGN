@@ -65,7 +65,9 @@ def gameSetup(group, x = 0, y = 0): # WiP
    if Faction == "Shadow Patriots": table.create("bf4bfecd-1d84-4a6f-a787-0986a0fe06b1",playerside * -380, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
    debugNotify("Moving First Leader to table",2)
    rnd(1,10) # Delay
-   leadersDeck.top().moveToTable(0, (playerside * 130) + yaxisMove()) # Top card in the leaders deck should be the player's level 1 leader.
+   firstLeader = leadersDeck.top()
+   firstLeader.moveToTable(0, (playerside * 130) + yaxisMove()) # Top card in the leaders deck should be the player's level 1 leader.
+   firstLeader.markers[mdict['Fresh']] += 1
    debugNotify("Preparing Mission Deck",2)
    currMissionsVar = getGlobalVariable('currentMissions')
    debugNotify("currMissionsVar = {}".format(currMissionsVar),2)
@@ -173,39 +175,76 @@ def inspectTargetCard(group, x = 0, y = 0): # This function shows the player the
       if card.targetedBy and card.targetedBy == me: inspectCard(card)
     
 #---------------------------------------------------------------------------
-# Agent Status
+# Agent Status and Actions
 #---------------------------------------------------------------------------
 
+def snoop(card, x = 0, y = 0):
+   mute()
+   if card.markers[mdict['Snoop']] > 0 and not confirm("{} has already snooped at a card this turn. Proceed anyway?".format(card.name)): return
+   targetCard = None
+   for c in table:
+      if c.targetedBy and c.targetedBy == me and not c.isFaceUp:
+         targetCard = c
+         break
+   if not targetCard: 
+      whisper(":::ERROR::: You need to target a face down card to snoop at.")
+   else:
+      targetCard.peek()
+      card.markers[mdict['Snoop']] += 1
+      notify("{} snoops target inactive card".format(card))
+      
+def brief(card, x = 0, y = 0):
+   mute()
+   if card.markers[mdict['Fresh']] > 0 and not confirm("{} has enterred play this turn and is not normally allowed to perform a brief. Proceed anyway?".format(card.name)): return
+   if card.markers[mdict['Brief']] > 0 and not confirm("{} has already briefed a leader this turn. Proceed anyway?".format(card.name)): return
+   targetCard = None
+   for c in table:
+      if c.targetedBy and c.targetedBy == me and not c.isFaceUp and fetchProperty(card, 'Type') == 'Leader':
+         targetCard = c
+         break
+   if not targetCard: 
+      whisper(":::ERROR::: You need to target a face down leader to brief.")
+   else:
+      card.markers[mdict['Brief']] += 1
+      briefNR = num(card.properties['Expense Rating'])
+      targetCard.markers[mdict['Briefed']] += briefNR
+      notify("{} briefs one of their inactive leaders for {} points".format(card,briefNR))
+      
 def clear(card, x = 0, y = 0):
-    notify("{} clears {}.".format(me, card))
-    card.highlight = None
-    card.target(False)
+   mute()
+   notify("{} clears {}.".format(me, card))
+   card.target(False)
+   card.markers[mdict['Brief']] = 0
+   card.markers[mdict['Snoop']] = 0
+   card.markers[mdict['MissionAction']] = 0
+   card.markers[mdict['DefaultMission']] = 0
+   card.markers[mdict['TextAction']] = 0
 
 def wound(card, x = 0, y = 0):
-    mute()
-    card.orientation ^= Rot90
-    if card.orientation & Rot90 == Rot90:
-        notify('{} is wounded.'.format(card))
-    else:
-        notify('{} is unwounded.'.format(card))
+   mute()
+   card.orientation ^= Rot90
+   if card.orientation & Rot90 == Rot90:
+      notify('{} is wounded.'.format(card))
+   else:
+      notify('{} is unwounded.'.format(card))
 
 def expose(card, x = 0, y = 0):
     mute()
-    if card.markers[mdict['exposed']] == 0:
+    if card.markers[mdict['Exposed']] == 0:
         notify("{} becomes Exposed.".format(card))
-        card.markers[mdict['exposed']] = 1
+        card.markers[mdict['Exposed']] = 1
     else:
         notify("{} is not Exposed anymore.".format(card))
-        card.markers[mdict['exposed']] = 0
+        card.markers[mdict['Exposed']] = 0
 
 def baffle(card, x = 0, y = 0):
     mute()
-    if card.markers[mdict['baffled']] == 0:
+    if card.markers[mdict['Baffled']] == 0:
        notify("{} becomes Baffled, loses all skill points, and is considered Exposed until the end of the mission.".format(card))
-       card.markers[mdict['baffled']] = 1
+       card.markers[mdict['Baffled']] = 1
     else:
        notify("{} is not baffled anymore.".format(card))
-       card.markers[mdict['baffled']] = 0
+       card.markers[mdict['Baffled']] = 0
 
 #---------------------------------------------------------------------------
 # Hand Actions
