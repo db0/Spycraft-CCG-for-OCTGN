@@ -4,12 +4,19 @@ Changelog - Spycraft CCG OCTGN Game Definition
 ### 1.0.2.x
 
 * Fixed b0rked mutliplayer mission queue
+* **Significant:** Leaders now start in your hand and are placed on the table at the start of the game, behind your reference card. You can use the brief action on inactive leaders.
+* **Significant:** Added Intel Phase (F1). Only one player needs to use it per turn, and it will clear all once-per-turn markers and calculate who has the initiative
+* Discarding a Leader now automatically activates the next one
+* Activating a Leader now automatically demotes the existing one.
 * Fixed placement of 2nd player cards and mission queue a bit
 * Added a function under the game menu to get the mission queue unstuck if it gets stuck
 * Game will auto peek face down cards you play
 * Added Brief ability 
 * Added Snoop ability
 * Added Mission Action and Default Mission Action
+* You can now discard cards from your hand as Bravado
+* Activating Actions cards played as bluffs now discard them.
+
 
 ### 1.0.1.x
 
