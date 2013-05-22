@@ -118,6 +118,22 @@ def activate(card, x = 0, y = 0):
       if card.Type == 'Mission': 
          notify("{} Reveals {}".format(me, card))
          card.orientation = Rot0
+      elif card.Type == 'Action':
+         notify("{} Reveals the action card {} as a bluff! Card is discarded.".format(card.owner, card))
+         rnd(1,1000) # Adding a small delay before discarding the card.
+         card.moveTo(card.owner.Discard)
+      elif card.Type == 'Leader':
+         if card.markers[mdict['Brief']] < num(card.properties['Expense Rating']) and not confirm("You do not seem to have enough briefing tokens on this leader to activate them.\n\nProceed anyway?"):
+            card.isFaceUp = False
+            return
+         notify("{} Activates their level {} leader: {}".format(me,card.Level,card))
+         card.orientation = Rot0
+         card.moveToTable(playerside * -300, yaxisMove() + (cwidth() * playerside * 3))
+         leader.markers[mdict['Fresh']] += 1
+         for c in table:
+            if c.controller == me and c.Type == 'Leader' and num(c.Level) < num(card.Level) and not c.markers[mdict['Demoted']]:
+               c.markers[mdict['Demoted']] = 1
+               notify("{}'s previous leader ({}) is demoted".format(c))
       else: notify("{} Activates {}".format(me, card))
    debugNotify("<<< activate()") #Debug
 
