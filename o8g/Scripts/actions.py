@@ -66,7 +66,8 @@ def gameSetup(group, x = 0, y = 0): # WiP
          leader.markers[mdict['Fresh']] += 1
       else:
          debugNotify("Moving high level Leader to table",2)
-         leader.moveToTable(playerside * -1 * (380 + cwidth()),(playerside * cheight() * (4 - num(leader.Level))) + yaxisMove(), True)
+         leader.moveToTable(playerside * -1 * (400 + cwidth()),(playerside * cwidth() * (4 - num(leader.Level))) + yaxisMove(), True)
+         leader.orientation = Rot90
          leader.peek()
          # We move the level 2-4 leaders face down to the table, behind the reference card. Highest level leader is on the top
    debugNotify("Setting Reference Cards",2)
