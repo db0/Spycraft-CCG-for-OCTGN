@@ -4,7 +4,7 @@
       name="Spycraft" 
       id="d1d8cc2c-e817-4b4d-9449-3315bbd3c643" 
       octgnVersion="3.1.15.112" 
-      version="1.0.1.12" 
+      version="1.0.1.18" 
       markersize="16"
       tags="duel espionage objectives AEG"
       description="Spycraft CCG is a espionage-themed card game for 2-6 players.
@@ -97,7 +97,6 @@
 		<group name="Discard" visibility="all" ordered="False" width="63" height="88" icon="Groups/discard.png" collapsed="False">
 			<groupaction menu="Shuffle into Deck" default="False" execute="shuffleIntoDeck" />
 		</group>
-		<group name="Leaders" visibility="me" ordered="False" width="63" height="88" icon="Groups/IconLeadership.png" collapsed="False" />
 		<group name="Victory Pile" visibility="all" ordered="False" width="63" height="88" icon="Groups/vp.png" collapsed="True" />
 		<group name="Removed from Game" visibility="all" ordered="False" width="63" height="88" icon="Groups/removed.png" collapsed="True" />
 		<group name="ScriptingPile" visibility="me" ordered="False" width="63" height="88" icon="Groups/scripting.png" collapsed="True" />
@@ -112,7 +111,7 @@
 	</shared>
 	<deck>
 		<section name="Deck" group="Deck" />
-		<section name="Leaders" group="Leaders" />
+		<section name="Leaders" group="Hand" />
 	</deck>
 	<sharedDeck>
 		<section name="Missions" group="Missions" />

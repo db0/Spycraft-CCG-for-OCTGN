@@ -39,35 +39,43 @@ def gameSetup(group, x = 0, y = 0): # WiP
    chooseSide()
    debugNotify("Setting Deck Variables", 2) #Debug
    deck = me.piles['Deck']
-   leadersDeck = me.piles['Leaders']
    missionDeck = shared.Missions
-   debugNotify("Arranging Leaders",2)
-   if len(missionDeck) == 0: 
-      delayed_whisper(":::ERROR::: Please load the mission deck before setting up the game")
+   if len(missionDeck) != 24: 
+      delayed_whisper(":::ERROR::: Please load the mission deck properly before setting up the game")
       return
-   if len(leadersDeck) < 4 and not confirm(":::Illegal Deck:::\n\nYou must have at least 4 leaders in your leader deck.\n\nProceed Anyway?"): return
-   for leader in leadersDeck:
-      debugNotify("Moving {} ({}) to pos {}".format(leader, leader.level, num(leader.level) - 1),2)
-      leader.moveTo(leadersDeck,num(leader.level) - 1) # This function will move each leader card at the index of the leader deck, according to its level. So level 1 leader will be top, and level 4 will be bottom
+   debugNotify("Checking hand size",2)
+   if len(me.hand) < 4 and not confirm(":::Illegal Deck:::\n\nYou must have at least 4 leaders in your deck.\n\nProceed Anyway?"): return
+   debugNotify("Arranging Leaders",2)
+   for leader in me.hand:
+      if leader.Type != 'Leader':
+         delayed_whisper("You're only allowed to hold leaders during setup. Shuffling {} into your deck".format(leader))
+         leader.moveTo(deck)
+         continue
+      debugNotify("Checking Faction",2)
       if not Faction: Faction = leader.Faction
       elif Faction != leader.Faction:
          if not confirm(":::Illegal Deck:::\n\nYou have leader of different factions in your leader deck.\n\nProceed Anyway?"): return
          else: 
             notify(":::Warning::: {}'s Leader deck has different factions!".format(me))
             Faction = leader.Faction
+      #debugNotify("Moving {} ({}) to pos {}".format(leader, leader.level, num(leader.level) - 1),2)
+      debugNotify("Checking Leader Levels",2)
+      if num(leader.Level) == 1:
+         debugNotify("Moving First Leader to table",2)
+         leader.moveToTable(0, (playerside * 130) + yaxisMove()) # Level 1 leader is moved to the table
+         leader.markers[mdict['Fresh']] += 1
+      else:
+         debugNotify("Moving high level Leader to table",2)
+         leader.moveToTable(playerside * -1 * (380 + cwidth()),(playerside * cheight() * (4 - num(leader.Level))) + yaxisMove(), True)
+         leader.peek()
+         # We move the level 2-4 leaders face down to the table, behind the reference card. Highest level leader is on the top
    debugNotify("Setting Reference Cards",2)
-   debugNotify("playerside = {}. yaxisMove = {}".format(playerside,yaxisMove()),4)
    if Faction == "Banshee Net": table.create("9f291494-8713-4b7e-bc7c-36b428fc0dd1",playerside * -380, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
    if Faction == "Bloodvine": table.create("8e2ff010-98b5-4884-a39b-100940d4f702",playerside * -380, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
    if Faction == "Franchise": table.create("6d131915-cb6a-43ca-b2f1-64ac040b0eec",playerside * -380, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
    if Faction == "The Krypt": table.create("0d058ed6-51e8-42c7-9cbb-67a3d267c618",playerside * -380, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
    if Faction == "Nine Tiger": table.create("49f5d0ad-60e2-4810-86b6-5f962f99d9bd",playerside * -380, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
    if Faction == "Shadow Patriots": table.create("bf4bfecd-1d84-4a6f-a787-0986a0fe06b1",playerside * -380, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
-   debugNotify("Moving First Leader to table",2)
-   rnd(1,10) # Delay
-   firstLeader = leadersDeck.top()
-   firstLeader.moveToTable(0, (playerside * 130) + yaxisMove()) # Top card in the leaders deck should be the player's level 1 leader.
-   #firstLeader.markers[mdict['Fresh']] += 1
    debugNotify("Preparing Mission Deck",2)
    currMissionsVar = getGlobalVariable('currentMissions')
    debugNotify("currMissionsVar = {}".format(currMissionsVar),2)
