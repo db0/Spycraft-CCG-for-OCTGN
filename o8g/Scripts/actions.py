@@ -285,6 +285,11 @@ def playAction(card, x = 0, y = 0):
       draw()
     else: notify("{} attempts to play {}.".format(me, card))
 
+def playBravado(card, x = 0, y = 0):
+    mute()
+    card.moveTo(me.Discard)
+    notify("{} discards {} for {} bravado.".format(me, card, card.Bravado))
+
 def discardFromHand(card):
    mute()
    card.moveTo(me.Discard)

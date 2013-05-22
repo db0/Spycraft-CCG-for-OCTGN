@@ -86,6 +86,7 @@
 			<cardaction menu="Play Action" default="False" execute="playAction" />
 			<cardaction menu="Play as Face-Down Agent" default="False" execute="playAgent" />
 			<cardaction menu="Play as Face-Down Gear" default="False" execute="playGear" />
+			<cardaction menu="Discard as Bravado" default="False" shortcut="Ctrl+B" execute="playBravado" />
          <cardaction menu="Inspect" default="False" shortcut="Ctrl+I" execute="inspectCard" />
 			<cardaction menu="Discard" default="False" execute="discardFromHand" />
 		</hand>
