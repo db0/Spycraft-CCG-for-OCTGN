@@ -22,7 +22,7 @@ import re
 #---------------------------------------------------------------------------
 
 Faction = None
-
+leadersDict = {} # A dictionary which holds card IDs of all the player's leaders according to their level.
     
 #---------------------------------------------------------------------------
 # Game Setup
@@ -31,7 +31,7 @@ Faction = None
 def gameSetup(group, x = 0, y = 0): # WiP
    debugNotify(">>> gameSetup()") #Debug
    mute()
-   global Faction
+   global Faction, leadersDict
    if Faction and not confirm("Are you sure you want to setup for a new game? (This action should only be done after a table reset)"): return
    debugNotify("Resetting All", 2) #Debug
    debugNotify("Choosing Side", 2) #Debug
@@ -62,14 +62,18 @@ def gameSetup(group, x = 0, y = 0): # WiP
       debugNotify("Checking Leader Levels",2)
       if num(leader.Level) == 1:
          debugNotify("Moving First Leader to table",2)
+         leadersDict[1] = leader._id
          leader.moveToTable(0, (playerside * 130) + yaxisMove()) # Level 1 leader is moved to the table
          leader.markers[mdict['Fresh']] += 1
       else:
          debugNotify("Moving high level Leader to table",2)
+         leadersDict[num(leader.Level)] = leader._id
          leader.moveToTable(playerside * -1 * (400 + cwidth()),(playerside * cwidth() * (4 - num(leader.Level))) + yaxisMove(), True)
          leader.orientation = Rot90
          leader.peek()
          # We move the level 2-4 leaders face down to the table, behind the reference card. Highest level leader is on the top
+   for iter in range(4): # We do a quick check to see we indeed have leaders 1-4
+      if not leadersDict.get(iter + 1,None): notify(":::WARNING::: {} is missing their level {} leader!".format(iter + 1))
    debugNotify("Setting Reference Cards",2)
    if Faction == "Banshee Net": table.create("9f291494-8713-4b7e-bc7c-36b428fc0dd1",playerside * -380, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
    if Faction == "Bloodvine": table.create("8e2ff010-98b5-4884-a39b-100940d4f702",playerside * -380, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
@@ -123,26 +127,45 @@ def activate(card, x = 0, y = 0):
          rnd(1,1000) # Adding a small delay before discarding the card.
          card.moveTo(card.owner.Discard)
       elif card.Type == 'Leader':
-         if card.markers[mdict['Brief']] < num(card.properties['Expense Rating']) and not confirm("You do not seem to have enough briefing tokens on this leader to activate them.\n\nProceed anyway?"):
+         if card.markers[mdict['Briefed']] < num(card.properties['Expense Rating']) and not confirm("You do not seem to have enough briefing tokens on this leader to activate them.\n\nProceed anyway?"):
             card.isFaceUp = False
+            card.peek()
             return
          notify("{} Activates their level {} leader: {}".format(me,card.Level,card))
          card.orientation = Rot0
-         card.moveToTable(playerside * -300, yaxisMove() + (cwidth() * playerside * 3))
-         leader.markers[mdict['Fresh']] += 1
+         card.moveToTable(playerside * -300, yaxisMove() + (cwidth() * playerside * 2))
+         if num(card.Level) < 4: card.markers[mdict['Fresh']] += 1
+         card.markers[mdict['Briefed']] = 0
          for c in table:
             if c.controller == me and c.Type == 'Leader' and num(c.Level) < num(card.Level) and not c.markers[mdict['Demoted']]:
                c.markers[mdict['Demoted']] = 1
-               notify("{}'s previous leader ({}) is demoted".format(c))
+               notify("{}'s previous leader ({}) is demoted".format(me,c))
+               break
       else: notify("{} Activates {}".format(me, card))
    debugNotify("<<< activate()") #Debug
 
 def discard(card, x = 0, y = 0):
    mute()
    if fetchProperty(card, 'Type') != 'Mission': 
-      card.moveTo(card.owner.Discard)
-      if card.Type == 'Agent' or card.Type == 'Leader': notify("{} retires {}.".format(me, card))
+      if card.Type == 'Agent' or (card.Type == 'Leader' and card.markers[mdict['Demoted']]): notify("{} retires {}.".format(me, card))
+      elif card.Type == 'Leader':
+         debugNotify("About to discard Active leader", 2) #Debug
+         if card.Level == '4': notify("{} has retired their highest level leader and loses the game".format(me))
+         else:
+            for iter in range(4):
+               debugNotify("Checking Leader level {}".format(iter + 1), 3) #Debug
+               leaderCHK = Card(leadersDict[iter + 1])
+               if not leaderCHK.isFaceUp and leaderCHK.group == table:
+                  notify("{} retires {} and {} activates to take their place as leader.".format(me,card,leaderCHK))
+                  leaderCHK.isFaceUp = True
+                  rnd(1,10)
+                  leaderCHK.orientation = Rot0
+                  leaderCHK.moveToTable(playerside * -300, yaxisMove() + (cwidth() * playerside * 2))
+                  if num(leaderCHK.Level) < 4: leaderCHK.markers[mdict['Fresh']] += 1
+                  leaderCHK.markers[mdict['Briefed']] = 0
+                  break
       else: notify("{} trashes {}.".format(me, card))
+      card.moveTo(card.owner.Discard)
    else: 
       if scrubMission(card) == 'ABORT': return
       if prepMission(shared.Missions.top()) == 'ABORT': return
@@ -221,6 +244,7 @@ def snoop(card, x = 0, y = 0):
 def brief(card, x = 0, y = 0):
    mute()
    if card.markers[mdict['Fresh']] > 0 and not confirm("{} has enterred play this turn and is not normally allowed to perform a brief. Proceed anyway?".format(card.name)): return
+   if card.markers[mdict['Demoted']] > 0 and not confirm("{} is a demoted leader and is not normally allowed to perform a brief. Proceed anyway?".format(card.name)): return
    if card.markers[mdict['Brief']] > 0 and not confirm("{} has already briefed a leader this turn. Proceed anyway?".format(card.name)): return
    targetCard = None
    for c in table:
