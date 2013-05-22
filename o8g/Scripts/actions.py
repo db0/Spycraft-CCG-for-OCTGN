@@ -40,7 +40,7 @@ def gameSetup(group, x = 0, y = 0): # WiP
    debugNotify("Setting Deck Variables", 2) #Debug
    deck = me.piles['Deck']
    missionDeck = shared.Missions
-   if len(missionDeck) != 24: 
+   if len(missionDeck) == 0 or len(missionDeck) > 24: 
       delayed_whisper(":::ERROR::: Please load the mission deck properly before setting up the game")
       return
    debugNotify("Checking hand size",2)
@@ -259,16 +259,18 @@ def brief(card, x = 0, y = 0):
       targetCard.markers[mdict['Briefed']] += briefNR
       notify("{} briefs one of their inactive leaders for {} points".format(card,briefNR))
       
-def clear(card, x = 0, y = 0):
+def clear(card, x = 0, y = 0, silent = False):
+   debugNotify(">>> clear()")
    mute()
-   notify("{} clears {}.".format(me, card))
+   if not silent: notify("{} clears {}.".format(me, card))
    card.target(False)
    card.markers[mdict['Brief']] = 0
    card.markers[mdict['Snoop']] = 0
    card.markers[mdict['MissionAction']] = 0
    card.markers[mdict['DefaultMission']] = 0
    card.markers[mdict['TextAction']] = 0
-
+   debugNotify("<<< clear()")
+   
 def wound(card, x = 0, y = 0):
    mute()
    card.orientation ^= Rot90
@@ -379,7 +381,52 @@ def shuffle(group, x = 0, y = 0):
 # Phases
 #---------------------------------------------------------------------------
 
-   
+def goToIntel(group,x=0,y=0):
+   mute()
+   notify("===================")
+   notify("  New Intel Phase  ")
+   notify("===================")
+   craftCalcs = {}
+   debugNotify("About to calculate crafts",2)
+   for player in players: # First we calculate the craft for each player 
+      craftCalcs[player] = 0
+      debugNotify("About to iterate table cards",4)
+      for card in table:
+         clear(card, silent = True) # Since we're going through all cards, we might as well clear them now.
+         if card.controller == player and card.isFaceUp:
+            if card.orientation == Rot90 and card.Type == 'Agent': # If agent is wounded, their craft is reduced by 2
+               craft = num(card.Craft) - 2
+               if craft < 0: craft = 0
+            else:
+               craft = num(card.Craft)
+            craftCalcs[player] += craft
+   craftyPlayers = [] # A list holding the player or players with the highest craft total.
+   debugNotify("About to compare crafts",2)
+   for player in players:
+      if len(craftyPlayers) == 0: craftyPlayers.append(player)
+      else:
+         for crafty in craftyPlayers:
+            if craftCalcs[crafty] < craftCalcs[player]: 
+               del craftyPlayers[:] # If the checked player has more craft than those in the list, we clear the list and put just them in
+               craftyPlayers.append(player)
+               break
+            elif craftCalcs[crafty] == craftCalcs[player]: 
+               craftyPlayers.append(player)  # If they are equal, we put them both in the list
+               break
+   if len(craftyPlayers) == 1: 
+      debugNotify("Only one winner",4)
+      winner = craftyPlayers[0]
+      notify(":> {} has the most craft this turn and takes the initiative".format(winner))
+   else:
+      debugNotify("Craft is tied",4)
+      random = rnd(0,len(craftyPlayers) - 1)
+      winner = craftyPlayers[random]
+      notify(":> {} are tied in craft this turn. {} is selected at random to get the initiative".format([player.name for player in craftyPlayers],winner))
+   debugNotify("About to place starting marker",2)
+   for card in table:
+      if card.Type == 'Reference':
+         if card.owner == winner: card.markers[mdict['Starting']] = 1
+         else: card.markers[mdict['Starting']] = 0
 
 #---------------------------------------------------------------------------
 # Rest

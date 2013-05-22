@@ -7,6 +7,7 @@ mdict = { # A dictionary which holds all the hard coded markers (in the markers 
     'Briefed'        : ("Briefed", "72179c7a-9087-49f8-8a93-010b284cfa6e"),
     'Fresh'          : ("Fresh Leader", "c964be10-521f-4cc0-a3a9-5c0def322110"),
     'Demoted'        : ("Demoted", "cdf63a20-808d-4789-b192-da69a870719c"),
+    'Starting'       : ("Starting Player", "fce69579-dbbf-428f-852f-86dbfdc97c67"),
     'DefaultMission' : ("Default Mission Action Taken", "c3dcf14d-65ae-4356-b702-f4b8fda91313"),
     'MissionAction'  : ("Mission Action Taken", "69a2514e-9d49-4f8d-8408-dc069625e07c"),
     'TextAction'     : ("Text Action Taken", "05a5f34f-e4d2-4ee0-9906-b03f70b02a01")

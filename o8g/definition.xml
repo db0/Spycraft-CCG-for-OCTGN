@@ -4,7 +4,7 @@
       name="Spycraft" 
       id="d1d8cc2c-e817-4b4d-9449-3315bbd3c643" 
       octgnVersion="3.1.15.112" 
-      version="1.0.1.25" 
+      version="1.0.1.32" 
       markersize="16"
       tags="duel espionage objectives AEG"
       description="Spycraft CCG is a espionage-themed card game for 2-6 players.
@@ -48,7 +48,7 @@
 		<property name="Victory Points" type="String" hidden="False" ignoreText="False" />
 		<property name="Cover Level" type="String" hidden="False" ignoreText="False" />
 	</card>
-	<table name="Table" visibility="undefined" ordered="False" width="800" height="450" background="Table/Intel.jpg" backgroundStyle="uniformToFill">
+	<table name="Table" visibility="undefined" ordered="False" width="950" height="450" background="Table/Intel.jpg" backgroundStyle="uniformToFill">
 		<cardaction menu="Smart Action (Activate/Score/Participate...)" default="True" shortcut="Ctrl+S" execute="defaultAction" />
 		<groupactions menu="Game...">
          <groupaction menu="Set up" default="False" shortcut="Ctrl+Shift+S" execute="gameSetup" />
