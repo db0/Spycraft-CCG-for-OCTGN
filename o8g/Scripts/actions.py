@@ -93,6 +93,7 @@ def gameSetup(group, x = 0, y = 0): # WiP
          for mission in startingMissions: prepMission(mission, True)
       else: debugNotify("Missions already setup by another player. Aborting mission deck setup",4)
    else: debugNotify("Missions currently being setup by another player",4)
+   if PlayerColor == "#": defPlayerColor()
    shuffle(deck)
    drawMany(deck, 7, silent = True)
    debugNotify("<<< gameSetup()") #Debug
@@ -105,9 +106,31 @@ def gameSetup(group, x = 0, y = 0): # WiP
 def defaultAction(card, x = 0, y = 0):
    debugNotify(">>> defaultAction()") #Debug
    mute()
-   if not card.isFaceUp: activate(card)
-   elif card.Type == 'Mission': winMission(card)
-   else: useText(card)
+   for c in table:
+      if c.Type == 'Mission' and c.highlight: missionInProgress = True
+      else: missionInProgress = False
+      if missionInProgress: break
+   debugNotify("Checking for activation",2) #Debug
+   if not card.isFaceUp:
+      if missionInProgress and not card.highlight:
+         if confirm("There's currently a mission in progress. Do you want to declare this card as participating agent?"): participate(card)
+         else: activate(card)
+      else: activate(card)
+   elif card.Type == 'Mission':
+      if not card.highlight: runMission(card)
+      else: winMission(card)
+   elif card.Type == 'Agent' or card.Type == 'Leader':
+      if missionInProgress:
+         if not card.highlight: participate(card)
+         elif not card.markers[mdict['DefaultMission']]: useDefaultMission(card)
+         elif not card.markers[mdict['MissionAction']]: useMission(card)
+         else: useText(card)
+      else: useText(card)
+   else: 
+      if missionInProgress:
+         if not card.markers[mdict['MissionAction']]: useMission(card)
+         else: useText(card)
+      else: useText(card)
    debugNotify("<<< defaultAction()") #Debug
     
 def activate(card, x = 0, y = 0):
@@ -167,10 +190,16 @@ def discard(card, x = 0, y = 0):
       else: notify("{} trashes {}.".format(me, card))
       card.moveTo(card.owner.Discard)
    else: 
+      if card.highlight: finishRun()
       if scrubMission(card) == 'ABORT': return
       if prepMission(shared.Missions.top()) == 'ABORT': return
       card.moveTo(shared.piles['Mission Discard'])
       notify("{} discards {}.".format(me, card))
+      
+def discardTarget(group, x = 0, y = 0):
+   for card in table:
+      if card.targetedBy and card.targetedBy == me: discard(card)
+
       
 def useText(card, x = 0, y = 0):
     mute()
@@ -193,19 +222,54 @@ def useDefaultMission(card, x = 0, y = 0):
     else: extraTXT = ''
     notify('{} uses the default mission action{} with {}.'.format(me, extraTXT, card))
     
+def runMission(card, x = 0, y = 0):
+   debugNotify(">>> runMission()")
+   mute()
+   for c in table:
+      debugNotify("Checking table card: {}".format(c),4)
+      if c.Type == 'Mission' and c.highlight:
+         delayed_whisper(":::ERROR::: There's already a run in progress on {}. Please make sure that run is complete by winning, discarding or cleasring that mission, and then redo this action.".format(c))
+         return 'ABORT'
+   if fetchProperty(card, 'Type') == 'Mission': 
+      debugNotify("About to start the run:",2)
+      if not card.isFaceUp: 
+         card.isFaceUp = True
+         rnd(1,10)
+      debugNotify("About to assign highlight color",2)
+      debugNotify("My color is {}".format(PlayerColor),4)
+      card.highlight = PlayerColor
+      notify("{} starts a run on {}".format(me,card))
+   else: 
+      delayed_whisper(":::ERROR::: You can only run mission cards")      
+      return 'ABORT'
+   debugNotify("<<< runMission()")
+   return 'OK'
+
+def runTargetMission(group, x = 0, y = 0):
+   for card in table:
+      if card.targetedBy and card.targetedBy == me: 
+         runResult = runMission(card)
+         if runResult != 'ABORT': break
+    
 def winMission(card, x = 0, y = 0):
    mute()
    if card.Type == 'Mission' and confirm("Have you just won {}?".format(card.name)): 
-      if scrubMission(card) == 'ABORT': return
-      if prepMission(shared.Missions.top()) == 'ABORT': return
+      if card.highlight: finishRun()
+      if scrubMission(card) == 'ABORT': return 'ABORT'
+      if prepMission(shared.Missions.top()) == 'ABORT': return 'ABORT'
       card.moveTo(me.piles['Victory Pile'])
       me.counters['Victory Points'].value += num(card.properties['Victory Points'])
       notify("{} wins {} and gains {} VP.".format(me, card, card.properties['Victory Points']))
-   else: whisper(":::ERROR::: You can only win missions")      
+   else: 
+      whisper(":::ERROR::: You can only win missions")
+      return 'ABORT'
+   return 'OK'
 
 def winTargetMission(group, x = 0, y = 0):
    for card in table:
-      if card.targetedBy and card.targetedBy == me: winMission(card)
+      if card.targetedBy and card.targetedBy == me: 
+         winResult = winMission(card)
+         if winResult != 'ABORT': break
     
 def inspectCard(card, x = 0, y = 0): # This function shows the player the card text, to allow for easy reading until High Quality scans are procured.
    debugNotify(">>> inspectCard()") #Debug
@@ -264,12 +328,32 @@ def clear(card, x = 0, y = 0, silent = False):
    mute()
    if not silent: notify("{} clears {}.".format(me, card))
    card.target(False)
+   card.highlight = None
    card.markers[mdict['Brief']] = 0
    card.markers[mdict['Snoop']] = 0
    card.markers[mdict['MissionAction']] = 0
    card.markers[mdict['DefaultMission']] = 0
    card.markers[mdict['TextAction']] = 0
    debugNotify("<<< clear()")
+
+def participate(card, x = 0, y = 0):
+   debugNotify(">>> participate()")
+   mute()
+   attacker = None
+   for c in table:
+      if c.Type == 'Mission' and c.highlight:
+         if c.highlight == PlayerColor: attacker = 'me'
+         else: attacker = 'opponent'
+         break
+   if attacker == 'me': 
+      card.highlight = AttackerColor
+      notify("{} declares {} as an attacker.".format(me,card))
+   elif attacker == 'opponent': 
+      card.highlight = DefenderColor
+      notify("{} declares {} as a defender.".format(me,card))
+   else: delayed_whisper("There is no mission run currently in progress! Aborting.")
+   debugNotify("<<< participate()")
+   
    
 def wound(card, x = 0, y = 0):
    mute()
@@ -428,6 +512,19 @@ def goToIntel(group,x=0,y=0):
          if card.owner == winner: card.markers[mdict['Starting']] = 1
          else: card.markers[mdict['Starting']] = 0
 
+def goToDebrief(group,x=0,y=0):
+   mute()
+   drawMany(count = 5,silent = True)
+   notify(":> {} starts their debriefing phase and draw 5 cards".format(me))
+   
+
+#---------------------------------------------------------------------------
+# Announcements
+#---------------------------------------------------------------------------
+
+def declarePass(group,x=0,y=0):
+   notify("-- {} Passes".format(me))
+   
 #---------------------------------------------------------------------------
 # Rest
 #---------------------------------------------------------------------------

@@ -4,7 +4,7 @@
       name="Spycraft" 
       id="d1d8cc2c-e817-4b4d-9449-3315bbd3c643" 
       octgnVersion="3.1.15.112" 
-      version="1.0.2.1" 
+      version="1.0.2.11" 
       markersize="16"
       tags="duel espionage objectives AEG"
       description="Spycraft CCG is a espionage-themed card game for 2-6 players.
@@ -64,6 +64,7 @@
       </groupactions>
 		<groupaction menu="Roll d6" default="False" execute="roll6" />
 		<cardaction menu="Retire Agent/Discard Card" default="False" shortcut="del" execute="discard" />
+		<cardaction menu="Discard Target Cards" default="False" shortcut="del" execute="discardTargets" />
 		<cardaction menu="Activate/Deactivate" default="False" shortcut="Ctrl+A" execute="activate" />
 		<cardaction menu="Wound/Unwound" default="False" shortcut="Alt+W" execute="wound" />
 		<cardaction menu="Expose/Clear" default="False" shortcut="Alt+E" execute="expose" />
@@ -74,13 +75,17 @@
 		<cardaction menu="Snoop Target Card" default="False" shortcut="Ctrl+S" execute="snoop" />
 		<cardaction menu="Brief Target Leader" default="False" shortcut="Ctrl+B" execute="brief" />
 		<cardaction menu="Clear Used Abilities" default="False" shortcut="Ctrl+C"  execute="clear" />
-		<cardaction menu="Win Mission" default="False" shortcut="Ctrl+W" execute="winMission" />
+		<groupaction menu="Run Target Mission" default="False" shortcut="Ctrl+A" execute="runTargetMission" />
       <groupaction menu="Win Target Mission" default="False" shortcut="Ctrl+W" execute="winTargetMission" />
+      <groupaction menu="Declare as Mission Participant" default="False" shortcut="Ctrl+P" execute="participate" />
       <cardaction menu="Inspect" default="False" shortcut="Ctrl+I" execute="inspectCard" />
       <groupaction menu="Inspect Target" default="False" shortcut="Ctrl+I" execute="inspectTargetCard" />
+      <groupactions menu="Announcements...">
+         <groupaction menu="Declare Pass." default="False" shortcut="Ctrl+Enter" execute="announcePass" />
+      </groupactions>
 <!--      <cardaction menu="Show Card Position" default="False" shortcut="Ctrl+Shift+X" execute="ShowPosC" /> -->
 	</table>
-	<player summary="{#Victory Points} VP/ {#brief} Brief/ {#Hand} Cards">
+	<player summary="{#Victory Points} VP/ {#Hand} Cards">
 		<hand name="Hand" visibility="me" ordered="False" width="63" height="88" icon="Groups/hand.jpg">
 			<cardaction menu="Smart Play" default="True" shortcut="enter" execute="smartPlay" />
 			<cardaction menu="Play Action" default="False" execute="playAction" />
@@ -102,7 +107,6 @@
 		<group name="Removed from Game" visibility="all" ordered="False" width="63" height="88" icon="Groups/removed.png" collapsed="True" />
 		<group name="ScriptingPile" visibility="me" ordered="False" width="63" height="88" icon="Groups/scripting.png" collapsed="True" />
 		<counter name="Victory Points" default="0" reset="False" icon="Counters/vp.png" />
-		<counter name="brief" default="0" reset="False" icon="Counters/briefcase-icon.png" />
 	</player>
 	<shared>
 		<group name="Missions" visibility="none" ordered="False" width="63" height="88" icon="Groups/H_Mission_50.png" collapsed="False">

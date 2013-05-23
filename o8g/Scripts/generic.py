@@ -26,6 +26,7 @@ import re
 
 playerside = None # Variable to keep track on which side each player is
 playeraxis = None # Variable to keep track on which axis the player is
+PlayerColor = "#" # Variable with the player's unique colour.
 
 #---------------------------------------------------------------------------
 # Custom Windows Forms
@@ -413,6 +414,13 @@ def multiChoice(title, options,card): # This displays a choice where the player 
 #---------------------------------------------------------------------------
 # Generic
 #---------------------------------------------------------------------------
+
+def defPlayerColor(): 
+# Provide a random highlight colour for the player which we use to simulate ownership
+   global PlayerColor
+   if len(PlayerColor) == 7 : return
+   RGB = ["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"]
+   for i in range(6): PlayerColor += RGB[rnd(0,15)]
 
 def debugNotify(msg = 'Debug Ping!', level = 1):
    if not re.search(r'<<<',msg) and not re.search(r'>>>',msg):

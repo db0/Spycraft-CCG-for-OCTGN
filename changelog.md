@@ -1,6 +1,18 @@
 Changelog - Spycraft CCG OCTGN Game Definition
 ===============================================
 
+### 1.0.3.x
+
+* **Significant:** Added Mission Participation controls
+  * Double clicking on a mission or targeting and pressing Ctrl+A initiates a run on that mission for your side
+  * Double clicking a highlighted mission tries to score it
+  * Double clicking on a non-participating agent, marks them as a participanty
+  * Double clicking on a participating agent tries to use: Default Mission Action, Mission Action, Text Action, in that order
+  * Face down cards can be declared as participants as well.
+  * Winning or Discarding a mission currently being run, clears all participants and their mission markers.
+* Added Debriefing Phase. It just draws 5 cards for you and announces it.
+
+
 ### 1.0.2.x
 
 * Fixed b0rked mutliplayer mission queue

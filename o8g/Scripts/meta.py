@@ -103,6 +103,15 @@ def scrubMission(card):
    setGlobalVariable('currentMissions', str(currentMissions))
    debugNotify("<<< scrubMission()") #Debug
 
+def finishRun():
+   debugNotify(">>> finishRun()") #Debug
+   mute()
+   for card in table:
+      card.target(False)
+      card.highlight = None
+      card.markers[mdict['MissionAction']] = 0
+      card.markers[mdict['DefaultMission']] = 0
+   debugNotify("<<< finishRun()") #Debug
    
 #------------------------------------------------------------------------------
 # Debugging
