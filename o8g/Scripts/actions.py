@@ -235,6 +235,7 @@ def runMission(card, x = 0, y = 0):
       if not card.isFaceUp: 
          card.isFaceUp = True
          rnd(1,10)
+         card.orientation = Rot0
       debugNotify("About to assign highlight color",2)
       debugNotify("My color is {}".format(PlayerColor),4)
       card.highlight = PlayerColor
