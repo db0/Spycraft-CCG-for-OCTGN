@@ -137,7 +137,7 @@ def activate(card, x = 0, y = 0):
          if num(card.Level) < 4: card.markers[mdict['Fresh']] += 1
          card.markers[mdict['Briefed']] = 0
          for c in table:
-            if c.controller == me and c.Type == 'Leader' and num(c.Level) < num(card.Level) and not c.markers[mdict['Demoted']]:
+            if c.controller == me and c.isFaceUp and c.Type == 'Leader' and num(c.Level) < num(card.Level) and not c.markers[mdict['Demoted']]:
                c.markers[mdict['Demoted']] = 1
                notify("{}'s previous leader ({}) is demoted".format(me,c))
                break
