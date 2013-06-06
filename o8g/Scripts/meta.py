@@ -112,7 +112,99 @@ def finishRun():
       card.markers[mdict['MissionAction']] = 0
       card.markers[mdict['DefaultMission']] = 0
    debugNotify("<<< finishRun()") #Debug
+
+#------------------------------------------------------------------------------
+# Card Attachments scripts
+#------------------------------------------------------------------------------
+
+def findHost():
+   debugNotify(">>> findHost(){}".format(extraASDebug())) #Debug
+   # Tries to find a host to attach the gear
+   hostCards = eval(getGlobalVariable('Host Cards'))
+   potentialHosts = [card for card in table  # Potential hosts are:
+                     if card.targetedBy # Cards that are targeted by the player
+                     and card.targetedBy == me 
+                     and card.controller == me # Which the player control
+                     and ((card.Type == 'Agent' or (card.Type == 'Leader' and card.isFaceUp)) # That are either Agents or Active Leader
+                        or (not card.isFaceUp                    # Or that are face down (i.e. pretending to be agents)
+                           and card.orientation == Rot0          # and are not turned sideways (which is reserved for missions and incactive leaders) 
+                           and not hostCards.has_key(card._id))) # and are not attached to other cards already
+                     ]
+   debugNotify("Finished gatherting potential hosts",2)
+   if len(potentialHosts) == 0:
+      delayed_whisper(":::ERROR::: Please Target a valid host for this gear!")
+      result = None
+   else: result = potentialHosts[0] # If a propert host is targeted, then we return it to the calling function. We always return just the first result.
+   debugNotify("<<< findHost() with result {}".format(result), 3)
+   return result
+
+def attachCard(attachment,host,facing = 'Same'):
+   debugNotify(">>> attachCard(){}".format(extraASDebug())) #Debug
+   hostCards = eval(getGlobalVariable('Host Cards'))
+   hostCards[attachment._id] = host._id
+   setGlobalVariable('Host Cards',str(hostCards))
+   orgAttachments(host,facing)
+   debugNotify("<<< attachCard()", 3)
    
+def clearAttachLinks(card):
+# This function takes care to discard any attachments of a card that left play
+# It also clear the card from the host dictionary, if it was itself attached to another card
+# If the card was hosted by a Daemon, it also returns the free MU token to that daemon
+   debugNotify(">>> clearAttachLinks()") #Debug
+   hostCards = eval(getGlobalVariable('Host Cards'))
+   cardAttachementsNR = len([att_id for att_id in hostCards if hostCards[att_id] == card._id])
+   if cardAttachementsNR >= 1:
+      hostCardSnapshot = dict(hostCards)
+      for attachmentID in hostCardSnapshot:
+         if hostCardSnapshot[attachmentID] == card._id:
+            if Card(attachmentID) in table: discard(Card(attachmentID))
+            del hostCards[attachmentID]
+   debugNotify("Checking if the card is attached to unlink.", 2)      
+   if hostCards.has_key(card._id):
+      hostCard = Card(hostCards[card._id])
+      del hostCards[card._id] # If the card was an attachment, delete the link
+      orgAttachments(hostCard) 
+   setGlobalVariable('Host Cards',str(hostCards))
+   debugNotify("<<< clearAttachLinks()", 3) #Debug   
+
+
+def orgAttachments(card,facing = 'Same'):
+# This function takes all the cards attached to the current card and re-places them so that they are all visible
+# xAlg, yAlg are the algorithsm which decide how the card is placed relative to its host and the other hosted cards. They are always multiplied by attNR
+   debugNotify(">>> orgAttachments()") #Debug
+   attNR = 1
+   debugNotify(" Card Name : {}".format(card.name), 4)
+   if specialHostPlacementAlgs.has_key(card.name):
+      debugNotify("Found specialHostPlacementAlgs", 3)
+      xAlg = specialHostPlacementAlgs[card.name][0]
+      yAlg = specialHostPlacementAlgs[card.name][1]
+      debugNotify("Found Special Placement Algs. xAlg = {}, yAlg = {}".format(xAlg,yAlg), 2)
+   else: 
+      debugNotify("No specialHostPlacementAlgs", 3)
+      yAlg = 0 # The Default placement on the Y axis, is to place the attachments at the same line as their parent
+      #if card.controller == me: sideOffset = playerside # If it's our card, we need to assign it towards our side
+      #else: sideOffset = playerside * -1 # Otherwise we assign it towards the opponent's side
+      xAlg = -(cwidth() / 3 * playerside) # Default placement on the x axis is to the left of its host
+   hostCards = eval(getGlobalVariable('Host Cards'))
+   cardAttachements = [Card(att_id) for att_id in hostCards if hostCards[att_id] == card._id]
+   x,y = card.position
+   for attachment in cardAttachements:
+      if facing == 'Faceup': FaceDown = False
+      elif facing == 'Facedown': FaceDown = True
+      else: # else is the default of 'Same' and means the facing stays the same as before.
+         if attachment.isFaceUp: FaceDown = False
+         else: FaceDown = True
+      attachment.moveToTable(x + (xAlg * attNR), y + (yAlg * attNR),FaceDown)
+      if attachment.controller == me and FaceDown: attachment.peek()
+      attachment.setIndex(len(cardAttachements) - attNR) # This whole thing has become unnecessary complicated because sendToBack() does not work reliably
+      debugNotify("{} index = {}".format(attachment,attachment.getIndex), 4) # Debug
+      attNR += 1
+      debugNotify("Moving {}, Iter = {}".format(attachment,attNR), 4)
+   card.sendToFront() # Because things don't work as they should :(
+   if debugVerbosity >= 4: # Checking Final Indices
+      for attachment in cardAttachements: notify("{} index = {}".format(attachment,attachment.getIndex)) # Debug
+   debugNotify("<<< orgAttachments()", 3) #Debug      
+
 #------------------------------------------------------------------------------
 # Debugging
 #------------------------------------------------------------------------------

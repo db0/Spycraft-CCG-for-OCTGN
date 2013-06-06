@@ -141,13 +141,17 @@ def activate(card, x = 0, y = 0):
       card.isFaceUp = False
    else:
       card.isFaceUp = True
-      rnd(1,10) 
+      rnd(1,10)
+      hostCards = eval(getGlobalVariable('Host Cards'))
       if card.Type == 'Mission': 
          notify("{} Reveals {}".format(me, card))
          card.orientation = Rot0
-      elif card.Type == 'Action':
-         notify("{} Reveals the action card {} as a bluff! Card is discarded.".format(card.owner, card))
+      elif (card.Type == 'Action' # If the card is an action and it's been played face-down, it's always discarded on activation
+            or (card.Type == 'Agent' and hostCards.has_key(card._id)) # If the card is an agent and it's been played as an attachment, it's a bluff and must be discarded
+            or (card.Type == 'Gear' and not hostCards.has_key(card._id))): # if the card is a gear and it has been played as an agent, it's a bluff and must be discarded
+         notify("{} Reveals the {} card {} as a bluff! The card is discarded.".format(card.owner, card.Type, card))
          rnd(1,1000) # Adding a small delay before discarding the card.
+         clearAttachLinks(card)
          card.moveTo(card.owner.Discard)
       elif card.Type == 'Leader':
          if card.markers[mdict['Briefed']] < num(card.properties['Expense Rating']) and not confirm("You do not seem to have enough briefing tokens on this leader to activate them.\n\nProceed anyway?"):
@@ -168,6 +172,7 @@ def activate(card, x = 0, y = 0):
    debugNotify("<<< activate()") #Debug
 
 def discard(card, x = 0, y = 0):
+   debugNotify(">>> discard()") #Debug
    mute()
    if fetchProperty(card, 'Type') != 'Mission': 
       if card.Type == 'Agent' or (card.Type == 'Leader' and card.markers[mdict['Demoted']]): notify("{} retires {}.".format(me, card))
@@ -188,13 +193,16 @@ def discard(card, x = 0, y = 0):
                   leaderCHK.markers[mdict['Briefed']] = 0
                   break
       else: notify("{} trashes {}.".format(me, card))
+      clearAttachLinks(card)
       card.moveTo(card.owner.Discard)
    else: 
       if card.highlight: finishRun()
       if scrubMission(card) == 'ABORT': return
       if prepMission(shared.Missions.top()) == 'ABORT': return
+      clearAttachLinks(card)
       card.moveTo(shared.piles['Mission Discard'])
       notify("{} discards {}.".format(me, card))
+   debugNotify("<<< discard()") #Debug
       
 def discardTarget(group, x = 0, y = 0):
    for card in table:
@@ -400,9 +408,12 @@ def playAgent(card, x = 0, y = 0):
 
 def playGear(card, x = 0, y = 0):
     mute()
-    card.moveToTable(playerside * -220, yaxisMove() + (cwidth() * playerside),True)
-    card.peek()
-    notify("{} requisitions a gear from their hand.".format(me))
+    hostCard = findHost()
+    if not hostCard: return
+    else: attachCard(card,hostCard,'Facedown')
+    #card.moveToTable(playerside * -220, yaxisMove() + (cwidth() * playerside),True)
+    if hostCard.isFaceUp: notify("{} requisitions a gear for {}.".format(me,hostCard))
+    else: notify("{} requisitions a gear from their hand.".format(me))
 
 def playAction(card, x = 0, y = 0):
     mute()

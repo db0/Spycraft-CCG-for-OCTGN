@@ -21,3 +21,5 @@ CardHeight = 88
 
 Xaxis = 'x'
 Yaxis = 'y'
+
+specialHostPlacementAlgs = {} # A Dictionary which holds tuples of X and Y placement offsets, for cards which place their hosted cards differently to normal.
