@@ -1,6 +1,14 @@
 Changelog - Spycraft CCG OCTGN Game Definition
 ===============================================
 
+### 1.0.4.x
+
+* **Significant:** Added card attachment code. 
+  * Now when you play a card as a gear, you need to have one of your active or inactive agent cards targeted or it will abort. 
+  * Cards played as gear will be attached to their host card automatically at the right placement
+  * When retiring an agent card, all attached gear is also automatically trashed.
+  * When activating a agent played as gear, or a gear played as agent, those cards will be automatically discarded.
+
 ### 1.0.3.x
 
 * **Significant:** Added Mission Participation controls
