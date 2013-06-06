@@ -163,8 +163,9 @@ def clearAttachLinks(card):
    if hostCards.has_key(card._id):
       hostCard = Card(hostCards[card._id])
       del hostCards[card._id] # If the card was an attachment, delete the link
+      setGlobalVariable('Host Cards',str(hostCards)) # We store it before calling orgAttachments, so that it has the updated list of hostCards.
       orgAttachments(hostCard) 
-   setGlobalVariable('Host Cards',str(hostCards))
+   else: setGlobalVariable('Host Cards',str(hostCards))
    debugNotify("<<< clearAttachLinks()", 3) #Debug   
 
 

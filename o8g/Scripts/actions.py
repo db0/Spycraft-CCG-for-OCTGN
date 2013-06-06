@@ -168,7 +168,9 @@ def activate(card, x = 0, y = 0):
                c.markers[mdict['Demoted']] = 1
                notify("{}'s previous leader ({}) is demoted".format(me,c))
                break
-      else: notify("{} Activates {}".format(me, card))
+      else: 
+         if card.Type == 'Gear': notify("{} Activates {} on {}".format(me, card, Card(hostCards[card._id]))) 
+         else: notify("{} Activates {}".format(me, card))
    debugNotify("<<< activate()") #Debug
 
 def discard(card, x = 0, y = 0):
