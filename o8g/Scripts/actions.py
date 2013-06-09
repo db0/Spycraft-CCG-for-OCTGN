@@ -112,7 +112,8 @@ def defaultAction(card, x = 0, y = 0):
       if missionInProgress: break
    debugNotify("Checking for activation",2) #Debug
    if not card.isFaceUp:
-      if missionInProgress and not card.highlight:
+      hostCards = eval(getGlobalVariable('Host Cards'))
+      if missionInProgress and not card.highlight and not hostCards.has_key(card._id): # If there is a mission in progress, and the card is not currently participating and it's not a gear, then check if the player wants it to participate
          if confirm("There's currently a mission in progress. Do you want to declare this card as participating agent?"): participate(card)
          else: activate(card)
       else: activate(card)
