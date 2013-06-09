@@ -535,7 +535,7 @@ def goToIntel(group,x=0,y=0):
       for card in table:
          clear(card, silent = True) # Since we're going through all cards, we might as well clear them now.
          if card.controller == player and card.isFaceUp:
-            if card.orientation == Rot90 and card.Type == 'Agent': # If agent is wounded, their craft is reduced by 2
+            if card.orientation == Rot90 and (card.Type == 'Agent' or card.Type == 'Leader'): # If agent is wounded, their craft is reduced by 2
                craft = num(card.Craft) - 2
                if craft < 0: craft = 0
             else:
@@ -547,12 +547,16 @@ def goToIntel(group,x=0,y=0):
       if len(craftyPlayers) == 0: craftyPlayers.append(player)
       else:
          for crafty in craftyPlayers:
+            debugNotify("Comparing {}'s total of {} with {} total of {}".format(player, craftCalcs[player], crafty, craftCalcs[crafty]), 4)
+            if crafty == player: continue # Don't compare with ourself.
             if craftCalcs[crafty] < craftCalcs[player]: 
                del craftyPlayers[:] # If the checked player has more craft than those in the list, we clear the list and put just them in
                craftyPlayers.append(player)
+               debugNotify("{}'s is larger".format(player), 4)
                break
             elif craftCalcs[crafty] == craftCalcs[player]: 
                craftyPlayers.append(player)  # If they are equal, we put them both in the list
+               debugNotify("{}'s is equal".format(player), 4)
                break
    if len(craftyPlayers) == 1: 
       debugNotify("Only one winner",4)

@@ -103,11 +103,11 @@ def scrubMission(card):
    setGlobalVariable('currentMissions', str(currentMissions))
    debugNotify("<<< scrubMission()") #Debug
 
-def finishRun(abort = False):
+def finishRun(abort = False): # The 'abort' variable is set to true only when one spy team pulls out of the mission.
    debugNotify(">>> finishRun()") #Debug
    mute()
    for card in table:
-      if abort and card.controller != me: continue
+      if abort and (card.controller != me or card.Type == 'Mission'): continue # If we're just pulling out, then we don't clear opposing agents and current mission target
       card.target(False)
       card.highlight = None
       card.markers[mdict['MissionAction']] = 0
