@@ -430,7 +430,7 @@ def smartPlay(card, x = 0, y = 0):
 
 def playAgent(card, x = 0, y = 0):
     mute()
-    card.moveToTable(playerside * -270, yaxisMove() + (cwidth() * playerside),True)
+    card.moveToTable(playerside * 230, yaxisMove() + (cwidth() * playerside),True)
     card.peek()
     notify("{} recruits an agent from their hand.".format(me))
 
