@@ -321,6 +321,7 @@ def brief(card, x = 0, y = 0):
    if card.markers[mdict['Fresh']] > 0 and not confirm("{} has enterred play this turn and is not normally allowed to perform a brief. Proceed anyway?".format(card.name)): return
    if card.markers[mdict['Demoted']] > 0 and not confirm("{} is a demoted leader and is not normally allowed to perform a brief. Proceed anyway?".format(card.name)): return
    if card.markers[mdict['Brief']] > 0 and not confirm("{} has already briefed a leader this turn. Proceed anyway?".format(card.name)): return
+   if (not card.isFaceUp or card.Type != 'Leader') and not confirm("Only active leaders may perform a brief action. Proceed anyway?".format(card.name)): return
    targetCard = None
    for c in table:
       if c.targetedBy and c.targetedBy == me and not c.isFaceUp and fetchProperty(c, 'Type') == 'Leader':
