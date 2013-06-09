@@ -282,6 +282,13 @@ def winTargetMission(group, x = 0, y = 0):
          winResult = winMission(card)
          if winResult != 'ABORT': break
     
+def cancelMission(group, x = 0, y = 0):
+   for card in table:
+      if card.Type == 'Mission' and card.highlight and confirm("Cancel the current mission for all players?"):
+         card.highlight = None
+         finishRun()
+         break
+    
 def inspectCard(card, x = 0, y = 0): # This function shows the player the card text, to allow for easy reading until High Quality scans are procured.
    debugNotify(">>> inspectCard()") #Debug
    #if debugVerbosity > 0: finalTXT = 'AutoScript: {}\n\n AutoAction: {}'.format(CardsAS.get(card.model,''),CardsAA.get(card.model,''))
