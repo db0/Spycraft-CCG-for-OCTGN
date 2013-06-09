@@ -64,7 +64,7 @@
       </groupactions>
 		<groupaction menu="Roll d6" default="False" execute="roll6" />
 		<cardaction menu="Retire Agent/Discard Card" default="False" shortcut="del" execute="discard" />
-		<cardaction menu="Discard Target Cards" default="False" shortcut="del" execute="discardTargets" />
+		<groupaction menu="Discard Target Cards" default="False" shortcut="del" execute="discardTarget" />
 		<cardaction menu="Activate/Deactivate" default="False" shortcut="Ctrl+A" execute="activate" />
 		<cardaction menu="Wound/Unwound" default="False" shortcut="Alt+W" execute="wound" />
 		<cardaction menu="Expose/Clear" default="False" shortcut="Alt+E" execute="expose" />
@@ -77,6 +77,7 @@
 		<cardaction menu="Clear Used Abilities" default="False" shortcut="Ctrl+C"  execute="clear" />
 		<groupaction menu="Run Target Mission" default="False" shortcut="Ctrl+A" execute="runTargetMission" />
       <groupaction menu="Win Target Mission" default="False" shortcut="Ctrl+W" execute="winTargetMission" />
+      <groupaction menu="Pull out team from Mission" default="False" execute="abortMission" />
       <groupaction menu="Cancel Current Mission" default="False" execute="cancelMission" />
       <groupaction menu="Participate/Leave Mission" default="False" shortcut="Ctrl+P" execute="participate" />
       <cardaction menu="Inspect" default="False" shortcut="Ctrl+I" execute="inspectCard" />

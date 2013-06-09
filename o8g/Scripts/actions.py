@@ -207,10 +207,10 @@ def discard(card, x = 0, y = 0):
    debugNotify("<<< discard()") #Debug
       
 def discardTarget(group, x = 0, y = 0):
-   for card in table:
-      if card.targetedBy and card.targetedBy == me: discard(card)
+   if confirm("Are you sure you want to discard all cards you've targeted on the table?"):
+      for card in table:
+         if card.targetedBy and card.targetedBy == me: discard(card)
 
-      
 def useText(card, x = 0, y = 0):
     mute()
     card.markers[mdict['TextAction']] += 1
@@ -277,12 +277,19 @@ def winMission(card, x = 0, y = 0):
    return 'OK'
 
 def winTargetMission(group, x = 0, y = 0):
+   mute()
    for card in table:
       if card.targetedBy and card.targetedBy == me: 
          winResult = winMission(card)
          if winResult != 'ABORT': break
     
+def abortMission(group, x = 0, y = 0):
+   mute()
+   if confirm("Do you want your team to abort the current mission?"): finishRun(True)
+
+    
 def cancelMission(group, x = 0, y = 0):
+   mute()
    for card in table:
       if card.Type == 'Mission' and card.highlight and confirm("Cancel the current mission for all players?"):
          card.highlight = None

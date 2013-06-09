@@ -103,7 +103,7 @@ def scrubMission(card):
    setGlobalVariable('currentMissions', str(currentMissions))
    debugNotify("<<< scrubMission()") #Debug
 
-def finishRun():
+def finishRun(abort = False):
    debugNotify(">>> finishRun()") #Debug
    mute()
    for card in table:
