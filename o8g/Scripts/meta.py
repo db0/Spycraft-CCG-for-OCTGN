@@ -107,7 +107,7 @@ def finishRun(abort = False): # The 'abort' variable is set to true only when on
    debugNotify(">>> finishRun()") #Debug
    mute()
    for card in table:
-      if abort and (card.controller != me or card.Type == 'Mission'): continue # If we're just pulling out, then we don't clear opposing agents and current mission target
+      if abort and (card.controller != me or card.Type == 'Mission' or not card.targetedBy or (card.targetedBy and card.targetedBy != me)): continue # If we're just pulling out, then we clear only our own targeted agents
       card.target(False)
       card.highlight = None
       card.markers[mdict['MissionAction']] = 0

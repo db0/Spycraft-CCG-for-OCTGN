@@ -287,15 +287,19 @@ def winTargetMission(group, x = 0, y = 0):
 def abortMission(group, x = 0, y = 0):
    mute()
    if confirm("Do you want your team to abort the current mission?"): finishRun(True)
+   notify("{} has pulled some agents out of the current mission")
 
     
 def cancelMission(group, x = 0, y = 0):
    mute()
+   missionCard = None
    for card in table:
       if card.Type == 'Mission' and card.highlight and confirm("Cancel the current mission for all players?"):
          card.highlight = None
          finishRun()
+         missionCard = card
          break
+   if missionCard: notify("{} has cancelled {}".format(me,missionCard))
     
 def inspectCard(card, x = 0, y = 0): # This function shows the player the card text, to allow for easy reading until High Quality scans are procured.
    debugNotify(">>> inspectCard()") #Debug
