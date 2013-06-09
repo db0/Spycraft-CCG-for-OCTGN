@@ -450,6 +450,27 @@ def shuffleIntoDeck(group = me.Discard):
    random = rnd(100, 1000)
    Deck.shuffle()
    notify("{} shuffles his {} into his Deck.".format(me, group.name))
+   
+def handRandomDiscard(group, count = None, player = None, silent = False):
+   debugNotify(">>> handRandomDiscard(){}".format(extraASDebug())) #Debug
+   mute()
+   if not player: player = me
+   SSize = len(group)
+   if SSize == 0: return 0
+   if count == None: count = askInteger("Discard how many cards at random?", 1)
+   if count == None: return 0
+   if count > SSize :
+      count = SSize
+      whisper("You do not have enough cards in your hand to complete this action. Will discard as many as possible.")
+   for iter in range(count):
+      debugNotify("handRandomDiscard() iter: {}".format(iter + 1), 3) # Debug
+      card = group.random()
+      if card == None: return iter + 1 # If we have no more cards, then return how many we managed to discard.
+      card.moveTo(player.Discard)
+      if not silent: notify("{} discards {} at random.".format(player,card))
+   debugNotify("<<< handRandomDiscard() with return {}".format(iter + 1), 2) #Debug
+   return iter + 1 #We need to increase the iter by 1 because it starts iterating from 0
+   
 
 #---------------------------------------------------------------------------
 # Pile Actions

@@ -93,7 +93,8 @@
 			<cardaction menu="Play as Face-Down Gear" default="False" execute="playGear" />
 			<cardaction menu="Discard as Bravado" default="False" shortcut="Ctrl+B" execute="playBravado" />
          <cardaction menu="Inspect" default="False" shortcut="Ctrl+I" execute="inspectCard" />
-			<cardaction menu="Discard" default="False" execute="discardFromHand" />
+			<cardaction menu="Discard" default="False" shortcut="del" execute="discardFromHand" />
+			<cardaction menu="Discard at Random" default="False" execute="handRandomDiscard" />
 		</hand>
 		<group name="Deck" visibility="none" ordered="False" width="63" height="88" icon="Groups/deck.png" collapsed="False">
 			<groupaction menu="Draw" default="True" shortcut="Ctrl+D" execute="draw" />
