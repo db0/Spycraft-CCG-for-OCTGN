@@ -77,7 +77,7 @@ def prepMission(card, silent = False):
       Mission = Card(currentMissions[iter])
       if iter - 1 > 0 and not Mission.isFaceUp: missionFaceDown = True # Last three missions are face down unless they were already face up
       else: missionFaceDown = False # First two missions are face up
-      Mission.moveToTable(cheight() * (2 - iter), (cheight(0) / -2) + 8, missionFaceDown)
+      Mission.moveToTable(cheight() * (2 - iter) - 50, (cheight(0) / -2) + 8, missionFaceDown)
       if missionFaceDown: Mission.orientation = Rot90
       else: 
          Mission.orientation = Rot0

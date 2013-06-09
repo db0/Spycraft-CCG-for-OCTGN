@@ -68,19 +68,19 @@ def gameSetup(group, x = 0, y = 0): # WiP
       else:
          debugNotify("Moving high level Leader to table",2)
          leadersDict[num(leader.Level)] = leader._id
-         leader.moveToTable(playerside * -1 * (350 + cwidth()),(playerside * cwidth() * (4 - num(leader.Level))) + yaxisMove(), True)
+         leader.moveToTable(playerside * -1 * (300 + cwidth()) - 50,(playerside * cwidth() * (4 - num(leader.Level))) + yaxisMove(), True)
          leader.orientation = Rot90
          leader.peek()
          # We move the level 2-4 leaders face down to the table, behind the reference card. Highest level leader is on the top
    for iter in range(4): # We do a quick check to see we indeed have leaders 1-4
       if not leadersDict.get(iter + 1,None): notify(":::WARNING::: {} is missing their level {} leader!".format(iter + 1))
    debugNotify("Setting Reference Cards",2)
-   if Faction == "Banshee Net": table.create("9f291494-8713-4b7e-bc7c-36b428fc0dd1",playerside * -330, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
-   if Faction == "Bloodvine": table.create("8e2ff010-98b5-4884-a39b-100940d4f702",playerside * -330, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
-   if Faction == "Franchise": table.create("6d131915-cb6a-43ca-b2f1-64ac040b0eec",playerside * -330, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
-   if Faction == "The Krypt": table.create("0d058ed6-51e8-42c7-9cbb-67a3d267c618",playerside * -330, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
-   if Faction == "Nine Tiger": table.create("49f5d0ad-60e2-4810-86b6-5f962f99d9bd",playerside * -330, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
-   if Faction == "Shadow Patriots": table.create("bf4bfecd-1d84-4a6f-a787-0986a0fe06b1",playerside * -330, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
+   if Faction == "Banshee Net": table.create("9f291494-8713-4b7e-bc7c-36b428fc0dd1",playerside * -280 - 50, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
+   if Faction == "Bloodvine": table.create("8e2ff010-98b5-4884-a39b-100940d4f702",playerside * -280 - 50, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
+   if Faction == "Franchise": table.create("6d131915-cb6a-43ca-b2f1-64ac040b0eec",playerside * -280 - 50, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
+   if Faction == "The Krypt": table.create("0d058ed6-51e8-42c7-9cbb-67a3d267c618",playerside * -280 - 50, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
+   if Faction == "Nine Tiger": table.create("49f5d0ad-60e2-4810-86b6-5f962f99d9bd",playerside * -280 - 50, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
+   if Faction == "Shadow Patriots": table.create("bf4bfecd-1d84-4a6f-a787-0986a0fe06b1",playerside * -280 - 50, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
    debugNotify("Preparing Mission Deck",2)
    currMissionsVar = getGlobalVariable('currentMissions')
    debugNotify("currMissionsVar = {}".format(currMissionsVar),2)
@@ -161,7 +161,7 @@ def activate(card, x = 0, y = 0):
             return
          notify("{} Activates their level {} leader: {}".format(me,card.Level,card))
          card.orientation = Rot0
-         card.moveToTable(playerside * -300, yaxisMove() + (cwidth() * playerside * 2))
+         card.moveToTable(playerside * cwidth() / -2, yaxisMove() + (cheight() * playerside / 2))
          if num(card.Level) < 4: card.markers[mdict['Fresh']] += 1
          card.markers[mdict['Briefed']] = 0
          for c in table:
@@ -286,8 +286,8 @@ def winTargetMission(group, x = 0, y = 0):
     
 def abortMission(group, x = 0, y = 0):
    mute()
-   if confirm("Do you want your team to abort the current mission?"): finishRun(True)
-   notify("{} has pulled some agents out of the current mission")
+   if confirm("Do you want your selected agents to abort the current mission?"): finishRun(True)
+   notify("{} has pulled some agents out of the current mission".format(me))
 
     
 def cancelMission(group, x = 0, y = 0):
@@ -565,15 +565,16 @@ def goToIntel(group,x=0,y=0):
    if len(craftyPlayers) == 1: 
       debugNotify("Only one winner",4)
       winner = craftyPlayers[0]
-      notify(":> {} has the most craft this turn and takes the initiative".format(winner))
+      notify(":> {} has the most craft this turn ({}) and takes the initiative".format(winner,craftCalcs[winner]))
    else:
       debugNotify("Craft is tied",4)
       random = rnd(0,len(craftyPlayers) - 1)
       winner = craftyPlayers[random]
-      notify(":> {} are tied in craft this turn. {} is selected at random to get the initiative".format([player.name for player in craftyPlayers],winner))
+      notify(":> {} are tied in craft ({}) this turn. {} is selected at random to get the initiative".format([player.name for player in craftyPlayers],craftCalcs[winner],winner))
    debugNotify("About to place starting marker",2)
    for card in table:
       if card.Type == 'Reference':
+         debugNotify("Checking ref. {}. Winner is {}. Owner is {}.".format(card,winner,card.owner),2)
          if card.owner == winner: card.markers[mdict['Starting']] = 1
          else: card.markers[mdict['Starting']] = 0
 

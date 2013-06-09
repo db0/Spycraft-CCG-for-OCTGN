@@ -2367,7 +2367,7 @@
 			<property name="Charisma" value="1" />
 			<property name="Combat" value="5" />
 			<property name="Transport" value="0" />
-			<property name="Craft" value="5" />
+			<property name="Craft" value="2" />
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
 			<property name="Faction" value="The Krypt" />
