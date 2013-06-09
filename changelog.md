@@ -1,6 +1,20 @@
 Changelog - Spycraft CCG OCTGN Game Definition
 ===============================================
 
+### 1.0.5.x
+
+* Fixed the participate command which was mistakenly put under the table menu. The same command can now also take agents out of missions (in case they are removed via card effects)
+* Prevented Inactive cards from performing a briefing
+* Added "Discard a random card" action, to the hand menu.
+* You can now cancel current mission (in case it was started by mistake)
+* You can now pull out agents from the team with a special table menu action. Simply target the agents you want to pull out and use it.
+* "Fresh Leader" markers will be removed at the debriefing phase.
+* Inactive gear won't ask you if you want it to participate in missions if you double click it.
+* Fixed King Maul's Craft.
+* Fixed Setup placement to be a bit more bunched up in the middle.
+* Fixed activating leader placement to pop-into the middle of the table which is a bit more obvious.
+* Fixed Discarding Target Cards
+
 ### 1.0.4.x
 
 * **Significant:** Added card attachment code. 
