@@ -68,19 +68,19 @@ def gameSetup(group, x = 0, y = 0): # WiP
       else:
          debugNotify("Moving high level Leader to table",2)
          leadersDict[num(leader.Level)] = leader._id
-         leader.moveToTable(playerside * -1 * (400 + cwidth()),(playerside * cwidth() * (4 - num(leader.Level))) + yaxisMove(), True)
+         leader.moveToTable(playerside * -1 * (350 + cwidth()),(playerside * cwidth() * (4 - num(leader.Level))) + yaxisMove(), True)
          leader.orientation = Rot90
          leader.peek()
          # We move the level 2-4 leaders face down to the table, behind the reference card. Highest level leader is on the top
    for iter in range(4): # We do a quick check to see we indeed have leaders 1-4
       if not leadersDict.get(iter + 1,None): notify(":::WARNING::: {} is missing their level {} leader!".format(iter + 1))
    debugNotify("Setting Reference Cards",2)
-   if Faction == "Banshee Net": table.create("9f291494-8713-4b7e-bc7c-36b428fc0dd1",playerside * -380, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
-   if Faction == "Bloodvine": table.create("8e2ff010-98b5-4884-a39b-100940d4f702",playerside * -380, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
-   if Faction == "Franchise": table.create("6d131915-cb6a-43ca-b2f1-64ac040b0eec",playerside * -380, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
-   if Faction == "The Krypt": table.create("0d058ed6-51e8-42c7-9cbb-67a3d267c618",playerside * -380, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
-   if Faction == "Nine Tiger": table.create("49f5d0ad-60e2-4810-86b6-5f962f99d9bd",playerside * -380, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
-   if Faction == "Shadow Patriots": table.create("bf4bfecd-1d84-4a6f-a787-0986a0fe06b1",playerside * -380, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
+   if Faction == "Banshee Net": table.create("9f291494-8713-4b7e-bc7c-36b428fc0dd1",playerside * -330, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
+   if Faction == "Bloodvine": table.create("8e2ff010-98b5-4884-a39b-100940d4f702",playerside * -330, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
+   if Faction == "Franchise": table.create("6d131915-cb6a-43ca-b2f1-64ac040b0eec",playerside * -330, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
+   if Faction == "The Krypt": table.create("0d058ed6-51e8-42c7-9cbb-67a3d267c618",playerside * -330, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
+   if Faction == "Nine Tiger": table.create("49f5d0ad-60e2-4810-86b6-5f962f99d9bd",playerside * -330, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
+   if Faction == "Shadow Patriots": table.create("bf4bfecd-1d84-4a6f-a787-0986a0fe06b1",playerside * -330, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
    debugNotify("Preparing Mission Deck",2)
    currMissionsVar = getGlobalVariable('currentMissions')
    debugNotify("currMissionsVar = {}".format(currMissionsVar),2)
@@ -430,7 +430,7 @@ def smartPlay(card, x = 0, y = 0):
 
 def playAgent(card, x = 0, y = 0):
     mute()
-    card.moveToTable(playerside * -300, yaxisMove() + (cwidth() * playerside),True)
+    card.moveToTable(playerside * -270, yaxisMove() + (cwidth() * playerside),True)
     card.peek()
     notify("{} recruits an agent from their hand.".format(me))
 
