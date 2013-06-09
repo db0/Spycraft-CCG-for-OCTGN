@@ -354,7 +354,6 @@ def clear(card, x = 0, y = 0, silent = False):
    mute()
    if not silent: notify("{} clears {}.".format(me, card))
    card.target(False)
-   card.highlight = None
    card.markers[mdict['Brief']] = 0
    card.markers[mdict['Snoop']] = 0
    card.markers[mdict['MissionAction']] = 0

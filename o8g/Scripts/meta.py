@@ -107,6 +107,7 @@ def finishRun(abort = False):
    debugNotify(">>> finishRun()") #Debug
    mute()
    for card in table:
+      if abort and card.controller != me: continue
       card.target(False)
       card.highlight = None
       card.markers[mdict['MissionAction']] = 0
