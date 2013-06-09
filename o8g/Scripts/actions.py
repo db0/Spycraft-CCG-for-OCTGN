@@ -571,6 +571,8 @@ def goToIntel(group,x=0,y=0):
 def goToDebrief(group,x=0,y=0):
    mute()
    drawMany(count = 5,silent = True)
+   for card in table:
+      if card.markers[mdict['Fresh']]: card.markers[mdict['Fresh']] = 0 # We clean the "fresh" markers from all leaders to allow them to perform briefing actions next turn.
    notify(":> {} starts their debriefing phase and draw 5 cards".format(me))
    
 
