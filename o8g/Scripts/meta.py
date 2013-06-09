@@ -111,6 +111,7 @@ def finishRun():
       card.highlight = None
       card.markers[mdict['MissionAction']] = 0
       card.markers[mdict['DefaultMission']] = 0
+      card.markers[mdict['Baffled']] = 0
    debugNotify("<<< finishRun()") #Debug
 
 #------------------------------------------------------------------------------

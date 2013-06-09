@@ -350,19 +350,26 @@ def clear(card, x = 0, y = 0, silent = False):
 def participate(card, x = 0, y = 0):
    debugNotify(">>> participate()")
    mute()
-   attacker = None
-   for c in table:
-      if c.Type == 'Mission' and c.highlight:
-         if c.highlight == PlayerColor: attacker = 'me'
-         else: attacker = 'opponent'
-         break
-   if attacker == 'me': 
-      card.highlight = AttackerColor
-      notify("{} declares {} as an attacker.".format(me,card))
-   elif attacker == 'opponent': 
-      card.highlight = DefenderColor
-      notify("{} declares {} as a defender.".format(me,card))
-   else: delayed_whisper("There is no mission run currently in progress! Aborting.")
+   if card.highlight == AttackerColor or card.highlight == DefenderColor:
+      card.highlight = None
+      card.markers[mdict['MissionAction']] = 0
+      card.markers[mdict['DefaultMission']] = 0
+      card.markers[mdict['Baffled']] = 0
+      notify("{} leaves the mission".format(card))
+   else:
+      attacker = None
+      for c in table:
+         if c.Type == 'Mission' and c.highlight:
+            if c.highlight == PlayerColor: attacker = 'me'
+            else: attacker = 'opponent'
+            break
+      if attacker == 'me': 
+         card.highlight = AttackerColor
+         notify("{} declares {} as an attacker.".format(me,card))
+      elif attacker == 'opponent': 
+         card.highlight = DefenderColor
+         notify("{} declares {} as a defender.".format(me,card))
+      else: delayed_whisper("There is no mission run currently in progress! Aborting.")
    debugNotify("<<< participate()")
    
    
