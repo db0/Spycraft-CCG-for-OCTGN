@@ -1,6 +1,17 @@
 Changelog - Spycraft CCG OCTGN Game Definition
 ===============================================
 
+### 1.0.6.x
+
+* Solo Ops have specialized scripts around them
+  * To start a solo op, you need to have one of your agents targeted when you play the card. That agent will automatically be set as the attacker.
+  * When you double click on a current solo op, you will be prompted to win it
+  * While a solo op is ongoing, double clicking on an agent will try to set them to participate (to be used only by your opponent since you have already chosen your attacker)
+  * When the attacker wins the solo op, the highlight will be removed and you will gain 1 VP
+  * When the defender wins the solo op, the card will be discarded and they will gain 1 VP and draw a card
+  * To win a Solo Op as the defender, just target it and Ctrl + W like any other mission
+* Resetting the game will now reset your VP as well.
+
 ### 1.0.5.x
 
 * Fixed the participate command which was mistakenly put under the table menu. The same command can now also take agents out of missions (in case they are removed via card effects)

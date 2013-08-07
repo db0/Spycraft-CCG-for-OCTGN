@@ -13,8 +13,8 @@ mdict = { # A dictionary which holds all the hard coded markers (in the markers 
     'TextAction'     : ("Text Action Taken", "05a5f34f-e4d2-4ee0-9906-b03f70b02a01")
 }
 
-AttackerColor = "#FF0000"
-DefenderColor = "#0000FF"
+AttackerColor = "#ff0000"
+DefenderColor = "#0000ff"
 
 CardWidth = 63
 CardHeight = 88

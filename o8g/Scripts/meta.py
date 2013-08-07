@@ -56,8 +56,9 @@ def resetAll(): # Clears all the global variables in order to start a new game.
    hostCards.clear()
    leadersDict.clear()
    setGlobalVariable('Host Cards',str(hostCards))
+   me.counters['Victory Points'].value = 0
    if len(shared.Missions) == 24: setGlobalVariable('currentMissions', '[]') # If the mission deck is exactly 24 cards, then it means it's a fresh game, and we clean the mission queue,
-                                                                         # If it's less, then it means the mission queue has already been setup by another player so we don't do it again.
+                                                                             # If it's less, then it means the mission queue has already been setup by another player so we don't do it again.
    if debugVerbosity != -1 and confirm("Reset Debug Verbosity?"): debugVerbosity = -1 
    debugNotify("<<< resetAll()") #Debug
    

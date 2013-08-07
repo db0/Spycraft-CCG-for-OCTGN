@@ -107,19 +107,23 @@ def defaultAction(card, x = 0, y = 0):
    debugNotify(">>> defaultAction()") #Debug
    mute()
    for c in table:
-      if c.Type == 'Mission' and c.highlight: missionInProgress = True
+      debugNotify("Now Checking {} with Traits: {} and highlight = {}".format(c,c.Traits,c.highlight),4)
+      if (c.Type == 'Mission' or re.search(r'Solo Op',c.Traits)) and c.highlight: 
+         missionInProgress = True
+         debugNotify("Set missionInProgress True for {}".format(c))
       else: missionInProgress = False
       if missionInProgress: break
-   debugNotify("Checking for activation",2) #Debug
+   debugNotify("missionInProgress = {}. Now Checking for activation".format(missionInProgress),2) #Debug
    if not card.isFaceUp:
       hostCards = eval(getGlobalVariable('Host Cards'))
       if missionInProgress and not card.highlight and not hostCards.has_key(card._id): # If there is a mission in progress, and the card is not currently participating and it's not a gear, then check if the player wants it to participate
-         if confirm("There's currently a mission in progress. Do you want to declare this card as participating agent?"): participate(card)
+         if confirm("There's currently a mission in progress. Do you want to declare this card as participating agent?\n\n(Pressing 'No' will activate this card instead.)"): participate(card)
          else: activate(card)
       else: activate(card)
    elif card.Type == 'Mission':
       if not card.highlight: runMission(card)
       else: winMission(card)
+   elif re.search(r'Solo Op',card.Traits) and card.highlight: winMission(card)
    elif card.Type == 'Agent' or card.Type == 'Leader':
       if missionInProgress:
          if not card.highlight: participate(card)
@@ -265,15 +269,25 @@ def runTargetMission(group, x = 0, y = 0):
     
 def winMission(card, x = 0, y = 0):
    mute()
-   if card.Type == 'Mission' and confirm("Have you just won {}?".format(card.name)): 
-      if card.highlight: finishRun()
-      if scrubMission(card) == 'ABORT': return 'ABORT'
-      if prepMission(shared.Missions.top()) == 'ABORT': return 'ABORT'
-      card.moveTo(me.piles['Victory Pile'])
-      me.counters['Victory Points'].value += num(card.properties['Victory Points'])
-      notify("{} wins {} and gains {} VP.".format(me, card, card.properties['Victory Points']))
+   if card.Type == 'Mission':
+      if confirm("Have you just won {}?".format(card.name)): # We put this on its own 'if' clause so that saying 'No' to it doesn't tell the player that they can only win missions or solo ops
+         if card.highlight: finishRun()
+         if scrubMission(card) == 'ABORT': return 'ABORT'
+         if prepMission(shared.Missions.top()) == 'ABORT': return 'ABORT'
+         card.moveTo(me.piles['Victory Pile'])
+         me.counters['Victory Points'].value += num(card.properties['Victory Points'])
+         notify("{} wins {} and gains {} VP.".format(me, card, card.properties['Victory Points']))
+   elif re.search(r'Solo Op',card.Traits):
+      if confirm("Have you just won {}?".format(card.name)):
+         if card.highlight: finishRun()
+         if card.controller != me: # If the opponent wins the Solo Op, the mission is discarded and they draw a card.
+            card.moveTo(card.owner.piles['Discard'])
+            draw()
+         else: card.highlight = None
+         me.counters['Victory Points'].value += 1
+         notify("{} succeeds on {} and gains 1 VP.".format(me, card))
    else: 
-      whisper(":::ERROR::: You can only win missions")
+      whisper(":::ERROR::: You can only win missions or Solo Ops")
       return 'ABORT'
    return 'OK'
 
@@ -369,6 +383,7 @@ def clear(card, x = 0, y = 0, silent = False):
 def participate(card, x = 0, y = 0):
    debugNotify(">>> participate()")
    mute()
+   debugNotify("Card Highlight == {}".format(card.highlight))
    if card.highlight == AttackerColor or card.highlight == DefenderColor:
       card.highlight = None
       card.markers[mdict['MissionAction']] = 0
@@ -377,12 +392,16 @@ def participate(card, x = 0, y = 0):
       notify("{} leaves the mission".format(card))
    else:
       attacker = None
+      soloOp = False
       for c in table:
-         if c.Type == 'Mission' and c.highlight:
+         if (c.Type == 'Mission' or re.search(r'Solo Op',c.Traits)) and c.highlight:
             if c.highlight == PlayerColor: attacker = 'me'
             else: attacker = 'opponent'
+            if re.search(r'Solo Op',c.Traits): soloOp = True
             break
-      if attacker == 'me': 
+      debugNotify("attacker = {}. soloOp = {}. Demoted Marker = {}. card.Type = {}".format(attacker,soloOp,card.markers[mdict['Demoted']],card.Type))
+      if attacker and soloOp and card.Type == 'Leader' and not card.markers[mdict['Demoted']]: delayed_whisper("You cannot have an active leader participate in a solo op! Aborting.")
+      elif attacker == 'me': 
          card.highlight = AttackerColor
          notify("{} declares {} as an attacker.".format(me,card))
       elif attacker == 'opponent': 
@@ -445,11 +464,19 @@ def playGear(card, x = 0, y = 0):
 
 def playAction(card, x = 0, y = 0):
     mute()
-    card.moveToTable(playerside * 300, yaxisMove() + (cwidth() * playerside))
     if re.search(r'Solo Op',card.Traits):
-      notify("{} begins the {} Solo Op.".format(me, card))
-      draw()
+      runner = [c for c in table if (c.Type == 'Agent' or (c.Type == 'Leader' and c.markers[mdict['Demoted']]) or (not c.isFaceUp and c.Type != 'Leader')) and c.targetedBy and c.targetedBy == me]
+      if len(runner) != 1: 
+         delayed_whisper(":::ERROR::: You need to target exactly one of your agents to start this Solo Op. Aborting!")
+         return
+      else: 
+         runner[0].highlight = AttackerColor
+         if runner[0].isFaceUp: notify("{} initiates the {} Solo Op.".format(runner[0], card))
+         else: notify("One of {}'s inactive agents begins the {} Solo Op.".format(me, card))
+         draw()
     else: notify("{} attempts to play {}.".format(me, card))
+    card.moveToTable(playerside * 300, yaxisMove() + (cwidth() * playerside))
+    if re.search(r'Solo Op',card.Traits): card.highlight = PlayerColor
 
 def playBravado(card, x = 0, y = 0):
     mute()
