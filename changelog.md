@@ -1,6 +1,11 @@
 Changelog - Spycraft CCG OCTGN Game Definition
 ===============================================
 
+### 1.0.7.x
+
+* Added the rest of the promo cards
+* Fixed some typos
+
 ### 1.0.6.x
 
 * Solo Ops have specialized scripts around them
