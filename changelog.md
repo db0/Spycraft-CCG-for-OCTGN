@@ -5,6 +5,8 @@ Changelog - Spycraft CCG OCTGN Game Definition
 
 * Added the rest of the promo cards
 * Fixed some typos
+* Replaced the pre-made decks with more balanced editions
+* Added the Risky Maneuver and Payload missing Cards
 
 ### 1.0.6.x
 
