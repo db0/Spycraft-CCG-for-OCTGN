@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <set xmlns:noNamespaceSchemaLocation="CardSet.xsd" 
-     name="Nighfall" 
+     name="Operation Nighfall" 
      id="6d78ef02-2ce1-4499-9fc7-9480eb5c54c0" 
      gameId="d1d8cc2c-e817-4b4d-9449-3315bbd3c643"  
      gameVersion="1.0.0.0" 
@@ -726,7 +726,7 @@
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
-		<card id="3a8c87b7-57e8-418d-9b62-aebceed47f82" name="Chos">
+		<card id="3a8c87b7-57e8-418d-9b62-aebceed47f82" name="Chaos">
 			<property name="Type" value="Agent" />
 			<property name="Expense Rating" value="8" />
 			<property name="Charisma" value="0" />
@@ -3471,7 +3471,7 @@
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
-		<card id="0ee6551a-76a1-44e6-8772-00e1e50c6488" name="Run Interfarence">
+		<card id="0ee6551a-76a1-44e6-8772-00e1e50c6488" name="Run Interference">
 			<property name="Type" value="Action" />
 			<property name="Expense Rating" value="" />
 			<property name="Charisma" value="" />
@@ -5016,7 +5016,7 @@
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
-		<card id="7c614a8e-f5eb-4bba-b49e-6eaad30838c2" name="Unexpectde Guest">
+		<card id="7c614a8e-f5eb-4bba-b49e-6eaad30838c2" name="Unexpected Guest">
 			<property name="Type" value="Action" />
 			<property name="Expense Rating" value="" />
 			<property name="Charisma" value="" />

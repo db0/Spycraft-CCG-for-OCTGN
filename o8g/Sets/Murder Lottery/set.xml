@@ -2038,8 +2038,8 @@
 			<property name="Combat" value="4" />
 			<property name="Transport" value="4" />
 			<property name="Craft" value="4" />
-			<property name="Level" value="" />
-			<property name="Bravado" value="2" />
+			<property name="Level" value="2" />
+			<property name="Bravado" value="" />
 			<property name="Faction" value="Shadow Patriots" />
 			<property name="Traits" value="Fixer - Majestic" />
 			<property name="Rules" value="While Endeavour is your leader, before an agent you control declares an action, you may reveal a card from your hand with the Majetic trait. Your agent may declare an action on the revealed card. Discard the card after the action is resolved." />
@@ -2053,8 +2053,8 @@
 			<property name="Combat" value="5" />
 			<property name="Transport" value="5" />
 			<property name="Craft" value="5" />
-			<property name="Level" value="" />
-			<property name="Bravado" value="3" />
+			<property name="Level" value="3" />
+			<property name="Bravado" value="" />
 			<property name="Faction" value="Shadow Patriots" />
 			<property name="Traits" value="Pointman - Soldier - Majestic" />
 			<property name="Rules" value="Huntress has +3 expense for activating Majestic agents. While Huntress is your leader our mission team sizle is reduced by 2 (min 1).&#xD;&#xA;React Craft: After an agent targets a Majestic: Increase the TN of the action by +3." />
@@ -2068,8 +2068,8 @@
 			<property name="Combat" value="6" />
 			<property name="Transport" value="8" />
 			<property name="Craft" value="7" />
-			<property name="Level" value="" />
-			<property name="Bravado" value="4" />
+			<property name="Level" value="4" />
+			<property name="Bravado" value="" />
 			<property name="Faction" value="The Krypt" />
 			<property name="Traits" value="Pointman - Wheelman" />
 			<property name="Rules" value="React Transport: After assiging Valentin to an attacking mission team, search your Agenct Deck for a card that attaches to a mission card and attach it to the mission, paying all costs." />
@@ -2083,11 +2083,26 @@
 			<property name="Combat" value="3" />
 			<property name="Transport" value="5" />
 			<property name="Craft" value="4" />
-			<property name="Level" value="" />
-			<property name="Bravado" value="2" />
+			<property name="Level" value="2" />
+			<property name="Bravado" value="" />
 			<property name="Faction" value="The Krypt" />
 			<property name="Traits" value="Wheelman" />
 			<property name="Rules" value="React Transport: After you extended to or from a chase mission, move up to two agents into your mission team from headquters." />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
+		<card id="e2745818-800e-4098-a323-c39a994448fa" name="Payload">
+			<property name="Type" value="Agent" />
+			<property name="Expense Rating" value="10" />
+			<property name="Charisma" value="1" />
+			<property name="Combat" value="2" />
+			<property name="Transport" value="1" />
+			<property name="Craft" value="6" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="3" />
+			<property name="Faction" value="Freelancer" />
+			<property name="Traits" value="Fixer" />
+			<property name="Rules" value="Intel Cract 7: Target a lower expense agent you control. Until the end of the turn or Playlod is retired, actions on Firearms attached to the target which inflict a wound, inflict an additional wound." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
