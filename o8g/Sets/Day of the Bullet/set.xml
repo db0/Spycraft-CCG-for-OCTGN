@@ -2391,8 +2391,8 @@
 			<property name="Victory Points" value="6" />
 			<property name="Cover Level" value="3" />
 		</card>
-		<card id="301fc313-09f8-4b8e-a243-a499b7c62238" name="Tweny Questions">
-			<property name="Type" value="Mision" />
+		<card id="301fc313-09f8-4b8e-a243-a499b7c62238" name="Twenty Questions">
+			<property name="Type" value="Mission" />
 			<property name="Expense Rating" value="" />
 			<property name="Charisma" value="" />
 			<property name="Combat" value="" />
@@ -2401,7 +2401,7 @@
 			<property name="Level" value="" />
 			<property name="Bravado" value="" />
 			<property name="Faction" value="" />
-			<property name="Traits" value="Intrigue - Prviate - Charisma +4" />
+			<property name="Traits" value="Intrigue - Private - Charisma +4" />
 			<property name="Rules" value="Attacker: Effects that would expose an agent or that would result in an agent being considered Exposed at this mission wound that agent as well as producing their normal effects.&#xD;&#xA;Defender: Effects that would expose an agent or that would result in an agent being considered Exposed at this mission wound that agent as well as producing their normal effects." />
 			<property name="Victory Points" value="5" />
 			<property name="Cover Level" value="2" />
