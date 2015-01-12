@@ -1731,7 +1731,7 @@
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
-		<card id="7005309b-139b-4d14-b32d-0abfa263e918" name="Shinani">
+		<card id="7005309b-139b-4d14-b32d-0abfa263e918" name="Shinai">
 			<property name="Type" value="Agent" />
 			<property name="Expense Rating" value="6" />
 			<property name="Charisma" value="1" />
@@ -1742,7 +1742,7 @@
 			<property name="Bravado" value="3" />
 			<property name="Faction" value="Nine Tiger" />
 			<property name="Traits" value="Soldier" />
-			<property name="Rules" value="React Combat x: After an enemy agent declares an action during a solo op or chase mission: Wound the agent. The TN is the target's combat or cover, whichever is higher." />
+			<property name="Rules" value="React Combat x: After an opposing agent declares an action during a solo op or chase mission: Wound the agent. The TN is the target's combat or cover, whichever is higher." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -2267,7 +2267,7 @@
 			<property name="Bravado" value="" />
 			<property name="Faction" value="Bloodvine" />
 			<property name="Traits" value="Fixer" />
-			<property name="Rules" value="Action performed by opposing agents whose base stats are zero have +3 TN." />
+			<property name="Rules" value="Action performed by opposing non-leader agents whose base stats are zero have +3 TN." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -2362,7 +2362,7 @@
 			<property name="Cover Level" value="4" />
 		</card>
 		<card id="6b740ae0-afa4-48de-a026-b69ad73fb1ef" name="Hunting the Hunter">
-			<property name="Type" value="" />
+			<property name="Type" value="Mission" />
 			<property name="Expense Rating" value="" />
 			<property name="Charisma" value="" />
 			<property name="Combat" value="" />

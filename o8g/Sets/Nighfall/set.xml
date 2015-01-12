@@ -407,7 +407,7 @@
 			<property name="Bravado" value="3" />
 			<property name="Faction" value="Freelancer" />
 			<property name="Traits" value="Wheelman" />
-			<property name="Rules" value="Mission Transport: Move one of your agents from your headquarters to the mission team or vice-cersa." />
+			<property name="Rules" value="Mission Transport 4: Move one of your agents from your headquarters to the mission team or vice-cersa." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -1161,7 +1161,7 @@
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
-		<card id="f6f54077-38a8-4ea8-9729-a1dec6c4889a" name="Destory the Biochem Lab">
+		<card id="f6f54077-38a8-4ea8-9729-a1dec6c4889a" name="Destroy the Biochem Lab">
 			<property name="Type" value="Mission" />
 			<property name="Expense Rating" value="" />
 			<property name="Charisma" value="" />
@@ -1802,7 +1802,7 @@
 			<property name="Bravado" value="" />
 			<property name="Faction" value="Nine Tiger" />
 			<property name="Traits" value="Soldier" />
-			<property name="Rules" value="Intel Combat X: Target an agent. Untol the end of the turn, if the agent assigns to a mission team, wound him." />
+			<property name="Rules" value="Intel Combat: Target an agent. Until the end of the turn, if the agent assigns to a mission team, wound him." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -2942,7 +2942,7 @@
 			<property name="Bravado" value="1" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="" />
-			<property name="Rules" value="Mission Craft X: Retire an Exposed agent in this mission. The TN is the agent's combat or cover, whichever is higher." />
+			<property name="Rules" value="Mission Craft X: Retire target opposing Exposed agent. The TN is the agent's combat or cover, whichever is higher." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>

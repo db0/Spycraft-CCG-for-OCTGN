@@ -1126,7 +1126,7 @@
 			<property name="Level" value="" />
 			<property name="Bravado" value="2" />
 			<property name="Faction" value="Shadow Patriots" />
-			<property name="Traits" value="Soldier" />
+			<property name="Traits" value="Soldier - Unique" />
 			<property name="Rules" value="Other Soldier agents in Lt. Folley's mission team gain +1 to all skills." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
@@ -1352,7 +1352,7 @@
 			<property name="Bravado" value="2" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="" />
-			<property name="Rules" value="Intel Craft 8: Attach Outbreak to a Mission card. While Outbreak is attached the mission is worth +2 Victory Points and the mission text for the Attacker and Defender gains: &quot;After an agent is wounded by a non-Outbreak card during this mission, wound the agent.&quot;" />
+			<property name="Rules" value="Intel Craft 8: Attach Outbreak to a Mission card. While Outbreak is attached the mission is worth +2 Victory Points and the mission text for the Attacker and Defender gains: &quot;After an agent at this mission is wounded by a non-Outbreak card during this mission, wound the agent.&quot;" />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -1371,7 +1371,7 @@
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
-		<card id="3f210b5f-0b64-4e57-8beb-eadac740ed7b" name="Party Crafters">
+		<card id="3f210b5f-0b64-4e57-8beb-eadac740ed7b" name="Party Crashers">
 			<property name="Type" value="Mission" />
 			<property name="Expense Rating" value="" />
 			<property name="Charisma" value="" />
@@ -1457,7 +1457,7 @@
 			<property name="Bravado" value="2" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="" />
-			<property name="Rules" value="Mission Craft 7: Attach Pitfall Detection Net to this mision. Deactivate each agent that was ativated after this action was declared. While Pitfall Detection Net is attached, expose and wound each agent that is successfully activated." />
+			<property name="Rules" value="Mission Craft 7: Attach Pitfall Detection Net to this mision. Deactivate each agent that was activated after this action was declared. While Pitfall Detection Net is attached, expose and wound each agent at this mission that is successfully activated." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -1562,7 +1562,7 @@
 			<property name="Bravado" value="4" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="" />
-			<property name="Rules" value="Intel Craft 9: No player can activate agents until the end of the turn. Start with you and the proceeding in turn order, each player must wound, expose, or deactivate one of their target active non-leader agents until all active agents have been targeted. Leaders cannot assign to mission teams this turn." />
+			<property name="Rules" value="Intel Craft 9: Starting with you and the proceeding in turn order, each player must wound or expose one of their target active non-leader agents until all active agents have been targeted." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
@@ -1937,7 +1937,7 @@
 			<property name="Bravado" value="3" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="" />
-			<property name="Rules" value="React Combat 6: After an agent is activated during a mission: Wound the agent." />
+			<property name="Rules" value="React Combat 6: After a non-leader agent is activated during a mission: Wound the agent." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
