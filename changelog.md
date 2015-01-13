@@ -1,6 +1,10 @@
 Changelog - Spycraft CCG OCTGN Game Definition
 ===============================================
 
+### 1.1.0.x
+
+* Multiple wording changes, thanks to Argali's efforts. Visit [The Spycraft Subreddit](http://www.reddit.com/r/spycraftccg) for more spycraft goodies
+
 ### 1.0.7.x
 
 * Added the rest of the promo cards
