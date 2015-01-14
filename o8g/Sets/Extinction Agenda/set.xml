@@ -812,7 +812,7 @@
 			<property name="Bravado" value="" />
 			<property name="Faction" value="Franchise" />
 			<property name="Traits" value="Soldier - Master: Dr. Kholera" />
-			<property name="Rules" value="Dr. Kholera&#xD;&#xA;React Transport: After an action targets Dr. Kholera: Redirect the action to Gerhard.&#xD;&#xA;React Transport: After Gerhard activates: Search your discard pile, then Agency Deck, for an &quot;Armored Trenchcoat&quot; and a Firearm gear. Equip the cards to him." />
+			<property name="Rules" value="React Transport: After an action targets Dr. Kholera: Redirect the action to Gerhard.&#xD;&#xA;React Transport: After Gerhard activates: Search your discard pile, then Agency Deck, for an &quot;Armored Trenchcoat&quot; and a Firearm gear. Equip the cards to him." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
