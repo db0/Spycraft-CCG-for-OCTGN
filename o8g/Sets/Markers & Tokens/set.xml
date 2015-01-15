@@ -19,11 +19,26 @@
 		<marker id="05a5f34f-e4d2-4ee0-9906-b03f70b02a01" name="Text Action Taken" />
 	</markers>
 	<cards>
+		<card id="4fdb3309-7b42-41a6-a2b2-34ce2b75f831" name="Standard Reference Card">
+			<property name="Type" value="Reference" />
+			<property name="Expense Rating" value="" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
+			<property name="Transport" value="" />
+			<property name="Craft" value="" />
+			<property name="Level" value="" />
+			<property name="Bravado" value="" />
+			<property name="Faction" value="" />
+			<property name="Traits" value="" />
+			<property name="Rules" value="" />
+			<property name="Victory Points" value="" />
+			<property name="Cover Level" value="" />
+		</card>
 		<card id="9f291494-8713-4b7e-bc7c-36b428fc0dd1" name="Banshee Net Leaders">
 			<property name="Type" value="Reference" />
 			<property name="Expense Rating" value="" />
-			<property name="Charisma" value="0" />
-			<property name="Combat" value="5" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
 			<property name="Transport" value="" />
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
@@ -37,8 +52,8 @@
 		<card id="8e2ff010-98b5-4884-a39b-100940d4f702" name="Bloodvine Leaders">
 			<property name="Type" value="Reference" />
 			<property name="Expense Rating" value="" />
-			<property name="Charisma" value="0" />
-			<property name="Combat" value="5" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
 			<property name="Transport" value="" />
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
@@ -52,8 +67,8 @@
 		<card id="6d131915-cb6a-43ca-b2f1-64ac040b0eec" name="Franchise Leaders">
 			<property name="Type" value="Reference" />
 			<property name="Expense Rating" value="" />
-			<property name="Charisma" value="0" />
-			<property name="Combat" value="5" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
 			<property name="Transport" value="" />
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
@@ -67,8 +82,8 @@
 		<card id="0d058ed6-51e8-42c7-9cbb-67a3d267c618" name="The Krypt Leaders">
 			<property name="Type" value="Reference" />
 			<property name="Expense Rating" value="" />
-			<property name="Charisma" value="0" />
-			<property name="Combat" value="5" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
 			<property name="Transport" value="" />
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
@@ -82,8 +97,8 @@
 		<card id="49f5d0ad-60e2-4810-86b6-5f962f99d9bd" name="Nine Tigers Leaders">
 			<property name="Type" value="Reference" />
 			<property name="Expense Rating" value="" />
-			<property name="Charisma" value="0" />
-			<property name="Combat" value="5" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
 			<property name="Transport" value="" />
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
@@ -97,8 +112,8 @@
 		<card id="bf4bfecd-1d84-4a6f-a787-0986a0fe06b1" name="Shadow Patriot Leaders">
 			<property name="Type" value="Reference" />
 			<property name="Expense Rating" value="" />
-			<property name="Charisma" value="0" />
-			<property name="Combat" value="5" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
 			<property name="Transport" value="" />
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
@@ -112,8 +127,8 @@
 		<card id="05a8e219-4463-4ec0-a785-cd1c8eb551c8" name="Turn Sequence">
 			<property name="Type" value="Help" />
 			<property name="Expense Rating" value="" />
-			<property name="Charisma" value="0" />
-			<property name="Combat" value="5" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
 			<property name="Transport" value="" />
 			<property name="Craft" value="" />
 			<property name="Level" value="" />
@@ -127,8 +142,8 @@
 		<card id="91f77ea1-93ed-4375-83bd-d1ee0a1419fe" name="Cover">
 			<property name="Type" value="Scripting" />
 			<property name="Expense Rating" value="" />
-			<property name="Charisma" value="0" />
-			<property name="Combat" value="5" />
+			<property name="Charisma" value="" />
+			<property name="Combat" value="" />
 			<property name="Transport" value="" />
 			<property name="Craft" value="" />
 			<property name="Level" value="" />

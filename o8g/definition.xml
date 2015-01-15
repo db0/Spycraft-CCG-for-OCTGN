@@ -26,7 +26,7 @@
    </proxygen>   
   <documents>
       <document name="Rulebook" icon="Documents/Manual.png" src="Documents/spycraftccg_rulebook.html" />
-      <document name="Technical Rulebook" icon="Documents/Manual.png" src="Documents/Technical_Rulebook.html" />
+      <document name="Technical Rulebook" icon="Documents/Manual.png" src="Documents/Technical_Rulebook.htm" />
       <document name="Reference Sheet" icon="Documents/Manual.png" src="Documents/Spycraft CCG Reference Sheet.html" />
   </documents>    
    <globalvariables> 
