@@ -2297,7 +2297,7 @@
 			<property name="Bravado" value="3" />
 			<property name="Faction" value="" />
 			<property name="Traits" value="" />
-			<property name="Rules" value="Wheelman only.&#xD;&#xA;Mision Transport X: Target a Vehicle gear equipped to a target agent. Gain control of and move the gear to this agent. The TN is the gear's expense." />
+			<property name="Rules" value="Wheelman only.&#xD;&#xA;Mision Transport X: Target a Vehicle gear equipped to a target agent. Move the gear to this agent. The TN is the gear's expense." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
