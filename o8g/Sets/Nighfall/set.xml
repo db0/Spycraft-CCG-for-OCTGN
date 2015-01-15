@@ -5241,20 +5241,5 @@
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
-		<card id="3790bde5-67ad-4726-bd2d-3244f06d6af2" name="Risky Maneuver">
-			<property name="Type" value="Action" />
-			<property name="Expense Rating" value="" />
-			<property name="Charisma" value="" />
-			<property name="Combat" value="" />
-			<property name="Transport" value="" />
-			<property name="Craft" value="" />
-			<property name="Level" value="" />
-			<property name="Bravado" value="" />
-			<property name="Faction" value="" />
-			<property name="Traits" value="" />
-			<property name="Rules" value="Intel Craft: Target a mission in the queue. The mission's objective and Victory Point values are increased by +2." />
-			<property name="Victory Points" value="" />
-			<property name="Cover Level" value="" />
-		</card>
 	</cards>
 </set>

@@ -81,6 +81,12 @@ def gameSetup(group, x = 0, y = 0): # WiP
    if Faction == "The Krypt": table.create("0d058ed6-51e8-42c7-9cbb-67a3d267c618",playerside * -280 - 50, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
    if Faction == "Nine Tiger": table.create("49f5d0ad-60e2-4810-86b6-5f962f99d9bd",playerside * -280 - 50, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
    if Faction == "Shadow Patriots": table.create("bf4bfecd-1d84-4a6f-a787-0986a0fe06b1",playerside * -280 - 50, (playerside * 20) + yaxisMove(),1,True) # Creating a the player's faction reference card.
+   if Faction == "Banshee Net": table.create("4fdb3309-7b42-41a6-a2b2-34ce2b75f831",playerside * -280 - 50, (playerside * 120) + yaxisMove(),1,True) # Creating a standard reference card.
+   if Faction == "Bloodvine": table.create("4fdb3309-7b42-41a6-a2b2-34ce2b75f831",playerside * -280 - 50, (playerside * 120) + yaxisMove(),1,True) # Creating a standard reference card.
+   if Faction == "Franchise": table.create("4fdb3309-7b42-41a6-a2b2-34ce2b75f831",playerside * -280 - 50, (playerside * 120) + yaxisMove(),1,True) # Creating a standard reference card.
+   if Faction == "The Krypt": table.create("4fdb3309-7b42-41a6-a2b2-34ce2b75f831",playerside * -280 - 50, (playerside * 120) + yaxisMove(),1,True) # Creating a standard reference card.
+   if Faction == "Nine Tiger": table.create("4fdb3309-7b42-41a6-a2b2-34ce2b75f831",playerside * -280 - 50, (playerside * 120) + yaxisMove(),1,True) # Creating a standard reference card.
+   if Faction == "Shadow Patriots": table.create("4fdb3309-7b42-41a6-a2b2-34ce2b75f831",playerside * -280 - 50, (playerside * 120) + yaxisMove(),1,True) # Creating a standard reference card.
    debugNotify("Preparing Mission Deck",2)
    currMissionsVar = getGlobalVariable('currentMissions')
    debugNotify("currMissionsVar = {}".format(currMissionsVar),2)
