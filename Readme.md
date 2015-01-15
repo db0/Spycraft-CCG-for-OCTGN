@@ -17,6 +17,6 @@ AEG deleted the official Spycraft forums without giving any notice, and the foru
 
 Thus a lot of official documentation such as official errata, and rules for sanctioned play were lost.
 
-Therefore, all the errata done to cards "unofficial". Any errata made was done after intense discussion with the Manchester Spycraft community, which includes 2 Bounty Hunters, one of whom was a major collaborator with Azaroth in the creation of Azaroth's Unofficial Technical rules(which has now been taken over by Argali).
+Therefore, all the errata done to cards are "unofficial". Any errata made was done after intense discussion with the Manchester Spycraft community, which includes 2 Bounty Hunters, one of whom was a major collaborator with Azaroth in the creation of Azaroth's Unofficial Technical rules(which has now been taken over by Argali).
 
 Various promo programs existed, and some promos were never meant to be played in sanctioned games. Legal promos tended to be promos that were available through the player rewards program for playing in sanctioned events in store, or box toppers. Playtester, Bounty Hunter and special event promos were "discouraged" from being used, and were "encouraged" to be collector cards only. For sanctioned play, there was an official list of legal promo cards but as all official documentation has been lost, that list is lost too. So use promos with care.
