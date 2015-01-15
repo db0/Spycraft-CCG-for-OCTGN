@@ -1487,7 +1487,7 @@
 			<property name="Bravado" value="2" />
 			<property name="Faction" value="The Krypt" />
 			<property name="Traits" value="Fixer" />
-			<property name="Rules" value="React Craft: Before a target opposing agent is retired: Gain control of and move a gear from the target to Andrei." />
+			<property name="Rules" value="React Craft: Before a target opposing agent is retired: Move a gear from the target to Andrei." />
 			<property name="Victory Points" value="" />
 			<property name="Cover Level" value="" />
 		</card>
