@@ -4,7 +4,7 @@
       name="Spycraft" 
       id="d1d8cc2c-e817-4b4d-9449-3315bbd3c643" 
       octgnVersion="3.1.15.112" 
-      version="1.1.0.0" 
+      version="1.1.0.1" 
       markersize="16"
       tags="duel espionage objectives AEG"
       description="Spycraft CCG is a espionage-themed card game for 2-6 players.
@@ -15,6 +15,7 @@
       setsurl="https://github.com/db0/Spycraft-CCG-for-OCTGN#available-sets"
       gameurl="https://github.com/db0/Spycraft-CCG-for-OCTGN#spycraft-ccg-plugin-for-octgn"
       authors="Db0, Lord Nat"
+      scriptVersion="3.1.0.0"
       iconurl="https://raw.github.com/db0/Spycraft-CCG-for-OCTGN/master/spycraft_logo.jpg">
    <scripts>
       <script src="Scripts/actions.py" />
