@@ -4,7 +4,7 @@
       name="Spycraft" 
       id="d1d8cc2c-e817-4b4d-9449-3315bbd3c643" 
       octgnVersion="3.1.15.112" 
-      version="1.1.1.0" 
+      version="1.1.2.0" 
       markersize="16"
       tags="duel espionage objectives AEG"
       description="Spycraft CCG is a espionage-themed card game for 2-6 players.
@@ -27,7 +27,7 @@
    </proxygen>   
   <documents>
       <document name="Rulebook" icon="Documents/Manual.png" src="Documents/spycraftccg_rulebook.html" />
-      <document name="Technical Rulebook" icon="Documents/Manual.png" src="Documents/Technical_Rulebook.html" />
+      <document name="Technical Rulebook" icon="Documents/Manual.png" src="Documents/Technical_Rulebook.htm" />
       <document name="Reference Sheet" icon="Documents/Manual.png" src="Documents/Spycraft CCG Reference Sheet.html" />
   </documents>    
    <globalvariables> 
